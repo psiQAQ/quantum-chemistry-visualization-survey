@@ -4,7 +4,7 @@
 
 **Goal:** 使用 Zotero 已有全文和不超过 12 次 Web of Science 定向检索，完成文献分组、元数据与 BibTeX/工作簿同步，并形成有全文证据支撑的 12–15 分钟中文问卷。
 
-**Architecture:** Zotero 父分类 `IMD6DTWK` 是文献状态源，WoS 只补证据缺口。公开文件保存可复核的文献元数据、结论和问卷；含隐私的检索日志、学校访问记录与临时清单只保存在已忽略的 `tmp/`。若 P0/P1 关键全文缺失，则输出精选下载清单并停止最终定稿。
+**Architecture:** Zotero 调研父分类是文献状态源，其内部 key 仅保存在 `tmp/`；WoS 只补证据缺口。公开文件保存可复核的文献元数据、结论和问卷；含隐私的检索日志、学校访问记录与临时清单只保存在已忽略的 `tmp/`。若 P0/P1 关键全文缺失，则输出精选下载清单并停止最终定稿。
 
 **Tech Stack:** Zotero MCP、Web of Science Starter API、BibTeX、Markdown、XLSX、`@oai/artifact-tool`、PowerShell、Git。
 
@@ -62,7 +62,7 @@ git commit -m "docs: define survey research safeguards"
 - Modify: `tmp/pdf_priority.md`
 
 **Interfaces:**
-- Consumes: Zotero 父分类 `IMD6DTWK` 的 53 条记录及附件。
+- Consumes: Zotero 调研父分类中的记录及附件；内部 key 和动态条目数从 `tmp/` 的本地状态读取。
 - Produces: 8 个子分类、主题归类结果、全文/缺 PDF 基线。
 
 - [ ] **Step 1: 回读父分类和附件状态**
@@ -71,7 +71,7 @@ git commit -m "docs: define survey research safeguards"
 
 - [ ] **Step 2: 创建 8 个子分类**
 
-调用 `create_collection(parentCollection="IMD6DTWK")` 创建：`00｜优先精读`、`01｜PySCF 核心与生态`、`02｜量子化学软件与采用`、`03｜数值可靠性与跨引擎基准`、`04｜互操作、自动化与工作流`、`05｜数据格式与科学可视化`、`06｜科研软件工程与可持续性`、`07｜用户研究、信任与维护`。
+使用保存在 `tmp/` 的父分类 key 调用 `create_collection`，创建：`00｜优先精读`、`01｜PySCF 核心与生态`、`02｜量子化学软件与采用`、`03｜数值可靠性与跨引擎基准`、`04｜互操作、自动化与工作流`、`05｜数据格式与科学可视化`、`06｜科研软件工程与可持续性`、`07｜用户研究、信任与维护`。
 
 - [ ] **Step 3: 主题归类**
 

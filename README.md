@@ -13,7 +13,7 @@
 | [`pyscf_quantum_chemistry_visualization_research_2026-07-19.md`](pyscf_quantum_chemistry_visualization_research_2026-07-19.md) | 中文深度调研报告 | 了解结论、证据边界、产品方向与验证方案 |
 | [`pyscf_quantum_chemistry_visualization_research_2026-07-19.xlsx`](pyscf_quantum_chemistry_visualization_research_2026-07-19.xlsx) | 结构化调研工作簿 | 筛选文献、比较软件、整理问卷和验证任务 |
 | [`pyscf_quantum_chemistry_literature_2026-07-19.bib`](pyscf_quantum_chemistry_literature_2026-07-19.bib) | BibTeX 文献库 | 导入 Zotero 等文献管理工具 |
-| [`quantum_chemistry_software_survey_draft_2026-07-19.md`](quantum_chemistry_software_survey_draft_2026-07-19.md) | 量子化学软件采用与三维场可视化需求问卷草案 | 预测试、访谈和后续正式问卷设计 |
+| [`quantum_chemistry_software_survey_draft_2026-07-19.md`](quantum_chemistry_software_survey_draft_2026-07-19.md) | 文献支撑的量子化学软件采用与三维场可视化需求问卷 | 预测试、认知访谈和正式投放前校准 |
 | [`pyscf_research_overview_preview_2026-07-19.png`](pyscf_research_overview_preview_2026-07-19.png) | 工作簿概览预览图 | 快速查看资料规模与核心结论 |
 
 工作簿包含 5 个工作表：
@@ -62,4 +62,4 @@ OpenVDB 应被视为派生可视化数据，不能替代原始 `.cube`、checkpo
 
 ## 当前状态
 
-本仓库目前是**调研资料包**，不包含 `.cube` → OpenVDB 转换器、Blender 插件或可执行代码。问卷仍是预测试研究草案：WoS 新增的关键可视化与互操作论文尚待全文精读。`tmp/` 用于保存本地工作材料，并由 `.gitignore` 排除。
+本仓库目前是**调研资料包**，不包含 `.cube` → OpenVDB 转换器、Blender 插件或可执行代码。关键可视化、格式互操作、软件采用门槛和数值验证文献已完成全文核验，问卷已进入**文献支撑的预测试版**；正式投放前仍需用 10–15 人认知访谈检查题目理解和实际完成时间。`tmp/` 仅用于保存本地工作材料和可能含隐私的信息，并由 `.gitignore` 排除。
