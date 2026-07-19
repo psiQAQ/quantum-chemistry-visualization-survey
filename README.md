@@ -1,6 +1,6 @@
 # PySCF × ChemBlender 量子化学可视化调研
 
-本仓库整理 PySCF、主流量子化学软件、量子化学场/波函数文件、OpenVDB / Blender 可视化工作流，以及软件采用度问卷设计的阶段性调研资料。检索与整理日期为 **2026-07-19**。
+本仓库整理 PySCF、主流量子化学软件、量子化学场/波函数文件、OpenVDB / Blender 可视化工作流，以及软件采用度问卷设计的阶段性调研资料。检索日期为 **2026-07-19**，全文笔记与问卷依据更新至 **2026-07-20**。
 
 > 核心结论：该方向值得继续研究，但项目不宜只定位为“PySCF 专用 `.cube` → OpenVDB 转换器”。更有价值的方向是构建一个引擎无关、物理语义完整、可验证、可复现，并适合大规模稀疏体数据与时间序列的量子化学计算到 Blender 场景工作流。
 
@@ -10,6 +10,7 @@
 | --- | ---: | --- |
 | 文献与证据条目 | 72 | 同行评议论文、官方资料、公开技术讨论及项目资料 |
 | A 级优先证据 | 31 | 直接支撑核心判断或问卷构念的优先精读资料 |
+| 全文阅读笔记 | 61 | 与 2026-07-20 BibTeX 及 Zotero 父分类按 DOI 一一对应 |
 | 软件矩阵条目 | 18 | 常见量子化学或电子结构软件的定位与适配比较 |
 | 问卷题目 | 30 | 预计完成时间 12–15 分钟 |
 | 验证测试 | 20 | 覆盖格式、数值、跨引擎、可视化和回归验证 |
@@ -19,12 +20,13 @@
 | 主题 | 条目数 |
 | --- | ---: |
 | PySCF 核心与生态 | 8 |
-| 综述与软件工程 | 4 |
+| 科研软件工程与可持续性 | 4 |
 | 数值可靠性与基准 | 5 |
-| 主流量子化学软件 | 21 |
-| 互操作与工作流 | 12 |
-| 数据格式与可视化 | 17 |
-| 采用度与维护 | 5 |
+| 主流量子化学软件 | 20 |
+| 互操作与工作流 | 11 |
+| 数据格式与可视化 | 13 |
+
+> 以上是 61 篇阅读笔记的单一主归类。Zotero 中“用户研究、信任与维护”与其他主题交叉，作为横向分析维度使用，不复制文件。
 
 ## 文档导航
 
@@ -33,7 +35,7 @@
 | 文档 | 内容 | 建议用途 |
 | --- | --- | --- |
 | [量子化学可视化方向深度调研](docs/research/pyscf_quantum_chemistry_visualization_research_2026-07-19.md) | 结论、证据边界、产品方向和验证协议 | 首先阅读，确认项目定位与路线 |
-| [跨子类文献精读关键发现](docs/research/literature_review_cross_cutting_findings_2026-07-19.md) | 61 篇文献跨主题综合、矛盾点和问卷启示 | 查看全文精读后的横向综合结果 |
+| [跨主题文献精读关键发现](docs/research/literature_review_cross_cutting_findings_2026-07-19.md) | 61 篇文献的事实、综合推论、证据链接和问卷构念映射 | 查看全文精读后的横向综合结果 |
 
 ### 问卷
 
@@ -46,7 +48,9 @@
 | 文件 | 内容 | 建议用途 |
 | --- | --- | --- |
 | [结构化调研工作簿](data/pyscf_quantum_chemistry_visualization_research_2026-07-19.xlsx) | 概览、核心文献、软件矩阵、问卷题库和验证矩阵 | 筛选证据、比较软件和追踪验证任务 |
-| [BibTeX 文献库](data/pyscf_quantum_chemistry_literature_2026-07-19.bib) | 61 条带 DOI 的纳入文献 | 导入 Zotero 或用于引用管理 |
+| [文献总结引用索引](data/literature-notes/README.md) | 按六个主主题列出 61 篇原始 Zotero 阅读笔记 | 从研究结论回查逐篇回答、页码和图表依据 |
+| [当前 BibTeX 文献库](data/pyscf_quantum_chemistry_literature_2026-07-20.bib) | 61 个唯一 key、61 个唯一 DOI；45 条含摘要 | 与阅读笔记对应或用于引用管理 |
+| [前一版 BibTeX 文献库](data/pyscf_quantum_chemistry_literature_2026-07-19.bib) | 61 条紧凑导入记录 | 保留旧 key 对照，不再作为笔记命名源 |
 
 ### 项目方法与维护
 
@@ -64,17 +68,17 @@
 ## 建议阅读顺序
 
 1. 阅读[深度调研报告](docs/research/pyscf_quantum_chemistry_visualization_research_2026-07-19.md)，确认方向、证据边界和产品路线。
-2. 阅读[跨子类精读发现](docs/research/literature_review_cross_cutting_findings_2026-07-19.md)，理解不同文献主题之间的共同结论与冲突。
-3. 在[结构化工作簿](data/pyscf_quantum_chemistry_visualization_research_2026-07-19.xlsx)中按优先级、证据等级和主题筛选资料。
-4. 使用[问卷预测试版](docs/survey/quantum_chemistry_software_survey_draft_2026-07-19.md)进行 10–15 人认知访谈。
-5. 按工作簿的验证矩阵优先完成 P0 测试，再扩展计算后端和高级场类型。
+2. 阅读[跨主题精读发现](docs/research/literature_review_cross_cutting_findings_2026-07-19.md)，区分论文事实与项目综合推论。
+3. 通过[文献总结引用索引](data/literature-notes/README.md)回查每项结论对应的 Zotero 阅读笔记。
+4. 在[结构化工作簿](data/pyscf_quantum_chemistry_visualization_research_2026-07-19.xlsx)中按优先级、证据等级和主题筛选资料。
+5. 使用[问卷预测试版](docs/survey/quantum_chemistry_software_survey_draft_2026-07-19.md)进行 10–15 人认知访谈。
 
 ## 主要判断
 
-- **PySCF 适合作为首个深度集成后端。** 它是开源、Python 原生、模块化的研究级电子结构框架，适合方法开发、自动化、高通量和分子—周期统一工作流。
-- **PySCF 与 Gaussian 的差异主要是产品形态和工作流。** 前者强调开放、可编程和可组合，后者强调成熟集成流程、GUI、培训和商业支持；在理论方法和数值设置一致时，软件品牌本身不能单独决定结果可信度。
-- **仅实现格式转换不足以形成项目壁垒。** Den2Obj、Molecular Blender、Rhorix 等已有相邻功能或研究先例，差异化应来自科学元数据、单位与仿射网格处理、误差量化、多后端互操作、批处理、动画和可复现场景。
-- **格式需求必须独立于计算库测量。** 问卷分别使用多选题统计 Cube、Molden、FCHK、WFN/WFX、XSF、OpenDX、VASP 体数据等实际格式，并用单选题确定首个优先适配格式；OpenVDB 明确作为派生可视化格式。
+- **PySCF 适合作为首个深度集成后端。** 其 Python 宿主语言、可组合对象、插件式开发和分子—周期覆盖由[框架论文](data/literature-notes/01-pyscf-core/sun_p_2018.md)与[生态更新论文](data/literature-notes/01-pyscf-core/sun_recent_2020.md)直接说明；“首个后端”是本项目据此作出的工程选择。
+- **现有证据不支持给 PySCF 与 Gaussian 做单一准确度或采用率排名。** 数值结果依赖方法、基组、积分网格和收敛等协议细节。[DFT 数值细节笔记](data/literature-notes/03-numerical-reliability/morgante_devil_2020.md)、[基准实践笔记](data/literature-notes/03-numerical-reliability/karton_good_2025.md)。
+- **Blender 量子化学/科学可视化已有直接先例。** Rhorix、QMBlender、BlendMol 和 Digichem 分别覆盖拓扑对象、动态波函数、大分子场景和集成渲染工作流。[Rhorix](data/literature-notes/05-data-formats-visualization/mills_rhorix_2017.md)、[QMBlender](data/literature-notes/05-data-formats-visualization/figueiras_qmblender_2019.md)、[BlendMol](data/literature-notes/05-data-formats-visualization/durrant_blendmol_2019.md)、[Digichem](data/literature-notes/04-interoperability-workflows/lee_digichem_2024.md)。因此，科学元数据、误差量化和跨后端可追溯性是待问卷验证的差异化假设。
+- **格式需求必须独立于计算库测量。** ORBKIT 和 Multiwfn 表明源波函数与实空间分析不能只用 Cube 表示；VDB 适合稀疏体数据但属于派生表示。[ORBKIT](data/literature-notes/05-data-formats-visualization/hermann_orbkit_2016.md)、[Multiwfn](data/literature-notes/05-data-formats-visualization/lu_multiwfn_2012.md)、[VDB](data/literature-notes/05-data-formats-visualization/museth_vdb_2013.md)。
 - **“行业认可度”需要组合证据。** 引用量、下载量或 GitHub 指标均不能单独代表软件的科学可信度或真实采用。
 
 ## “行业认可度”六维证据模型
@@ -99,9 +103,9 @@ OpenVDB 应被视为派生可视化数据，不能替代原始 `.cube`、checkpo
 
 ## 数据口径与限制
 
-- 本资料是截至 2026-07-19 的阶段性检索结果，不是持续自动更新的数据库。
+- 本资料是 2026-07-19 检索、2026-07-20 完成笔记链接整理的阶段性结果，不是持续自动更新的数据库。
 - 工作簿收录 72 条证据；BibTeX 与 Zotero 父分类均收录其中 61 条带 DOI 的文献，未覆盖部分官网、仓库和公开讨论。
-- BibTeX 中部分作者列表经过缩写，部分记录以 DOI 元数据为准；正式投稿或公开引用前，应通过 Zotero、Crossref 或出版社页面刷新并复核。
+- 2026-07-20 BibTeX 已通过 61 条目、key/DOI 唯一性、标题/DOI 必填检查；其中 16 条没有摘要。正式投稿或公开引用前，仍应通过 Zotero、Crossref 或出版社页面复核作者和出版字段。
 - 项目方用户数、注册用户数和性能数据应按来源属性与实验条件解读，不能直接外推为全球市场份额。
 - GitHub Issue 可用于发现真实工程问题，但不等同于匿名同行评审或受控基准。
 - 问卷若使用便利抽样，结果只能解释为“本样本中的使用与态度”，不能代表全球量子化学软件市场。

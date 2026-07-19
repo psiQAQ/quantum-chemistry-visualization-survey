@@ -1,263 +1,117 @@
-# 跨子类文献精读关键发现汇总
+# 跨主题文献精读关键发现
 
-生成日期：2026-07-19
-数据来源：Zotero "PySCF × ChemBlender 量子化学可视化调研（2026-07-19）" 全部 8 个子类、61 篇文献的精读笔记
+更新日期：2026-07-20
+证据范围：Zotero“PySCF × ChemBlender 量子化学可视化调研（2026-07-19）”父分类中的 61 篇全文阅读笔记。全部笔记见[文献总结引用索引](../../data/literature-notes/README.md)。
 
-## 一、方向验证——项目值得投入
+## 一、证据边界
 
-### 1.1 Blender 量子化学可视化已有先例，但差异化空间充足
+本文把内容分为两类：
 
-| 先例 | 功能 | 本项目的差异化方向 |
-|------|------|-------------------|
-| **Digichem** (Lee 2024) | 已集成 Blender (Beautiful Atoms) 作为 3D 密度图渲染引擎，计划集成 PySCF | 科学元数据保留、跨引擎互操作、误差量化、批量自动化 |
-| **Rhorix** (Mills 2017) | QCT 临界点/梯度路径/等值包络 → Blender 对象 | 保留拓扑语义、对象关系和来源元数据；不只做拓扑 |
-| **QMBlender** (Figueiras 2019) | 粒子法波函数动力学 → Blender 模型 | 时间信息、相位保存、多帧一致性 |
-| **BlendMol** (Durrant 2019) | VMD/PyMOL → Blender 大分子场景 | 为量子化学场导入提供可复用的 Blender 交互设计模式 |
-| **Molecular Blender** | Cube/Molden → Blender 等值面 | VDB 性能、语义、批处理和复现的差异化 |
+- **文献事实**：论文报告的功能、方法、实验条件、结果或作者结论，直接链接到对应阅读笔记。
+- **综合推论**：本项目基于多篇文献形成的问卷或产品判断；它不是任何单篇论文的原结论，并列出支撑笔记。
 
-**结论：** "Blender 中看到轨道"已有成熟方案。项目壁垒应建立在：完整计算协议保存、单位与仿射网格正确处理、有符号轨道和周期边界、量化转换误差、多后端支持、批处理动画和自动图注生成。
+笔记中“对项目的启示”“建议题目”和“仍未解决的问题”本身不作为文献事实；只有回答区、页码/图表定位和论文总结可作为事实依据。
 
-### 1.2 标准化趋势为引擎无关工作流提供生态支撑
+## 二、已有可视化先例与真实缺口
 
-- **ORCA 6** (Neese 2025): JSON 接口、property 文件——互操作性是版本 6 的核心卖点之一
-- **PSI4** (Smith 2020): QCSchema 标准化输入输出，支持多后端
-- **TeraChem** (Seritan 2020): socket 接口设计——实时交互的潜在路径
-- **OpenMolcas** (Aquilante 2020): HDF5/XML/JSON 计划——多参考程序也在走向标准化
+| 文献事实 | 证据笔记 |
+| --- | --- |
+| Digichem 把输入生成、作业执行、结果解析和三维渲染组织成统一工作流，并可生成轨道与密度图。 | [Lee 2024](../../data/literature-notes/04-interoperability-workflows/lee_digichem_2024.md) |
+| Rhorix 把量子化学拓扑中的临界点、梯度路径和等值包络转换为 Blender 对象，同时讨论了异构拓扑输出带来的转换负担。 | [Mills 2017](../../data/literature-notes/05-data-formats-visualization/mills_rhorix_2017.md) |
+| QMBlender 使用粒子表示三维量子波函数动力学，并把时间演化结果带入 Blender。 | [Figueiras 2019](../../data/literature-notes/05-data-formats-visualization/figueiras_qmblender_2019.md) |
+| BlendMol 展示了 VMD/PyMOL 与 Blender 之间的大分子场景交换和交互模式。 | [Durrant 2019](../../data/literature-notes/05-data-formats-visualization/durrant_blendmol_2019.md) |
+| Jang 等直接从高斯基函数表示评估电子密度、静电势、分子轨道和自旋密度，并使用体渲染、切片、裁剪和传递函数进行交互探索。 | [Jang 2009](../../data/literature-notes/05-data-formats-visualization/yun_jang_interactive_2009.md)、[Jang 2010](../../data/literature-notes/05-data-formats-visualization/jang_interactive_2010.md) |
+| ORBKIT 可从多种程序输出读取波函数信息，并在用户指定网格上计算轨道、密度及导数。 | [Hermann 2016](../../data/literature-notes/05-data-formats-visualization/hermann_orbkit_2016.md) |
+| Multiwfn 覆盖轨道、电子密度、静电势、ELF/LOL 和拓扑等多类实空间分析。 | [Lu 2012](../../data/literature-notes/05-data-formats-visualization/lu_multiwfn_2012.md) |
 
-四个不同的主流程序不约而同地走向标准化输出，为"引擎无关"概念提供了强证据。
+**综合推论：**“在 Blender 中显示轨道或密度”已有直接先例，单纯增加一种格式转换不足以构成清晰差异。更值得验证的需求是：是否需要在跨程序导入时保留计算协议和场语义、报告转换误差、处理周期边界与有符号轨道，并支持批处理和时间序列。该推论由上述先例以及[QCArchive](../../data/literature-notes/04-interoperability-workflows/smith_span_2021.md)、[QCDB/QCEngine](../../data/literature-notes/04-interoperability-workflows/smith_quantum_2021.md)和[VDB](../../data/literature-notes/05-data-formats-visualization/museth_vdb_2013.md)共同支撑。
 
----
+## 三、格式、语义与互操作
 
-## 二、格式互操作——"XML 语义 + HDF5/OpenVDB 数据"是最优架构
+| 文献事实 | 证据笔记 |
+| --- | --- |
+| QC-ML/Q5cost 将可读的语义描述与大型数组分别交给 XML 和 HDF5，并用 schema 约束数据结构。 | [Angeli 2007](../../data/literature-notes/05-data-formats-visualization/angeli_problem_2007.md) |
+| QCArchive 将输入、输出、程序/执行来源和结果组织为可查询、可共享的计算记录。 | [Smith 2021, QCArchive](../../data/literature-notes/04-interoperability-workflows/smith_span_2021.md) |
+| QCDB/QCEngine 使用 QCSchema、验证、单位转换和程序适配器统一多程序任务，同时保留程序特定关键字。 | [Smith 2021, QCDB/QCEngine](../../data/literature-notes/04-interoperability-workflows/smith_quantum_2021.md) |
+| cclib 通过解析不同程序的文本输出建立包无关的数据访问层；论文也显示程序和版本差异会给解析维护带来负担。 | [O'Boyle 2008](../../data/literature-notes/04-interoperability-workflows/oboyle_cclib_2008.md) |
+| MDI 规定运行时命令、数据类型、顺序、长度和单位，用于进程间直接交换，而不是事后解析文件。 | [Barnes 2021](../../data/literature-notes/04-interoperability-workflows/barnes_molssi_2021.md) |
+| QMflows 用通用关键字、程序适配器、依赖图、队列执行和结果恢复组织多程序并行工作流，并保留原生结果与可移植结果。 | [Zapata 2019](../../data/literature-notes/04-interoperability-workflows/zapata_qmflows_2019.md) |
+| Basis Set Exchange 提供可版本化的基组数据和多程序格式输出；libxc 以统一接口集中实现交换-相关泛函。 | [Pritchard 2019](../../data/literature-notes/04-interoperability-workflows/pritchard_new_2019.md)、[Lehtola 2018](../../data/literature-notes/04-interoperability-workflows/lehtola_recent_2018.md) |
 
-### 2.1 关键参考文献
+**综合推论：**引擎无关不等于“识别多个扩展名”。最小语义层至少应记录程序和版本、方法、基组/ECP、程序特定设置、单位、坐标/晶格、数组形状与顺序、场/态索引、原始文件哈希和适配器版本；大型体数据可以使用独立的 HDF5/OpenVDB 表示，但必须链接回原始计算记录。[证据：Angeli 2007](../../data/literature-notes/05-data-formats-visualization/angeli_problem_2007.md)、[QCArchive](../../data/literature-notes/04-interoperability-workflows/smith_span_2021.md)、[QCDB/QCEngine](../../data/literature-notes/04-interoperability-workflows/smith_quantum_2021.md)。
 
-| 文献 | 年份 | 核心贡献 |
-|------|------|---------|
-| **QC-ML / Q5cost** (Angeli et al.) | 2007 | 最早提出"XML 语义 + HDF5 大数据"分离设计——直接适用于本项目的元数据+体数据架构 |
-| **QCArchive** (Smith et al.) | 2021 | 完整输入/输出/程序来源存档模型；VDB 应作为派生展示物而非主存档 |
-| **QCDB/QCEngine** (Smith et al.) | 2021 | QCSchema JSON 标准化 + 程序适配器 + 验证 + 单位转换——引擎无关的核心技术参考 |
-| **cclib** (O'Boyle et al.) | 2008 | 跨程序输出解析与统一内部表示——多引擎导入层的直接先例和脆弱性警示 |
+## 四、数值可信度不能由软件品牌替代
 
-### 2.2 格式生态分层
+| 文献事实 | 证据笔记 |
+| --- | --- |
+| DFT 结果会受基组、数值积分网格、SCF 稳定性、几何和实验校正等细节影响；论文强调不能依赖模糊方法标签或未经检查的默认设置。 | [Morgante & Peverati 2020](../../data/literature-notes/03-numerical-reliability/morgante_devil_2020.md) |
+| M06 系列反应能对积分网格敏感，粗网格可产生数 kcal/mol 量级误差。 | [Wheeler & Houk 2010](../../data/literature-notes/03-numerical-reliability/wheeler_integration_2010.md) |
+| SG-2/SG-3 提供公开定义的标准剪枝网格，便于跨程序复现积分设置。 | [Dasgupta & Herbert 2017](../../data/literature-notes/03-numerical-reliability/dasgupta_standard_2017.md) |
+| 高质量 DFT 基准需要明确参考值层级、体系覆盖、几何、基组、统计指标和异常值处理。 | [Karton & Santra 2025](../../data/literature-notes/03-numerical-reliability/karton_good_2025.md) |
+| 基组可复现性不仅依赖名称，还涉及收缩方式、元素覆盖、ECP 和数据版本。 | [Hill 2013](../../data/literature-notes/03-numerical-reliability/hill_gaussian_2013.md) |
 
-| 类型 | 代表格式 | 在项目中的定位 |
-|------|---------|--------------|
-| 波函数/轨道源数据 | Molden、FCHK、WFN/WFX | 允许在任意网格上重建轨道、密度及导数——不能只用 Cube |
-| 规则网格体数据 | Cube (.cube)、OpenDX (.dx)、XSF | 当前主流交换格式，但有单位/非正交/周期端点陷阱 |
-| 周期程序原生体数据 | VASP CHGCAR/PARCHG/LOCPOT/ELFCAR | 覆盖材料和表面用户 |
-| 通用科学体数据 | CCP4/MRC、VTK/VTI、HDF5/NumPy | 识别跨学科工作流 |
-| 派生可视化格式 | OpenVDB (.vdb) | 明确标注为派生格式，不能替代原始输出和计算协议 |
+**综合推论：**可视化管线不能修复上游计算协议错误，但应避免引入新的格式、单位、符号和采样错误。项目验证应分为四层：格式解析、物理量检查、跨程序对照和派生可视化误差；问卷应分别测量用户的上游核验习惯与对转换验证的最低要求。[证据：Morgante 2020](../../data/literature-notes/03-numerical-reliability/morgante_devil_2020.md)、[Karton 2025](../../data/literature-notes/03-numerical-reliability/karton_good_2025.md)、[QCDB/QCEngine](../../data/literature-notes/04-interoperability-workflows/smith_quantum_2021.md)。
 
-### 2.3 多程序解析层设计原则（来自 cclib、ORBKIT、MDI）
+## 五、PySCF 的定位与可视化数据来源
 
-1. **必须报告适配器版本、支持字段、警告和失败**——不能静默丢弃
-2. **保留原始输出文件和哈希**——派生数据必须可追溯
-3. **区分 in vivo（运行时接口）和 ex vivo（文件解析）互操作**（MDI 的区分）
-4. **程序版本、平台和任务变化会使解析器脆弱**——需要回归测试策略
+| 文献事实 | 证据笔记 |
+| --- | --- |
+| PySCF 直接使用 Python 作为宿主语言，主要算法以 Python 实现、计算热点使用 C，并通过插件和可组合对象支持方法开发。 | [Sun 2018](../../data/literature-notes/01-pyscf-core/sun_p_2018.md) |
+| PySCF 同时覆盖分子和周期体系，并形成量子化学、材料、机器学习和量子信息相关生态。 | [Sun 2020](../../data/literature-notes/01-pyscf-core/sun_recent_2020.md) |
+| GPU4PySCF 把多类 HF/DFT 计算移植到 GPU；后续工作继续扩展 GPU 能力和应用范围。 | [Li 2025](../../data/literature-notes/01-pyscf-core/li_introducing_2025.md)、[Wu 2025](../../data/literature-notes/01-pyscf-core/wu_enhancing_2025.md) |
+| GPU4PySCF 已用于周期 QM/MM 分子动力学和酶催化案例。 | [Li 2025, QM/MM](../../data/literature-notes/01-pyscf-core/li_accurate_2025.md) |
+| PySCF 的可微实现覆盖分子和材料中的能量及导数工作流。 | [Zhang 2022](../../data/literature-notes/01-pyscf-core/zhang_differentiable_2022.md) |
+| PyQMC 在 PySCF 生态中提供实空间量子蒙特卡洛工作流。 | [Wheeler 2023](../../data/literature-notes/01-pyscf-core/wheeler_pyqmc_2023.md) |
+| 周期 RT-TDDFT 实现产生随时间演化的电子响应数据，属于多帧可视化场景。 | [Hanasaki 2023](../../data/literature-notes/01-pyscf-core/hanasaki_implementation_2023.md) |
 
----
+**综合推论：**PySCF 适合作为首个深度 API 后端，因为它直接暴露 Python 数据对象并覆盖分子、周期、导数和时间相关场景；但问卷仍应先测量跨引擎需求，再把 PySCF 作为次级分层变量，避免把项目价值等同于单一软件采用率。[证据：Sun 2018](../../data/literature-notes/01-pyscf-core/sun_p_2018.md)、[Sun 2020](../../data/literature-notes/01-pyscf-core/sun_recent_2020.md)、[QCDB/QCEngine](../../data/literature-notes/04-interoperability-workflows/smith_quantum_2021.md)。
 
-## 三、数值可信度——默认设置盲区是项目的核心价值点
+## 六、体数据与交互可视化的适用边界
 
-### 3.1 关键证据
+| 文献事实 | 证据笔记 |
+| --- | --- |
+| VDB 使用层次稀疏数据结构支持高分辨率体数据、随机访问和动态拓扑。 | [Museth 2013](../../data/literature-notes/05-data-formats-visualization/museth_vdb_2013.md) |
+| NeuralVDB 用神经表示进一步压缩稀疏体数据，但解码和误差特性与无损 VDB 不同。 | [Kim 2024](../../data/literature-notes/05-data-formats-visualization/kim_neuralvdb_2024.md) |
+| 直接从基函数评估场可避免固定预采样网格的存储和分辨率限制，同时需要 GPU 计算与交互渲染支持。 | [Jang 2009](../../data/literature-notes/05-data-formats-visualization/yun_jang_interactive_2009.md)、[Jang 2010](../../data/literature-notes/05-data-formats-visualization/jang_interactive_2010.md) |
+| 增强现实与云端/机器学习结合提供了低门槛交互式化学展示的另一种交付方式。 | [Sakshuwong 2022](../../data/literature-notes/05-data-formats-visualization/sakshuwong_bringing_2022.md)、[Raucci 2023](../../data/literature-notes/05-data-formats-visualization/raucci_interactive_2023.md) |
 
-| 文献 | 发现 | 对项目的影响 |
-|------|------|------------|
-| **Morgante & Peverati (2020)** | 积分网格(99,590 为最低要求)、SCF 稳定性分析、实验值校正是三个最被低估的 DFT 陷阱；用户通常不知道程序默认值 | 项目元数据必须包含网格名称/径向角向点数；可视化验证不能替代上游计算验证 |
-| **Wheeler & Houk (2010)** | M06 系列在 SG-1 网格上反应能误差可达 -6.7 至 3.2 kcal/mol；明确警告"default options" | 网格不足会影响密度和 ESP 可视化精度 |
-| **Dasgupta & Herbert (2017)** | SG-2/SG-3 标准剪枝网格；此前剪枝网格参数从未正式发表，无法作为跨程序标准 | 跨程序对照必须记录完整网格参数，不能只写网格名称 |
-| **Karton & De Oliveira (2025)** | 60%+ 的 DFT 方法在基准中出现不超过 3 次；需标准化文件格式和命名约定 | "独立基准"选项应区分公开数据、可复现协议与单一论文结论三个层级 |
-| **Hill (2013)** | 基组名称不足以完全复现计算，需记录收缩模式、ECP 和版本信息；def2 系列推荐为跨程序共享基组 | 项目元数据必须包含基组版本、元素覆盖和 ECP 信息 |
+**综合推论：**OpenVDB 应作为适合稀疏大网格和多帧缓存的派生格式，而不是原始量子化学数据或完整计算记录的替代品；任何阈值化、重采样或有损压缩都应报告误差并保留回溯路径。[证据：VDB](../../data/literature-notes/05-data-formats-visualization/museth_vdb_2013.md)、[NeuralVDB](../../data/literature-notes/05-data-formats-visualization/kim_neuralvdb_2024.md)、[QCArchive](../../data/literature-notes/04-interoperability-workflows/smith_span_2021.md)。
 
-### 3.2 四层验证框架
+## 七、采用门槛与软件可持续性
 
-```
-格式验证 → 物理验证 → 跨引擎验证 → 可视化验证
-(原点/轴/单位) (电子数积分/符号/核附近) (能量/梯度/Hessian/轨道子空间) (dense cube vs VDB误差)
-```
+| 文献事实 | 证据笔记 |
+| --- | --- |
+| 交互式量子化学的普及同时受领域知识、编程、计算资源和界面/工作流复杂度影响。 | [Raucci 2023](../../data/literature-notes/05-data-formats-visualization/raucci_interactive_2023.md) |
+| 自由开源软件允许检查、修改和再分发源码，也能支持教学中的本地运行和工作流自动化。 | [Lehtola & Karttunen 2022](../../data/literature-notes/06-software-sustainability/lehtola_free_2022.md) |
+| 可持续计算化学软件需要稳定接口、测试、文档、互操作和可持续的人才/社区机制。 | [Di Felice et al. 2023](../../data/literature-notes/06-software-sustainability/di_felice_perspective_2023.md) |
+| 面向更广泛用户的软件设计需要同时考虑可获得性、易用性、计算资源和长期维护。 | [Gagliardi et al. 2023](../../data/literature-notes/06-software-sustainability/gagliardi_sustainable_2023.md) |
+| ORCA 的软件论文与未来展望体现了大型集成程序在方法覆盖、性能、用户接口和模块化演进之间的权衡。 | [Neese 2022](../../data/literature-notes/02-quantum-chemistry-software/neese_software_2022.md)、[Neese 2024](../../data/literature-notes/06-software-sustainability/neese_perspective_2024.md)、[Neese 2025](../../data/literature-notes/02-quantum-chemistry-software/neese_software_2025.md) |
 
----
+**综合推论：**采用调查不能只问“是否喜欢某软件”。应分别测量实际任务、现有主程序、运行环境、编程方式、验证行为、团队锁定、交付方式和不采用的首要原因。[证据：Raucci 2023](../../data/literature-notes/05-data-formats-visualization/raucci_interactive_2023.md)、[QMflows](../../data/literature-notes/04-interoperability-workflows/zapata_qmflows_2019.md)、[AQME](../../data/literature-notes/04-interoperability-workflows/alegrerequena_aqme_2023.md)、[WebMO](../../data/literature-notes/04-interoperability-workflows/polik_span_2022.md)。
 
-## 四、PySCF 核心生态——引擎无关工作流的天然基础
+## 八、问卷构念与证据对应
 
-### 4.1 PySCF 的设计优势（Sun 2018, 2020）
+| 问卷模块 | 由文献支持的测量内容 | 主要证据 |
+| --- | --- | --- |
+| A 背景与工作流 | 实际程序、运行方式、自动化程度、计算频率 | [QMflows](../../data/literature-notes/04-interoperability-workflows/zapata_qmflows_2019.md)、[AQME](../../data/literature-notes/04-interoperability-workflows/alegrerequena_aqme_2023.md)、[WebMO](../../data/literature-notes/04-interoperability-workflows/polik_span_2022.md) |
+| B 信任与风险 | 跨程序核验、默认设置、基准证据、错误后果 | [Morgante 2020](../../data/literature-notes/03-numerical-reliability/morgante_devil_2020.md)、[Karton 2025](../../data/literature-notes/03-numerical-reliability/karton_good_2025.md)、[Wheeler 2010](../../data/literature-notes/03-numerical-reliability/wheeler_integration_2010.md) |
+| C 场与格式 | 场类型、源波函数格式、规则网格、周期体数据、交互操作 | [ORBKIT](../../data/literature-notes/05-data-formats-visualization/hermann_orbkit_2016.md)、[Multiwfn](../../data/literature-notes/05-data-formats-visualization/lu_multiwfn_2012.md)、[Jang 2010](../../data/literature-notes/05-data-formats-visualization/jang_interactive_2010.md) |
+| D 概念测试 | 语义元数据、适配器能力、验证、派生格式、批处理 | [QCDB/QCEngine](../../data/literature-notes/04-interoperability-workflows/smith_quantum_2021.md)、[QCArchive](../../data/literature-notes/04-interoperability-workflows/smith_span_2021.md)、[VDB](../../data/literature-notes/05-data-formats-visualization/museth_vdb_2013.md) |
+| E PySCF 分层 | 认知、实际使用、Python/API、GPU、安装和团队障碍 | [Sun 2018](../../data/literature-notes/01-pyscf-core/sun_p_2018.md)、[Sun 2020](../../data/literature-notes/01-pyscf-core/sun_recent_2020.md)、[GPU4PySCF](../../data/literature-notes/01-pyscf-core/li_introducing_2025.md) |
 
-| 特征 | 含义 | 问卷选项转化 |
-|------|------|------------|
-| 无自定义输入语言 | 用户通过 Python 对象和 NumPy 数组交互，不需要学习特定输入语法 | Q09 选择因素：加入"无自定义输入语言" |
-| Python/C 混合实现 | 关键路径用 C 优化，其余用 Python 保持可扩展性 | 效率与可编程性兼得 |
-| 插件式架构 | 新方法和模块可独立开发、组合 | Q09：加入"插件式架构" |
-| 分子/周期统一 | 同一框架覆盖分子和周期体系 | Q05 使用程序中 PySCF 应同时覆盖分子和周期用户 |
-| 密度矩阵/轨道系数直接暴露 | 不需要解析文本输出即可访问内部对象 | 适合端到端自动化可视化管线 |
+## 九、仍需由用户研究回答的问题
 
-### 4.2 各模块产生的可视化数据类型
+以下内容是研究问题，不是现有文献已经证明的事实：
 
-| 模块 | 输出类型 | 可视化需求 |
-|------|---------|----------|
-| HF/DFT | 轨道、密度、ESP | 等值面、体渲染、色标映射 |
-| CASSCF/CI | 多组态波函数、NTO | 多态可视化、子空间投影 |
-| RT-TDDFT (Hanasaki 2023) | 3000 帧/24fs 时间相关密度 | 稀疏 VDB 时间序列、动画、相位对齐 |
-| PyQMC (Wheeler 2023) | 实空间采样、统计误差 | 不确定度可视化、采样状态标记 |
-| 可微 PySCF (Zhang 2022) | 梯度、Hessian、导数耦合 | 交互式参数扫描、敏感性可视化 |
-| GPU4PySCF (Li/Wu 2025) | 加速 HF/DFT | 准交互式场生成 |
+1. 不同用户群过去 12 个月实际处理的场文件格式及首选适配器是什么？
+2. 直接波函数评估、预采样网格、等值面和体渲染各自有多大真实使用频率？
+3. 用户愿意为哪些元数据和验证报告增加操作成本？
+4. 大网格、多帧和周期体系是否足以形成 OpenVDB 工作流的优先需求？
+5. GUI、Python API、CLI、Blender 插件和 HPC 批处理分别对应哪些用户群？
+6. PySCF 的认知、实际使用和障碍是否会改变对引擎无关工作流的评价？
 
-### 4.3 GPU 加速与可视化管线
+这些问题应由预测试、正式问卷和后续访谈回答，不能从软件论文的功能描述直接推出。
 
-- GPU4PySCF v1.0: DFT 30x 加速 vs 32 核 CPU、~90% 成本节省
-- 瓶颈从计算转移到网格评估、数据传输和渲染
-- Q08 应增加"GPU 环境"选项；Q25 应加入"GPU 硬件/软件要求"
+## 十、文献覆盖
 
----
-
-## 五、采用门槛与用户画像
-
-### 5.1 四大进入门槛（Raucci 2023, Ann. Rev. Phys. Chem.）
-
-1. **领域知识**——用户需要理解方法、基组、泛函选择
-2. **编程能力**——Python 脚本/工作流被视为门槛但也视为收益
-3. **I/O 复杂度**——多种格式、程序、版本的解析困难
-4. **硬件门槛**——HPC 集群或 GPU 的可获得性
-
-### 5.2 不同用户群的差异化需求
-
-| 用户群 | 核心需求 | 对应的交付方式 |
-|--------|---------|--------------|
-| 方法开发者 | Python API、可编程、可扩展 | Python 包、Jupyter、CLI |
-| 应用研究者 | 预设流程、易用性、可靠性 | Blender 插件、GUI、Web |
-| 教学用户 | 零安装、教程、可视反馈 | Web 服务、BYOD |
-| HPC 用户 | 批处理、容器化、离线 | CLI、容器镜像、HPC 脚本 |
-| 工业用户 | 许可合规、技术支持、长期稳定 | 容器、商业支持、审计 |
-
-### 5.3 FOSS 的教学价值（Lehtola & Karttunen 2022）
-
-- 自由再分发、源码可访问、复杂工作流自动化
-- BYOD 模式使学生在个人设备上运行计算成为可能
-- Section 3.5.5 明确指出"没有普遍接受的可视化格式标准"——直接支撑项目需求
-
----
-
-## 六、可视化技术栈的关键选择
-
-### 6.1 直接 GPU 评估 vs 预采样网格
-
-**Jang & Varetto (2009, 2010)** 证明了从高斯基函数直接在 GPU 上评估和体渲染量子化学场的可行性：
-- 优势：无存储和传输开销、任意分辨率、交互式探索
-- 劣势：依赖 GPU 硬件、不支持所有程序输出
-- 对本项目的含义：不能把需求简化为"是否打开 Cube"；问卷应测量对**直接波函数评估**、**交互式传递函数/裁剪**的需求
-
-### 6.2 OpenVDB 的适用边界（Museth 2013; Kim 2024）
-
-| 特性 | VDB | NeuralVDB |
-|------|-----|-----------|
-| 存储效率 | 内存 ∝ 活动体素（非包围盒） | 10x-100x 进一步压缩 |
-| 随机访问 | 平均 O(1) | 需推理/解压缩 |
-| 动态拓扑 | 原生支持 | 支持，含时间相干性 |
-| 科学归档 | ✅ 适合（无损或可控有损） | ❌ 应仅作为派生展示缓存 |
-| 误差 | 无（无损模式）或可控量化 | 有损，需报告重建误差 |
-
-**结论：** VDB 适合高分辨率、稀疏三维场和多帧缓存；NeuralVDB 适合作为低存储展示层，不应替代科学归档。
-
-### 6.3 交互式可视化的化学需求（Jang 2010; Raucci 2023）
-
-- 二维传递函数 → 同时探索场值和梯度
-- 切片和裁剪 → 揭示内部结构而不丢失全局上下文
-- 交互阈值选择 → 需保存为可复现参数，不能只视为探索状态
-- MolAR (Sakshuwong 2022): AR 降低了沉浸式门槛，但便捷性不应以牺牲方法、单位和可信度信息为代价
-
----
-
-## 七、软件可持续性与社区信任
-
-### 7.1 可持续软件的核心要素（Di Felice 2023）
-
-论文识别的六大基础设施要素按优先级：
-1. **模块化 API** 和稳定接口
-2. **自动化测试** 和 CI/CD
-3. **文档** 和教程
-4. **社区治理** 和贡献者培养
-5. **互操作性标准**
-6. **人才培养** 和代际传递
-
-### 7.2 信任模型（Gagliardi 2023; Lehtola 2022）
-
-- 社区活跃度 > 许可证类型 在预测软件可持续性方面
-- "everyone, everywhere" 的具体含义：非专家用户、教学环境、资源受限机构
-- 减少编程技能要求、提高互操作性和建设社区三者中，**互操作性**被认为是可持续性的最大杠杆
-
-### 7.3 ORCA 视角的务实警示（Neese 2024）
-
-> "all attempts in that direction [interoperability] have failed so far"
-
-- 数百万行代码的集成程序包不可能为互操作性重新设计
-- 未来架构方向：模块化、LKC (Local Kernel Concept)、Shell 结构、自动代码生成
-- 对项目的影响：互操作性应以**适配器模式**实现，而非要求后端程序修改自身架构
-- ORCA 用户从 35,000 (v5) → 80,000 (v6)，说明用户接受快速迭代但需要稳定接口
-
----
-
-## 八、对问卷设计的跨子类建议汇总
-
-### 8.1 模块 A（背景与工作流）
-- Q05 使用程序列表应确保 PySCF 和 GPU4PySCF 分别列出
-- Q08 增加"GPU 环境"和"云实例"运行方式选项
-
-### 8.2 模块 B（选择、可信度与失败风险）
-- Q09 选择因素矩阵：加入"无自定义输入语言"、"交互式 Python/Notebook"、"插件式架构"、"GPU 加速"
-- Q10 信任依据：区分"公开基准数据库"、"可复现协议"和"单一论文结论"三个层级
-- Q13 可视化错误后果：加入"网格不足导致的场值偏差"
-
-### 8.3 模块 C（三维场、文件格式与工作流）
-- Q15 物理量：确保覆盖 ELF/LOL、NTO、跃迁密度、局域轨道、差分密度、时间相关密度
-- Q16 文件格式：区分波函数源格式 (Molden/FCHK/WFN)、规则网格体数据 (Cube/OpenDX/XSF)、周期原生体数据 (CHGCAR/LOCPOT) 和派生可视化格式 (OpenVDB)
-- Q19 痛点：加入"网格评估速度"、"大规模时间序列数据存储/传输"
-- Q20 最低元数据：加入"积分网格名称/径向角向点数"、"基组版本/ECP"、"程序版本/平台"
-
-### 8.4 模块 D（引擎无关工作流概念测试）
-- Q22 功能优先级：加入"完整计算协议记录"、"正负轨道叶分离"、"跨帧相位对齐"
-- Q23 最低验证要求：加入"电子数积分差"和"最大/RMS 场误差"
-
-### 8.5 模块 E（PySCF 次级变量）
-- Q28 用户障碍：加入"GPU 硬件/软件要求"、"对泛函/区域选择缺乏信心"
-- Q29 非用户障碍：加入"团队使用其他主程序（锁定效应）"、"担心数值一致性"
-
-### 8.6 新增建议题
-
-考虑在模块 C 和 D 之间增加一道关于**默认设置意识**的行为选择题：
-
-> **Qxx 您是否曾在以下环节主动检查或覆盖程序的默认设置？**
-> - 题型：多选
-> - 选项：积分网格精度；SCF 收敛阈值；基组选择/版本；泛函定义/版本；溶剂模型参数；冻结核/ECP；几何优化收敛标准；通常使用默认设置；不了解这些设置
-
----
-
-## 九、9 个未解决的问题（供下一阶段研究）
-
-1. **Digichem 与 PySCF 集成完成后**，本项目的差异化空间是否需要重新评估？
-2. **NeuralVDB 的科学归档可接受性**——同行评审期刊是否会接受神经压缩的场数据作为支撑信息？
-3. **周期性端点的可视化约定**——不同程序对周期边界网格的处理差异尚未系统性量化
-4. **跨程序轨道子空间对应的自动化**——对于近简并轨道，主角(Kurtz angle)比较的高效实现仍未标准化
-5. **XFEL/超快光谱社区**是否需要与量子化学可视化社区建立专用数据通道？
-6. **Blender 几何节点(Geometry Nodes)**是否可以作为声明式可视化配方的基础设施？
-7. **QCSchema 的场数据扩展**——社区是否有意愿将体数据输出纳入标准化 schema？
-8. **Windows 原生 PySCF 状态**——WSL 依赖是否构成某些产业用户（如制药）的合规障碍？
-9. **GPU4PySCF 的交互式场生成延迟**——端到端从 SCF 收敛到 VDB 渲染的实际延迟尚未测量
-
----
-
-## 十、文献覆盖全景
-
-| 子类 | 文献数 | 覆盖主题 |
-|------|--------|---------|
-| 00 优先精读 | 16 | 核心证据的交叉验证，覆盖所有关键构念 |
-| 01 PySCF 核心与生态 | 8 | PySCF 框架、GPU 加速、QM/MM、可微、QMC、RT-TDDFT |
-| 02 量子化学软件与采用 | 20 | ORCA、PSI4、Q-Chem、NWChem、CP2K、OpenMolcas、Molpro、GAMESS、CFOUR、DFTB+、Quantum ESPRESSO、FHI-aims、xTB、TeraChem 等 |
-| 03 数值可靠性与跨引擎基准 | 5 | DFT 陷阱、基准设计、基组选择、积分网格、网格误差量化 |
-| 04 互操作与自动化工作流 | 12 | BSE、libxc、QCArchive、MDI、cclib、AQME、WebMO、Digichem、ASH、QCDB/QCEngine、QC-ML、QMflows |
-| 05 数据格式与科学可视化 | 13 | Multiwfn、Avogadro、VDB、NeuralVDB、Rhorix、BlendMol、QMBlender、交互式体渲染、AR+QC、ORBKIT |
-| 06 科研软件工程与可持续性 | 4 | FOSS 教育、可持续架构、社区信任、ORCA 未来视角 |
-| 07 用户研究信任与维护 | 7 | 软件可持续性、普及性、未来架构、DFT 可靠性、ORCA 版本演化 |
-
----
-
-> **数据口径：** 本汇总基于 2026-07-19 的 Zotero 文献库经 8 个 subagent 并行精读后的笔记内容。每篇文献的具体回答和引用位置详见 Zotero 中的对应笔记。正式投稿或公开发布前，建议逐条交叉核对涉及引用的原文献。
+单一主归类后共有 61 篇：PySCF 核心与生态 8 篇、量子化学软件与采用 20 篇、数值可靠性与跨引擎基准 5 篇、互操作/自动化/工作流 11 篇、数据格式与科学可视化 13 篇、科研软件工程与可持续性 4 篇。原 Zotero “用户研究、信任与维护”子分类与其他主题完全交叉，因此作为横向分析维度使用，不复制文件。逐篇标题、DOI 与 BibTeX key 见[文献总结引用索引](../../data/literature-notes/README.md)。

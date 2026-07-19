@@ -229,7 +229,7 @@ git commit -m "docs: update quantum chemistry visualization survey"
 - Conditional Modify: `data/pyscf_quantum_chemistry_visualization_research_2026-07-19.xlsx`
 
 **Interfaces:**
-- Consumes: Zotero 父分类 `IMD6DTWK` 的 61 个条目、每篇唯一阅读笔记、七个主题子分类和 2026-07-20 BibTeX。
+- Consumes: Zotero 调研父分类的 61 个条目、每篇唯一阅读笔记、七个主题子分类和 2026-07-20 BibTeX。
 - Produces: 61 个单一主归类证据笔记、带逐事实内链的研究文档，以及与证据一致的问卷。
 
 - [ ] **Step 1: 验证 BibTeX**
