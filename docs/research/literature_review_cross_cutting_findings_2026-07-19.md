@@ -87,28 +87,28 @@
 | 面向更广泛用户的软件设计需要同时考虑可获得性、易用性、计算资源和长期维护。 | [Gagliardi et al. 2023](../../data/literature-notes/06-software-sustainability/gagliardi_sustainable_2023.md) |
 | ORCA 的软件论文与未来展望体现了大型集成程序在方法覆盖、性能、用户接口和模块化演进之间的权衡。 | [Neese 2022](../../data/literature-notes/02-quantum-chemistry-software/neese_software_2022.md)、[Neese 2024](../../data/literature-notes/06-software-sustainability/neese_perspective_2024.md)、[Neese 2025](../../data/literature-notes/02-quantum-chemistry-software/neese_software_2025.md) |
 
-**综合推论：**采用调查不能只问“是否喜欢某软件”。应分别测量实际任务、现有主程序、运行环境、编程方式、验证行为、团队锁定、交付方式和不采用的首要原因。[证据：Raucci 2023](../../data/literature-notes/05-data-formats-visualization/raucci_interactive_2023.md)、[QMflows](../../data/literature-notes/04-interoperability-workflows/zapata_qmflows_2019.md)、[AQME](../../data/literature-notes/04-interoperability-workflows/alegrerequena_aqme_2023.md)、[WebMO](../../data/literature-notes/04-interoperability-workflows/polik_span_2022.md)。
+**综合推论：**采用调查不能只问“是否喜欢某软件”，也不能默认受访者亲自计算。应区分计算执行、共同设置、合作解释、委托代算和结果使用，并分别测量成果交付、信任依据、协作痛点和采用障碍。[证据：Raucci 2023](../../data/literature-notes/05-data-formats-visualization/raucci_interactive_2023.md)、[QMflows](../../data/literature-notes/04-interoperability-workflows/zapata_qmflows_2019.md)、[AQME](../../data/literature-notes/04-interoperability-workflows/alegrerequena_aqme_2023.md)、[WebMO](../../data/literature-notes/04-interoperability-workflows/polik_span_2022.md)。
 
 ## 八、问卷构念与证据对应
 
 | 问卷模块 | 由文献支持的测量内容 | 主要证据 |
 | --- | --- | --- |
-| A 背景与工作流 | 实际程序、运行方式、自动化程度、计算频率 | [QMflows](../../data/literature-notes/04-interoperability-workflows/zapata_qmflows_2019.md)、[AQME](../../data/literature-notes/04-interoperability-workflows/alegrerequena_aqme_2023.md)、[WebMO](../../data/literature-notes/04-interoperability-workflows/polik_span_2022.md) |
-| B 信任与风险 | 跨程序核验、默认设置、基准证据、错误后果 | [Morgante 2020](../../data/literature-notes/03-numerical-reliability/morgante_devil_2020.md)、[Karton 2025](../../data/literature-notes/03-numerical-reliability/karton_good_2025.md)、[Wheeler 2010](../../data/literature-notes/03-numerical-reliability/wheeler_integration_2010.md) |
-| C 场与格式 | 场类型、源波函数格式、规则网格、周期体数据、交互操作 | [ORBKIT](../../data/literature-notes/05-data-formats-visualization/hermann_orbkit_2016.md)、[Multiwfn](../../data/literature-notes/05-data-formats-visualization/lu_multiwfn_2012.md)、[Jang 2010](../../data/literature-notes/05-data-formats-visualization/jang_interactive_2010.md) |
-| D 概念测试 | 语义元数据、适配器能力、验证、派生格式、批处理 | [QCDB/QCEngine](../../data/literature-notes/04-interoperability-workflows/smith_quantum_2021.md)、[QCArchive](../../data/literature-notes/04-interoperability-workflows/smith_span_2021.md)、[VDB](../../data/literature-notes/05-data-formats-visualization/museth_vdb_2013.md) |
-| E PySCF 分层 | 认知、实际使用、Python/API、GPU、安装和团队障碍 | [Sun 2018](../../data/literature-notes/01-pyscf-core/sun_p_2018.md)、[Sun 2020](../../data/literature-notes/01-pyscf-core/sun_recent_2020.md)、[GPU4PySCF](../../data/literature-notes/01-pyscf-core/li_introducing_2025.md) |
+| A 背景与参与 | 工作身份、研究场景以及计算执行、合作、委托和结果使用角色 | [QMflows](../../data/literature-notes/04-interoperability-workflows/zapata_qmflows_2019.md)、[AQME](../../data/literature-notes/04-interoperability-workflows/alegrerequena_aqme_2023.md)、[WebMO](../../data/literature-notes/04-interoperability-workflows/polik_span_2022.md) |
+| B 协作与交付 | 收到的成果、协作痛点、来源信息和信任依据 | [Morgante 2020](../../data/literature-notes/03-numerical-reliability/morgante_devil_2020.md)、[Karton 2025](../../data/literature-notes/03-numerical-reliability/karton_good_2025.md)、[QCArchive](../../data/literature-notes/04-interoperability-workflows/smith_span_2021.md) |
+| C 场与可视化 | 场类型、交付形态、技术子样本格式、可视化痛点与风险 | [ORBKIT](../../data/literature-notes/05-data-formats-visualization/hermann_orbkit_2016.md)、[Multiwfn](../../data/literature-notes/05-data-formats-visualization/lu_multiwfn_2012.md)、[Jang 2010](../../data/literature-notes/05-data-formats-visualization/jang_interactive_2010.md) |
+| D 概念测试 | 概念价值、功能优先级、证据包、交付方式和采用障碍 | [QCDB/QCEngine](../../data/literature-notes/04-interoperability-workflows/smith_quantum_2021.md)、[QCArchive](../../data/literature-notes/04-interoperability-workflows/smith_span_2021.md)、[VDB](../../data/literature-notes/05-data-formats-visualization/museth_vdb_2013.md) |
+| E 次级变量与反馈 | PySCF 认知和亲自计算、合作或委托经历中的开放案例 | [Sun 2018](../../data/literature-notes/01-pyscf-core/sun_p_2018.md)、[Sun 2020](../../data/literature-notes/01-pyscf-core/sun_recent_2020.md)、[GPU4PySCF](../../data/literature-notes/01-pyscf-core/li_introducing_2025.md) |
 
 ## 九、仍需由用户研究回答的问题
 
 以下内容是研究问题，不是现有文献已经证明的事实：
 
-1. 不同用户群过去 12 个月实际处理的场文件格式及首选适配器是什么？
+1. 不同参与角色如何接收计算成果，技术子样本实际处理哪些场文件格式？
 2. 直接波函数评估、预采样网格、等值面和体渲染各自有多大真实使用频率？
 3. 用户愿意为哪些元数据和验证报告增加操作成本？
 4. 大网格、多帧和周期体系是否足以形成 OpenVDB 工作流的优先需求？
 5. GUI、Python API、CLI、Blender 插件和 HPC 批处理分别对应哪些用户群？
-6. PySCF 的认知、实际使用和障碍是否会改变对引擎无关工作流的评价？
+6. PySCF 认知以及亲自计算、合作或委托角色是否会改变对引擎无关工作流的评价？
 
 这些问题应由预测试、正式问卷和后续访谈回答，不能从软件论文的功能描述直接推出。
 

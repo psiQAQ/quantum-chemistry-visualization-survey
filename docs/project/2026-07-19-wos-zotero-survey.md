@@ -1,5 +1,7 @@
 # WoS、Zotero 文献调研与问卷完善实施计划
 
+> 2026-07-20 维护变更：结构化工作簿和预览图已退役；其证据、软件与验证内容转写为 Markdown。下文涉及工作簿的任务仅保留为历史执行记录。
+
 > **For agentic workers:** REQUIRED SUB-SKILL: Use superpowers:executing-plans to implement this plan task-by-task. Steps use checkbox (`- [ ]`) syntax for tracking.
 
 **Goal:** 使用 Zotero 已有全文和不超过 12 次 Web of Science 定向检索，完成文献分组、元数据与 BibTeX/工作簿同步，并形成有全文证据支撑的 12–15 分钟中文问卷。

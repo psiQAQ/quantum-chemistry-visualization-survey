@@ -12,7 +12,7 @@
 | A 级优先证据 | 31 | 直接支撑核心判断或问卷构念的优先精读资料 |
 | 全文阅读笔记 | 61 | 与 2026-07-20 BibTeX 及 Zotero 父分类按 DOI 一一对应 |
 | 软件矩阵条目 | 18 | 常见量子化学或电子结构软件的定位与适配比较 |
-| 问卷题目 | 30 | 预计完成时间 12–15 分钟 |
+| 问卷题目 | 18 | 预计完成时间 6–9 分钟；覆盖亲自计算、合作、委托代算和结果使用者 |
 | 验证测试 | 20 | 覆盖格式、数值、跨引擎、可视化和回归验证 |
 
 ### 证据主题分布
@@ -41,13 +41,14 @@
 
 | 文档 | 内容 | 建议用途 |
 | --- | --- | --- |
-| [量子化学输出文件与三维场可视化需求调查](docs/survey/quantum_chemistry_software_survey_draft_2026-07-19.md) | 30 道文献支撑的预测试题目，明确单选、多选及分支 | 认知访谈、预测试和正式投放前校准 |
+| [量子化学结果交付与三维场可视化需求调查](docs/survey/quantum_chemistry_software_survey_draft_2026-07-19.md) | 18 道文献支撑的预测试题目，按参与角色分流，明确单选和多选 | 认知访谈、预测试和正式投放前校准 |
 
 ### 数据与参考文献
 
 | 文件 | 内容 | 建议用途 |
 | --- | --- | --- |
-| [结构化调研工作簿](data/pyscf_quantum_chemistry_visualization_research_2026-07-19.xlsx) | 概览、核心文献、软件矩阵、问卷题库和验证矩阵 | 筛选证据、比较软件和追踪验证任务 |
+| [研究证据目录](data/research-evidence-catalog-2026-07-20.md) | 72 条核心文献、官方资料和公开证据的 Markdown 目录 | 按优先级、主题和证据用途筛选资料 |
+| [软件与验证参考](docs/research/software_and_validation_reference_2026-07-20.md) | 18 个软件条目和 20 项验证测试的 Markdown 转写 | 比较软件定位并追踪验证任务 |
 | [文献总结引用索引](data/literature-notes/README.md) | 按六个主主题列出 61 篇原始 Zotero 阅读笔记 | 从研究结论回查逐篇回答、页码和图表依据 |
 | [当前 BibTeX 文献库](data/pyscf_quantum_chemistry_literature_2026-07-20.bib) | 61 个唯一 key、61 个唯一 DOI；45 条含摘要 | 与阅读笔记对应或用于引用管理 |
 | [前一版 BibTeX 文献库](data/pyscf_quantum_chemistry_literature_2026-07-19.bib) | 61 条紧凑导入记录 | 保留旧 key 对照，不再作为笔记命名源 |
@@ -58,11 +59,12 @@
 | --- | --- | --- |
 | [WoS、Zotero 与问卷调研设计](docs/project/2026-07-19-wos-zotero-survey-design.md) | 检索、筛选、隐私和全文门槛设计 | 了解研究方法和范围控制 |
 | [WoS、Zotero 与问卷执行计划](docs/project/2026-07-19-wos-zotero-survey.md) | 分阶段执行步骤与验证要求 | 追溯本轮调研工作流 |
+| [问卷受众扩展设计](docs/superpowers/specs/2026-07-20-broaden-survey-audience-design.md) | 18 题角色分流方案、保留项和分析口径 | 了解本轮问卷压缩依据 |
+| [问卷受众扩展实施计划](docs/superpowers/plans/2026-07-20-broaden-survey-audience.md) | Markdown 改版、旧工作簿退役和验证步骤 | 追溯本轮改版过程 |
 | [项目协作规则](AGENTS.md) | 隐私、文献同步、全文门槛和验证约束 | 后续维护与协作时遵循 |
 
 ### 附属文件
 
-- [工作簿概览预览图](assets/previews/pyscf_research_overview_preview_2026-07-19.png)：保留原工作簿概览的静态预览；README 不再依赖该图片展示统计数据。
 - `tmp/`：本地全文提取、Zotero 原始导出和其他可能含隐私的工作材料；该目录已被 Git 忽略，不属于公开交付物。
 
 ## 建议阅读顺序
@@ -70,7 +72,7 @@
 1. 阅读[深度调研报告](docs/research/pyscf_quantum_chemistry_visualization_research_2026-07-19.md)，确认方向、证据边界和产品路线。
 2. 阅读[跨主题精读发现](docs/research/literature_review_cross_cutting_findings_2026-07-19.md)，区分论文事实与项目综合推论。
 3. 通过[文献总结引用索引](data/literature-notes/README.md)回查每项结论对应的 Zotero 阅读笔记。
-4. 在[结构化工作簿](data/pyscf_quantum_chemistry_visualization_research_2026-07-19.xlsx)中按优先级、证据等级和主题筛选资料。
+4. 在[研究证据目录](data/research-evidence-catalog-2026-07-20.md)中按优先级、证据等级和主题筛选资料，并通过[软件与验证参考](docs/research/software_and_validation_reference_2026-07-20.md)查看软件矩阵和测试清单。
 5. 使用[问卷预测试版](docs/survey/quantum_chemistry_software_survey_draft_2026-07-19.md)进行 10–15 人认知访谈。
 
 ## 主要判断
@@ -104,7 +106,7 @@ OpenVDB 应被视为派生可视化数据，不能替代原始 `.cube`、checkpo
 ## 数据口径与限制
 
 - 本资料是 2026-07-19 检索、2026-07-20 完成笔记链接整理的阶段性结果，不是持续自动更新的数据库。
-- 工作簿收录 72 条证据；BibTeX 与 Zotero 父分类均收录其中 61 条带 DOI 的文献，未覆盖部分官网、仓库和公开讨论。
+- Markdown 证据目录收录 72 条证据；BibTeX 与 Zotero 父分类均收录其中 61 条带 DOI 的文献，未覆盖部分官网、仓库和公开讨论。
 - 2026-07-20 BibTeX 已通过 61 条目、key/DOI 唯一性、标题/DOI 必填检查；其中 16 条没有摘要。正式投稿或公开引用前，仍应通过 Zotero、Crossref 或出版社页面复核作者和出版字段。
 - 项目方用户数、注册用户数和性能数据应按来源属性与实验条件解读，不能直接外推为全球市场份额。
 - GitHub Issue 可用于发现真实工程问题，但不等同于匿名同行评审或受控基准。
@@ -112,4 +114,4 @@ OpenVDB 应被视为派生可视化数据，不能替代原始 `.cube`、checkpo
 
 ## 当前状态
 
-本仓库是**调研资料包**，不包含 `.cube` → OpenVDB 转换器、Blender 插件或可执行代码。关键可视化、格式互操作、软件采用门槛和数值验证文献已完成全文核验，问卷已进入**文献支撑的预测试版**；正式投放前仍需用 10–15 人认知访谈检查题目理解和实际完成时间。
+本仓库是**调研资料包**，不包含 `.cube` → OpenVDB 转换器、Blender 插件或可执行代码。关键可视化、格式互操作、软件采用门槛和数值验证文献已完成全文核验，18 题问卷已进入**文献支撑的预测试版**；正式投放前仍需用 10–15 人认知访谈覆盖亲自计算、合作、委托代算和结果使用者，检查角色分流、题目理解和实际完成时间。
