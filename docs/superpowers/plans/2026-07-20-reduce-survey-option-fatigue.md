@@ -99,3 +99,32 @@ git commit -m "docs: streamline survey options"
 Run: `git push origin main`
 
 Expected: 本地 `HEAD` 与 `origin/main` 一致，工作区干净。
+
+### Task 3: 重写问卷开场说明
+
+**Files:**
+- Modify: `docs/survey/quantum_chemistry_software_survey_draft_2026-07-19.md:8`
+
+**Interfaces:**
+- Consumes: `docs/superpowers/specs/2026-07-20-reduce-survey-option-fatigue-design.md` 中已确认的两段融合开场文字
+- Produces: 说明 ChemBlender 现状、后续更新方向和作答边界的问卷开场
+
+- [x] **Step 1: 替换开场正文**
+
+使用设计稿中已确认的两段融合文字：第一段说明调查目的、ChemBlender 当前结构能力，以及场/波函数文件导入、结构对齐、等值面与体渲染、相位与状态、周期/大网格、多帧、参数记录和协作交付等后续方向；第二段说明亲自计算、合作、委托代算和结果使用者均可按实际经历作答。
+
+- [x] **Step 2: 删除题型规则段落**
+
+删除“除开放题外，每题均标注为单选或多选……”整段，不改各题内部的题型和选择上限标注。
+
+- [ ] **Step 3: 验证并交付**
+
+Run:
+
+```powershell
+node tmp/final_verify.mjs
+node tmp/check_repo_layout.mjs
+git diff --check
+```
+
+Expected: 开场首句与确认文本一致，包含 ChemBlender 更新方向，不包含已删除的题型规则段落；结构、内链和隐私检查通过。提交后执行 `git push origin main`，并确认本地与远端 `HEAD` 一致。
