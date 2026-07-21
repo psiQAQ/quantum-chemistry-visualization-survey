@@ -2,16 +2,16 @@
 
 > **For agentic workers:** REQUIRED SUB-SKILL: Use superpowers:subagent-driven-development (recommended) or superpowers:executing-plans to implement this plan task-by-task. Steps use checkbox (`- [ ]`) syntax for tracking.
 
-**Goal:** 将 18 题问卷的封闭题选项从 193 项压缩到 118 项，并让保留的细分信息直接服务于量子化学场可视化开发。
+**Goal:** 将问卷压缩结果保持为低负担结构，并新增一道直接决定 RDKit 安装方式的简短单选题，最终形成 19 题、121 个封闭题选项。
 
-**Architecture:** 问卷 Markdown 继续作为题号、题型、变量、选项和分支的唯一来源。按共同开发含义合并选项；只有场类型、文件格式、可视化风险和功能优先级保留超过 6 项，ChemBlender 2.1 仅作为现有能力基线，不新增产品使用经历题。
+**Architecture:** 问卷 Markdown 继续作为题号、题型、变量、选项和分支的唯一来源。按共同开发含义合并选项；只有场类型、文件格式、可视化风险和功能优先级保留超过 6 项。RDKit 安装方式作为 3 项单选题插入交付方式与采用障碍之间。
 
 **Tech Stack:** Markdown、Git、现有 Node.js 校验脚本
 
 ## Global Constraints
 
-- 保持 Q01–Q18、18 个唯一变量和 Q03 到 Q10 的条件分支。
-- Q01–Q07、Q09、Q12、Q14–Q16 各 6 项，Q17 为 5 项；Q08 为 10 项、Q10 为 12 项、Q11 为 9 项、Q13 为 10 项。
+- 保持 Q01–Q19、19 个唯一变量和 Q03 到 Q10 的条件分支。
+- Q01–Q07、Q09、Q12、Q14、Q15、Q17 各 6 项，Q16 为 3 项，Q18 为 5 项；Q08 为 10 项、Q10 为 12 项、Q11 为 9 项、Q13 为 10 项。
 - 所有选项继续使用 `- 选项：` 下的缩进多行列表。
 - Q13 最多选择 4 项；一般多选题最多选择 2–3 项；Q08 和 Q10 不设过低上限。
 - 不修改 ChemBlender 仓库，不增加依赖，不跟踪 `tmp/`。
@@ -128,3 +128,40 @@ git diff --check
 ```
 
 Expected: 开场首句与确认文本一致，包含 ChemBlender 更新方向，不包含已删除的题型规则段落；结构、内链和隐私检查通过。提交后执行 `git push origin main`，并确认本地与远端 `HEAD` 一致。
+
+### Task 4: 新增 RDKit 安装方式偏好题
+
+**Files:**
+- Modify: `docs/survey/quantum_chemistry_software_survey_draft_2026-07-19.md`
+- Modify: `README.md`
+- Modify: `docs/research/pyscf_quantum_chemistry_visualization_research_2026-07-19.md`
+- Modify: `docs/superpowers/specs/2026-07-20-reduce-survey-option-fatigue-design.md`
+- Modify: `docs/superpowers/plans/2026-07-20-reduce-survey-option-fatigue.md`
+- Test: `tmp/final_verify.mjs`
+
+**Interfaces:**
+- Consumes: 已确认的 Q16 题干、3 个单选项和变量 `rdkit_install_preference`
+- Produces: Q01–Q19 连续、19 个唯一变量、18 个选项块和 121 个选项
+
+- [x] **Step 1: 插入并重编号问卷**
+
+在 Q15 后新增 Q16“RDKit 安装方式偏好”。题干只说明用户可感知的取舍：内置 wheel 可离线、较少改动环境但包更大；运行时 pip 包较小但依赖网络/权限，且可能失败或改动环境。保留两个安装方案和“没有明确偏好”共 3 个单选项；原 Q16–Q18 顺延为 Q17–Q19。
+
+- [x] **Step 2: 同步公开数量说明**
+
+将 README 和研究交付说明中的当前问卷数量更新为 19 题、18 道封闭题、121 个选项；历史受众扩展设计仍保留当时的 18 题记录。
+
+- [x] **Step 3: 更新并运行校验**
+
+将 `tmp/final_verify.mjs` 更新为检查 19 个题号、19 个题型、19 个变量、18 个选项块、121 个选项，验证 Q16 为 `rdkit_install_preference` 单选题、Q18 为 PySCF 单选题，且长选项题仍只有 Q08/Q10/Q11/Q13。
+
+Run:
+
+```powershell
+node tmp/final_verify.mjs
+node tmp/check_repo_layout.mjs
+node tmp/verify_notes.mjs
+git diff --check
+```
+
+Expected: 三个脚本成功，问卷结构与 README 内链一致，61 篇文献及笔记未变化，隐私扫描无命中。提交后执行 `git push origin main`，并确认本地与远端 `HEAD` 一致。
