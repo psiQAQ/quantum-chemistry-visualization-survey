@@ -1,0 +1,131 @@
+{
+  "schema_version": "1.0",
+  "created_on": "2026-09-20",
+  "started_on": null,
+  "status": "not_started",
+  "current_exercise": "LX00",
+  "learner_baseline": {
+    "source": "learner_self_report",
+    "physics_optics_phd": true,
+    "python": "basic",
+    "quantum_chemistry_competence": "unverified"
+  },
+  "learning_contract": {
+    "target": "针对ChemBlender量子化学可视化独立完成一个有科学验证的局部开发改进",
+    "core_success_criteria": [
+      "物理定义正确",
+      "数据与元数据可追溯",
+      "数值误差有证据",
+      "架构与生命周期闭环",
+      "独立处理新变体"
+    ],
+    "initial_sprint_minutes": 240,
+    "proposed_total_minutes": 3840,
+    "proposed_weeks": 8,
+    "first_sprint_included_in_total": true,
+    "user_confirmed_time_budget": false,
+    "deadline": null
+  },
+  "environment": {
+    "project_root": null,
+    "learning_root": null,
+    "project_branch": null,
+    "project_head": null,
+    "dirty_worktree": null,
+    "skill_loaded": false,
+    "skill_local_path": null,
+    "skill_commit": null,
+    "python_version": null,
+    "processor_version": null,
+    "blender_version": null,
+    "backend_versions": {}
+  },
+  "capabilities": [
+    {
+      "id": "QC01",
+      "name": "物理量、符号与单位",
+      "level": null,
+      "status": "unverified",
+      "evidence": [],
+      "last_assessed": null
+    },
+    {
+      "id": "QC02",
+      "name": "基组约定、AO/MO与1-RDM",
+      "level": null,
+      "status": "unverified",
+      "evidence": [],
+      "last_assessed": null
+    },
+    {
+      "id": "QC03",
+      "name": "模型选择与误差分层",
+      "level": null,
+      "status": "unverified",
+      "evidence": [],
+      "last_assessed": null
+    },
+    {
+      "id": "QC04",
+      "name": "Grid3D/仿射坐标/数值采样",
+      "level": null,
+      "status": "unverified",
+      "evidence": [],
+      "last_assessed": null
+    },
+    {
+      "id": "QC05",
+      "name": "field-on-surface与显示语义",
+      "level": null,
+      "status": "unverified",
+      "evidence": [],
+      "last_assessed": null
+    },
+    {
+      "id": "QC06",
+      "name": "开壳层与局域分析",
+      "level": null,
+      "status": "unverified",
+      "evidence": [],
+      "last_assessed": null
+    },
+    {
+      "id": "QC07",
+      "name": "光谱与激发态语义",
+      "level": null,
+      "status": "unverified",
+      "evidence": [],
+      "last_assessed": null
+    },
+    {
+      "id": "QC08",
+      "name": "项目开发与保存恢复",
+      "level": null,
+      "status": "unverified",
+      "evidence": [],
+      "last_assessed": null
+    },
+    {
+      "id": "QC09",
+      "name": "独立迁移与科学解释",
+      "level": null,
+      "status": "unverified",
+      "evidence": [],
+      "last_assessed": null
+    }
+  ],
+  "completed_exercises": [],
+  "misconceptions": [],
+  "repeated_errors": [],
+  "blockers": [],
+  "time_spent_minutes": 0,
+  "time_remaining_minutes": 3840,
+  "next_action": "读取CODEX_HANDOFF，核验最小环境后只提出LX00主问题，不提前展示答案。",
+  "reviews": {
+    "after_24h": null,
+    "after_7d": null,
+    "automation_created": false
+  },
+  "sessions": [],
+  "notes": "资料调研完成不等于学习已开始；任何已掌握状态必须有学习者的实际证据。"
+}

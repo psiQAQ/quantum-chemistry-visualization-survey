@@ -1,0 +1,156 @@
+{
+    "input_path": "learning\\chemblender_qc_learning\\materials\\catalog\\pages\\BK03\\BK03-p014.png",
+    "page_index": null,
+    "page_count": null,
+    "width": 995,
+    "height": 1452,
+    "model_settings": {
+        "use_doc_preprocessor": false,
+        "use_layout_detection": true,
+        "use_chart_recognition": false,
+        "use_seal_recognition": false,
+        "use_ocr_for_image_block": false,
+        "format_block_content": false,
+        "merge_layout_blocks": true,
+        "markdown_ignore_labels": [
+            "number",
+            "footnote",
+            "header",
+            "header_image",
+            "footer",
+            "footer_image",
+            "aside_text"
+        ],
+        "return_layout_polygon_points": true
+    },
+    "parsing_res_list": [
+        {
+            "block_label": "header",
+            "block_content": "目 录",
+            "block_bbox": [
+                481,
+                37,
+                562,
+                60
+            ],
+            "block_id": 0,
+            "block_order": null,
+            "group_id": 0,
+            "block_polygon_points": [
+                [
+                    481.0,
+                    37.0
+                ],
+                [
+                    561.0,
+                    37.0
+                ],
+                [
+                    561.0,
+                    59.0
+                ],
+                [
+                    481.0,
+                    59.0
+                ]
+            ]
+        },
+        {
+            "block_label": "content",
+            "block_content": "5.4 休克尔分子轨道法(HMO法)..... (163)\n5.4.1 HMO法的基本内容..... (163)\n5.4.2 丁二烯的HMO法处理..... (165)\n5.4.3 环状共轭多烯的HMO法处理..... (167)\n5.5 离域 $ \\pi $键和共轭效应..... (168)\n5.5.1 离域 $ \\pi $键的形成和表示法..... (168)\n5.5.2 共轭效应..... (170)\n5.5.3 肽键..... (171)\n5.5.4 超共轭效应..... (172)\n5.6 分子轨道的对称性和反应机理..... (173)\n5.6.1 有关化学反应的一些概念和原理..... (173)\n5.6.2 前线轨道理论..... (174)\n5.6.3 分子轨道对称守恒原理..... (176)\n5.7 缺电子多中心键和硼烷的结构..... (178)\n5.7.1 硼烷中的缺电子多中心键..... (178)\n5.7.2 硼烷结构的描述..... (179)\n5.7.3 八隅律和分子骨干键数的计算..... (181)\n5.8 非金属元素的结构特征..... (182)\n5.8.1 非金属单质的结构特征..... (182)\n5.8.2 非金属化合物的结构特征..... (184)\n5.9 共价键的键长和键能..... (187)\n5.9.1 共价键的键长和原子的共价半径..... (187)\n5.9.2 共价键键能..... (188)\n5.9.3 碳和硅化学键的比较..... (191)\n习题..... (192)\n参考文献..... (196)\n第6章 配位化合物的结构和性质..... (197)\n6.1 概述..... (197)\n6.1.1 配位体..... (197)\n6.1.2 配位化合物结构理论的发展..... (199)\n6.2 配位场理论..... (200)\n6.2.1 ML $ _{6} $ 八面体配位化合物的分子轨道..... (200)\n6.2.2 八面体场分裂能 $ \\Delta_{0} $..... (202)\n6.2.3 配位场稳定化能与配位化合物的性质..... (203)\n6.2.4 配位化合物的热力学稳定性..... (207)\n6.2.5 其他多面体配位化合物的配位场..... (208)\n6.3  $ \\sigma-\\pi $配键与有关配位化合物的结构和性质..... (209)\n6.3.1 金属羰基配位化合物和小分子配位化合物..... (209)\n6.3.2 不饱和烃配位化合物..... (211)",
+            "block_bbox": [
+                78,
+                77,
+                974,
+                1392
+            ],
+            "block_id": 1,
+            "block_order": 1,
+            "group_id": 1,
+            "block_polygon_points": [
+                [
+                    78.0,
+                    77.0
+                ],
+                [
+                    974.0,
+                    77.0
+                ],
+                [
+                    974.0,
+                    1392.0
+                ],
+                [
+                    78.0,
+                    1392.0
+                ]
+            ]
+        }
+    ],
+    "layout_det_res": {
+        "input_path": null,
+        "page_index": null,
+        "boxes": [
+            {
+                "cls_id": 12,
+                "label": "header",
+                "score": 0.810809314250946,
+                "coordinate": [
+                    481,
+                    37,
+                    562,
+                    60
+                ],
+                "order": null,
+                "polygon_points": [
+                    [
+                        481.0,
+                        37.0
+                    ],
+                    [
+                        561.0,
+                        37.0
+                    ],
+                    [
+                        561.0,
+                        59.0
+                    ],
+                    [
+                        481.0,
+                        59.0
+                    ]
+                ]
+            },
+            {
+                "cls_id": 4,
+                "label": "content",
+                "score": 0.9718651175498962,
+                "coordinate": [
+                    78,
+                    77,
+                    974,
+                    1392
+                ],
+                "order": 1,
+                "polygon_points": [
+                    [
+                        78.0,
+                        77.0
+                    ],
+                    [
+                        974.0,
+                        77.0
+                    ],
+                    [
+                        974.0,
+                        1392.0
+                    ],
+                    [
+                        78.0,
+                        1392.0
+                    ]
+                ]
+            }
+        ]
+    }
+}

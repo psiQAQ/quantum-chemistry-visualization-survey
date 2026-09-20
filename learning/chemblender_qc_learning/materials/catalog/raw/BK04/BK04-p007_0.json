@@ -1,0 +1,217 @@
+{
+    "input_path": "learning\\chemblender_qc_learning\\materials\\catalog\\pages\\BK04\\BK04-p007.png",
+    "page_index": null,
+    "page_count": null,
+    "width": 1106,
+    "height": 1724,
+    "model_settings": {
+        "use_doc_preprocessor": false,
+        "use_layout_detection": true,
+        "use_chart_recognition": false,
+        "use_seal_recognition": false,
+        "use_ocr_for_image_block": false,
+        "format_block_content": false,
+        "merge_layout_blocks": true,
+        "markdown_ignore_labels": [
+            "number",
+            "footnote",
+            "header",
+            "header_image",
+            "footer",
+            "footer_image",
+            "aside_text"
+        ],
+        "return_layout_polygon_points": true
+    },
+    "parsing_res_list": [
+        {
+            "block_label": "number",
+            "block_content": "viii",
+            "block_bbox": [
+                79,
+                114,
+                118,
+                139
+            ],
+            "block_id": 0,
+            "block_order": null,
+            "group_id": 0,
+            "block_polygon_points": [
+                [
+                    79.0,
+                    114.0
+                ],
+                [
+                    117.0,
+                    114.0
+                ],
+                [
+                    117.0,
+                    138.0
+                ],
+                [
+                    79.0,
+                    138.0
+                ]
+            ]
+        },
+        {
+            "block_label": "header",
+            "block_content": "量子化学——基本原理和从头计算法（中册）",
+            "block_bbox": [
+                319,
+                110,
+                789,
+                138
+            ],
+            "block_id": 1,
+            "block_order": null,
+            "group_id": 1,
+            "block_polygon_points": [
+                [
+                    319.0,
+                    110.0
+                ],
+                [
+                    789.0,
+                    110.0
+                ],
+                [
+                    789.0,
+                    138.0
+                ],
+                [
+                    319.0,
+                    138.0
+                ]
+            ]
+        },
+        {
+            "block_label": "content",
+            "block_content": "参考文献..... 146\n习题..... 146\n第12章 原子结构的自洽场计算..... 151\n12.1 闭壳层组态的 Hartree-Fock 方程..... 153\n12.1.1 自洽场近似和 Hartree 方程..... 153\n12.1.2 闭壳层组态的 Hartree-Fock 方程的变分推导..... 155\n12.1.3 Hartree-Fock 方程的一些性质..... 160\n12.1.4 Koopmans 定理..... 164\n12.1.5 Brillouin 定理..... 168\n12.2 开壳层组态的 Hartree-Fock 方法..... 170\n12.2.1 自旋非限制的 Hartree-Fock 方法..... 170\n12.2.2 限制的 Hartree-Fock 方法..... 171\n12.3 径向 Hartree-Fock 方程..... 177\n12.3.1 原子的 Hartree-Fock 计算..... 177\n12.3.2 超 Hartree-Fock 方法..... 180\n12.4 径向 Hartree-Fock 方程的求解..... 184\n12.4.1 径向 Hartree-Fock 方程的性态..... 184\n12.4.2 齐次方程的数值解法..... 188\n12.4.3 径向 Hartree-Fock 方程的数值解法..... 202\n12.4.4 径向 Hartree-Fock 方程的分析解法..... 207\n参考文献..... 208\n习题..... 209\n第13章 分子的自洽场计算..... 213\n13.1 分子电子结构概述..... 215\n13.1.1 Born-Oppenheimer 近似与单粒子近似..... 215\n13.1.2 分子的电子多重态结构和谱项..... 217\n13.1.3 分子谱项的能量和波函数..... 222\n13.2 分子轨道的自洽场方程..... 224\n13.2.1 LCAO-MO 近似..... 224\n13.2.2 闭壳层组态的 Hartree-Fock-Roothaan 方程..... 225\n13.2.3 开壳层组态的限制性 Hartree-Fock-Roothaan 方程..... 230\n13.2.4 非限制性 Hartree-Fock-Roothaan 方程..... 233\n13.2.5 自旋态的纯化..... 235\n13.3 分子轨道的自洽场计算..... 237\n13.3.1 自洽场计算过程..... 237",
+            "block_bbox": [
+                66,
+                193,
+                1024,
+                1557
+            ],
+            "block_id": 2,
+            "block_order": 1,
+            "group_id": 2,
+            "block_polygon_points": [
+                [
+                    66.0,
+                    193.0
+                ],
+                [
+                    1024.0,
+                    193.0
+                ],
+                [
+                    1024.0,
+                    1557.0
+                ],
+                [
+                    66.0,
+                    1557.0
+                ]
+            ]
+        }
+    ],
+    "layout_det_res": {
+        "input_path": null,
+        "page_index": null,
+        "boxes": [
+            {
+                "cls_id": 16,
+                "label": "number",
+                "score": 0.752292811870575,
+                "coordinate": [
+                    79,
+                    114,
+                    118,
+                    139
+                ],
+                "order": 1,
+                "polygon_points": [
+                    [
+                        79.0,
+                        114.0
+                    ],
+                    [
+                        117.0,
+                        114.0
+                    ],
+                    [
+                        117.0,
+                        138.0
+                    ],
+                    [
+                        79.0,
+                        138.0
+                    ]
+                ]
+            },
+            {
+                "cls_id": 12,
+                "label": "header",
+                "score": 0.8670662641525269,
+                "coordinate": [
+                    319,
+                    110,
+                    789,
+                    138
+                ],
+                "order": null,
+                "polygon_points": [
+                    [
+                        319.0,
+                        110.0
+                    ],
+                    [
+                        789.0,
+                        110.0
+                    ],
+                    [
+                        789.0,
+                        138.0
+                    ],
+                    [
+                        319.0,
+                        138.0
+                    ]
+                ]
+            },
+            {
+                "cls_id": 4,
+                "label": "content",
+                "score": 0.9743307828903198,
+                "coordinate": [
+                    66,
+                    193,
+                    1024,
+                    1557
+                ],
+                "order": 2,
+                "polygon_points": [
+                    [
+                        66.0,
+                        193.0
+                    ],
+                    [
+                        1024.0,
+                        193.0
+                    ],
+                    [
+                        1024.0,
+                        1557.0
+                    ],
+                    [
+                        66.0,
+                        1557.0
+                    ]
+                ]
+            }
+        ]
+    }
+}

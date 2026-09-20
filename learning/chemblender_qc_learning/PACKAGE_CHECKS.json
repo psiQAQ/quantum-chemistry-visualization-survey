@@ -1,0 +1,48 @@
+{
+  "checked_on": "2026-09-20",
+  "checks": {
+    "unique_resource_ids": true,
+    "resource_count": 22,
+    "isbn13_checksums": true,
+    "json_parse": true,
+    "no_chat_only_citation_tokens_in_report": true,
+    "project_tests_executed": false,
+    "scientific_experiments_executed": false,
+    "third_party_fulltexts_included": false
+  },
+  "report_characters": 29889,
+  "files": {
+    "CODEX_HANDOFF.md": {
+      "bytes": 6205,
+      "sha256": "def77b509992ae59bd5f54f278b185d126f4f4534655fb13def5d83940ae1f00"
+    },
+    "DOWNLOAD_CHECKLIST.md": {
+      "bytes": 7637,
+      "sha256": "5d02d114db3af9471ef083b916d5efeea71f60c1522eb7bbf0956c706b324fe1"
+    },
+    "README.md": {
+      "bytes": 2043,
+      "sha256": "e8e81f2774825e98d5adbc5e0ca20ee07757707ea169d995f5b5f986f3bcd140"
+    },
+    "REPORT.md": {
+      "bytes": 56705,
+      "sha256": "83e7793adac8ab4b69c3cb91bb6b6f7471743c1cb87289d275fccdc74bc7097c"
+    },
+    "evidence/TEMPLATE.md": {
+      "bytes": 652,
+      "sha256": "c9333ab1ae5f690fe2ae02ab0d55b5e6f313db319d341399e8b7d8326859a984"
+    },
+    "exercises/EXERCISES.md": {
+      "bytes": 6706,
+      "sha256": "cdee7795b06dfd7f3da8af39802127e42c65f819fa9be4fff88c639edd8e227e"
+    },
+    "learning_state.json": {
+      "bytes": 3350,
+      "sha256": "eb18ba4316ac304df45d99408246e3eedf507f52e842a867abaa89834f4f4c25"
+    },
+    "reading_manifest.json": {
+      "bytes": 31677,
+      "sha256": "4fb27d76607f073202908ebfb3dd33dbbc5b6ab540f1832c3303ae5723f15bb2"
+    }
+  }
+}

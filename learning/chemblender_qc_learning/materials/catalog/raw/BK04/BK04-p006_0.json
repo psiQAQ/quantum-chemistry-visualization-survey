@@ -1,0 +1,217 @@
+{
+    "input_path": "learning\\chemblender_qc_learning\\materials\\catalog\\pages\\BK04\\BK04-p006.png",
+    "page_index": null,
+    "page_count": null,
+    "width": 1106,
+    "height": 1724,
+    "model_settings": {
+        "use_doc_preprocessor": false,
+        "use_layout_detection": true,
+        "use_chart_recognition": false,
+        "use_seal_recognition": false,
+        "use_ocr_for_image_block": false,
+        "format_block_content": false,
+        "merge_layout_blocks": true,
+        "markdown_ignore_labels": [
+            "number",
+            "footnote",
+            "header",
+            "header_image",
+            "footer",
+            "footer_image",
+            "aside_text"
+        ],
+        "return_layout_polygon_points": true
+    },
+    "parsing_res_list": [
+        {
+            "block_label": "header",
+            "block_content": "目 录",
+            "block_bbox": [
+                544,
+                113,
+                642,
+                139
+            ],
+            "block_id": 0,
+            "block_order": null,
+            "group_id": 0,
+            "block_polygon_points": [
+                [
+                    544.0,
+                    113.0
+                ],
+                [
+                    642.0,
+                    113.0
+                ],
+                [
+                    642.0,
+                    139.0
+                ],
+                [
+                    544.0,
+                    139.0
+                ]
+            ]
+        },
+        {
+            "block_label": "number",
+            "block_content": "vii",
+            "block_bbox": [
+                1025,
+                114,
+                1058,
+                139
+            ],
+            "block_id": 1,
+            "block_order": null,
+            "group_id": 1,
+            "block_polygon_points": [
+                [
+                    1025.0,
+                    114.0
+                ],
+                [
+                    1057.0,
+                    114.0
+                ],
+                [
+                    1057.0,
+                    138.0
+                ],
+                [
+                    1025.0,
+                    138.0
+                ]
+            ]
+        },
+        {
+            "block_label": "content",
+            "block_content": "习题..... 80\n第11章 原子结构的多重态理论..... 83\n11.1 全同粒子体系的交换对称性和 Pauli 原理..... 85\n11.1.1 量子力学的多体问题..... 85\n11.1.2 全同粒子的交换对称性..... 85\n11.1.3 体系状态的对称性守恒，Pauli 原理..... 86\n11.1.4 轨道近似，Slater 行列式..... 87\n11.2 多电子原子的结构..... 89\n11.2.1 Schrödinger 方程..... 89\n11.2.2 无微扰态、中心场近似和自旋轨道..... 90\n11.2.3 零级近似波函数..... 91\n11.2.4 电子组态..... 92\n11.2.5 一级近似波函数..... 93\n11.2.6 L-S 耦合..... 94\n11.3 谱项及属于谱项的波函数..... 98\n11.3.1 谱项的推算..... 98\n11.3.2 各种组态的谱项..... 100\n11.3.3 属于谱项的波函数  $ \\Psi(LM_{LSMS}) $..... 101\n11.3.4 阶梯算符公式的推导..... 102\n11.3.5  $ d^{2} $ 组态各谱项的  $ \\Psi(LM_{LSMS}) $ 的推导..... 104\n11.3.6 投影算符法推导  $ \\Psi(LM_{LSMS}) $..... 107\n11.4 谱项的能量..... 110\n11.4.1 Slater 行列式和波函数的矩阵元..... 110\n11.4.2 原子的能量矩阵元..... 114\n11.4.3 谱项的能量..... 115\n11.4.4 已充满壳层的作用和互补组态的能量..... 118\n11.4.5 组态平均能量..... 122\n11.4.6 Slater 积分的实验拟合..... 130\n11.5 磁相互作用..... 131\n11.5.1 考虑旋-轨耦合的氢原子..... 131\n11.5.2 多电子原子中的磁相互作用..... 135\n11.5.3 j-j 耦合..... 138\n11.5.4 Zeeman 效应..... 141\n11.5.5 原子光谱的指认..... 144",
+            "block_bbox": [
+                143,
+                188,
+                1083,
+                1561
+            ],
+            "block_id": 2,
+            "block_order": 1,
+            "group_id": 2,
+            "block_polygon_points": [
+                [
+                    143.0,
+                    188.0
+                ],
+                [
+                    1083.0,
+                    188.0
+                ],
+                [
+                    1083.0,
+                    1561.0
+                ],
+                [
+                    143.0,
+                    1561.0
+                ]
+            ]
+        }
+    ],
+    "layout_det_res": {
+        "input_path": null,
+        "page_index": null,
+        "boxes": [
+            {
+                "cls_id": 12,
+                "label": "header",
+                "score": 0.811903715133667,
+                "coordinate": [
+                    544,
+                    113,
+                    642,
+                    139
+                ],
+                "order": null,
+                "polygon_points": [
+                    [
+                        544.0,
+                        113.0
+                    ],
+                    [
+                        642.0,
+                        113.0
+                    ],
+                    [
+                        642.0,
+                        139.0
+                    ],
+                    [
+                        544.0,
+                        139.0
+                    ]
+                ]
+            },
+            {
+                "cls_id": 16,
+                "label": "number",
+                "score": 0.6972873210906982,
+                "coordinate": [
+                    1025,
+                    114,
+                    1058,
+                    139
+                ],
+                "order": 1,
+                "polygon_points": [
+                    [
+                        1025.0,
+                        114.0
+                    ],
+                    [
+                        1057.0,
+                        114.0
+                    ],
+                    [
+                        1057.0,
+                        138.0
+                    ],
+                    [
+                        1025.0,
+                        138.0
+                    ]
+                ]
+            },
+            {
+                "cls_id": 4,
+                "label": "content",
+                "score": 0.9751281142234802,
+                "coordinate": [
+                    143,
+                    188,
+                    1083,
+                    1561
+                ],
+                "order": 2,
+                "polygon_points": [
+                    [
+                        143.0,
+                        188.0
+                    ],
+                    [
+                        1083.0,
+                        188.0
+                    ],
+                    [
+                        1083.0,
+                        1561.0
+                    ],
+                    [
+                        143.0,
+                        1561.0
+                    ]
+                ]
+            }
+        ]
+    }
+}

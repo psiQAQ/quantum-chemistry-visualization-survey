@@ -1,0 +1,217 @@
+{
+    "input_path": "learning\\chemblender_qc_learning\\materials\\catalog\\pages\\BK04\\BK04-p009.png",
+    "page_index": null,
+    "page_count": null,
+    "width": 1106,
+    "height": 1724,
+    "model_settings": {
+        "use_doc_preprocessor": false,
+        "use_layout_detection": true,
+        "use_chart_recognition": false,
+        "use_seal_recognition": false,
+        "use_ocr_for_image_block": false,
+        "format_block_content": false,
+        "merge_layout_blocks": true,
+        "markdown_ignore_labels": [
+            "number",
+            "footnote",
+            "header",
+            "header_image",
+            "footer",
+            "footer_image",
+            "aside_text"
+        ],
+        "return_layout_polygon_points": true
+    },
+    "parsing_res_list": [
+        {
+            "block_label": "number",
+            "block_content": "X",
+            "block_bbox": [
+                74,
+                119,
+                94,
+                138
+            ],
+            "block_id": 0,
+            "block_order": null,
+            "group_id": 0,
+            "block_polygon_points": [
+                [
+                    74.0,
+                    119.0
+                ],
+                [
+                    93.0,
+                    119.0
+                ],
+                [
+                    93.0,
+                    137.0
+                ],
+                [
+                    74.0,
+                    137.0
+                ]
+            ]
+        },
+        {
+            "block_label": "header",
+            "block_content": "量子化学——基本原理和从头计算法（中册）",
+            "block_bbox": [
+                303,
+                113,
+                775,
+                141
+            ],
+            "block_id": 1,
+            "block_order": null,
+            "group_id": 1,
+            "block_polygon_points": [
+                [
+                    303.0,
+                    113.0
+                ],
+                [
+                    775.0,
+                    113.0
+                ],
+                [
+                    775.0,
+                    141.0
+                ],
+                [
+                    303.0,
+                    141.0
+                ]
+            ]
+        },
+        {
+            "block_label": "content",
+            "block_content": "14.3.3 分子轨道基组的选择..... 359\n14.3.4 组态函数的选择..... 360\n14.3.5 分子积分的计算和变换..... 363\n14.3.6 构成有正确对称性的组态函数..... 364\n14.3.7 Hamilton 矩阵元的计算..... 369\n14.3.8 Hamilton 矩阵的对角化..... 373\n14.3.9 大小一致性和大小广延性..... 375\n14.4 约化密度矩阵和自然轨道..... 377\n14.4.1 约化密度矩阵..... 377\n14.4.2 CI 波函数的密度矩阵..... 381\n14.4.3 自然轨道..... 387\n14.4.4 近似自然轨道..... 394\n14.5 微扰理论方法..... 398\n14.5.1 多体微扰理论..... 398\n14.5.2 图解方法..... 403\n14.5.3 Brueckner-Goldstone 定理..... 407\n14.5.4 对部分高级项求和与微扰-变分方法..... 413\n14.6 耦合簇理论..... 417\n14.6.1 波函数的耦合簇展开..... 417\n14.6.2 耦合电子对近似..... 419\n14.6.3 耦合簇理论..... 423\n14.6.4 几种理论方法的比较..... 425\n14.7 量子蒙特卡罗方法..... 428\n14.7.1 随机变量的概率分布函数和概率分布密度函数..... 429\n14.7.2 实现随机变量按指定概率分布密度函数取值的方法..... 431\n14.7.3 变分 Monte Carlo 方法..... 434\n14.7.4 扩散 Monte Carlo 方法..... 438\n14.7.5 试用波函数..... 447\n14.7.6 与其他方法的比较..... 451\n14.8 显含电子间距离坐标的相关能计算方法..... 452\n14.8.1 波函数显含电子间距离坐标的必要性..... 452\n14.8.2 超相关方法..... 453\n14.8.3 相关穴方法..... 460\n参考文献..... 463\n习题..... 464",
+            "block_bbox": [
+                109,
+                192,
+                1014,
+                1557
+            ],
+            "block_id": 2,
+            "block_order": 1,
+            "group_id": 2,
+            "block_polygon_points": [
+                [
+                    109.0,
+                    192.0
+                ],
+                [
+                    1014.0,
+                    192.0
+                ],
+                [
+                    1014.0,
+                    1557.0
+                ],
+                [
+                    109.0,
+                    1557.0
+                ]
+            ]
+        }
+    ],
+    "layout_det_res": {
+        "input_path": null,
+        "page_index": null,
+        "boxes": [
+            {
+                "cls_id": 16,
+                "label": "number",
+                "score": 0.6845807433128357,
+                "coordinate": [
+                    74,
+                    119,
+                    94,
+                    138
+                ],
+                "order": 1,
+                "polygon_points": [
+                    [
+                        74.0,
+                        119.0
+                    ],
+                    [
+                        93.0,
+                        119.0
+                    ],
+                    [
+                        93.0,
+                        137.0
+                    ],
+                    [
+                        74.0,
+                        137.0
+                    ]
+                ]
+            },
+            {
+                "cls_id": 12,
+                "label": "header",
+                "score": 0.8548873066902161,
+                "coordinate": [
+                    303,
+                    113,
+                    775,
+                    141
+                ],
+                "order": null,
+                "polygon_points": [
+                    [
+                        303.0,
+                        113.0
+                    ],
+                    [
+                        775.0,
+                        113.0
+                    ],
+                    [
+                        775.0,
+                        141.0
+                    ],
+                    [
+                        303.0,
+                        141.0
+                    ]
+                ]
+            },
+            {
+                "cls_id": 4,
+                "label": "content",
+                "score": 0.9758500456809998,
+                "coordinate": [
+                    109,
+                    192,
+                    1014,
+                    1557
+                ],
+                "order": 2,
+                "polygon_points": [
+                    [
+                        109.0,
+                        192.0
+                    ],
+                    [
+                        1014.0,
+                        192.0
+                    ],
+                    [
+                        1014.0,
+                        1557.0
+                    ],
+                    [
+                        109.0,
+                        1557.0
+                    ]
+                ]
+            }
+        ]
+    }
+}

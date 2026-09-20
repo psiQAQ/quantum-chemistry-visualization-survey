@@ -1,0 +1,490 @@
+{
+    "input_path": "learning\\chemblender_qc_learning\\materials\\catalog\\pages\\BK04\\BK04-p002.png",
+    "page_index": null,
+    "page_count": null,
+    "width": 1105,
+    "height": 1724,
+    "model_settings": {
+        "use_doc_preprocessor": false,
+        "use_layout_detection": true,
+        "use_chart_recognition": false,
+        "use_seal_recognition": false,
+        "use_ocr_for_image_block": false,
+        "format_block_content": false,
+        "merge_layout_blocks": true,
+        "markdown_ignore_labels": [
+            "number",
+            "footnote",
+            "header",
+            "header_image",
+            "footer",
+            "footer_image",
+            "aside_text"
+        ],
+        "return_layout_polygon_points": true
+    },
+    "parsing_res_list": [
+        {
+            "block_label": "doc_title",
+            "block_content": "21 世纪高等院校教材",
+            "block_bbox": [
+                405,
+                264,
+                746,
+                310
+            ],
+            "block_id": 0,
+            "block_order": 1,
+            "group_id": 0,
+            "block_polygon_points": [
+                [
+                    405.0,
+                    264.0
+                ],
+                [
+                    746.0,
+                    264.0
+                ],
+                [
+                    746.0,
+                    310.0
+                ],
+                [
+                    405.0,
+                    310.0
+                ]
+            ]
+        },
+        {
+            "block_label": "paragraph_title",
+            "block_content": "量子化学",
+            "block_bbox": [
+                390,
+                363,
+                765,
+                440
+            ],
+            "block_id": 1,
+            "block_order": 2,
+            "group_id": 1,
+            "block_polygon_points": [
+                [
+                    390.0,
+                    363.0
+                ],
+                [
+                    765.0,
+                    363.0
+                ],
+                [
+                    765.0,
+                    440.0
+                ],
+                [
+                    390.0,
+                    440.0
+                ]
+            ]
+        },
+        {
+            "block_label": "text",
+            "block_content": "——基本原理和从头计算法（中册）\n（第二版）",
+            "block_bbox": [
+                340,
+                530,
+                811,
+                725
+            ],
+            "block_id": 2,
+            "block_order": 3,
+            "group_id": 2,
+            "block_polygon_points": [
+                [
+                    340.0,
+                    530.0
+                ],
+                [
+                    811.0,
+                    530.0
+                ],
+                [
+                    811.0,
+                    725.0
+                ],
+                [
+                    340.0,
+                    725.0
+                ]
+            ]
+        },
+        {
+            "block_label": "doc_title",
+            "block_content": "徐光宪 黎乐民 王德民 编著",
+            "block_bbox": [
+                336,
+                803,
+                811,
+                848
+            ],
+            "block_id": 3,
+            "block_order": 4,
+            "group_id": 3,
+            "block_polygon_points": [
+                [
+                    336.0,
+                    803.0
+                ],
+                [
+                    811.0,
+                    803.0
+                ],
+                [
+                    811.0,
+                    848.0
+                ],
+                [
+                    336.0,
+                    848.0
+                ]
+            ]
+        },
+        {
+            "block_label": "image",
+            "block_content": "",
+            "block_bbox": [
+                383,
+                1363,
+                755,
+                1425
+            ],
+            "block_id": 4,
+            "block_order": null,
+            "group_id": 4,
+            "block_polygon_points": [
+                [
+                    383.0,
+                    1363.0
+                ],
+                [
+                    755.0,
+                    1363.0
+                ],
+                [
+                    755.0,
+                    1425.0
+                ],
+                [
+                    383.0,
+                    1425.0
+                ]
+            ]
+        },
+        {
+            "block_label": "text",
+            "block_content": "北京",
+            "block_bbox": [
+                509,
+                1448,
+                629,
+                1496
+            ],
+            "block_id": 5,
+            "block_order": 5,
+            "group_id": 5,
+            "block_polygon_points": [
+                [
+                    509.0,
+                    1448.0
+                ],
+                [
+                    629.0,
+                    1448.0
+                ],
+                [
+                    629.0,
+                    1496.0
+                ],
+                [
+                    509.0,
+                    1496.0
+                ]
+            ]
+        }
+    ],
+    "layout_det_res": {
+        "input_path": null,
+        "page_index": null,
+        "boxes": [
+            {
+                "cls_id": 6,
+                "label": "doc_title",
+                "score": 0.4302757978439331,
+                "coordinate": [
+                    405,
+                    264,
+                    746,
+                    310
+                ],
+                "order": 1,
+                "polygon_points": [
+                    [
+                        405.0,
+                        264.0
+                    ],
+                    [
+                        746.0,
+                        264.0
+                    ],
+                    [
+                        746.0,
+                        310.0
+                    ],
+                    [
+                        405.0,
+                        310.0
+                    ]
+                ]
+            },
+            {
+                "cls_id": 17,
+                "label": "paragraph_title",
+                "score": 0.4606091380119324,
+                "coordinate": [
+                    390,
+                    363,
+                    765,
+                    440
+                ],
+                "order": 2,
+                "polygon_points": [
+                    [
+                        390.0,
+                        363.0
+                    ],
+                    [
+                        765.0,
+                        363.0
+                    ],
+                    [
+                        765.0,
+                        440.0
+                    ],
+                    [
+                        390.0,
+                        440.0
+                    ]
+                ]
+            },
+            {
+                "cls_id": 6,
+                "label": "doc_title",
+                "score": 0.4007616341114044,
+                "coordinate": [
+                    342,
+                    529,
+                    810,
+                    578
+                ],
+                "order": 3,
+                "polygon_points": [
+                    [
+                        342.0,
+                        529.0
+                    ],
+                    [
+                        810.0,
+                        529.0
+                    ],
+                    [
+                        810.0,
+                        578.0
+                    ],
+                    [
+                        342.0,
+                        578.0
+                    ]
+                ]
+            },
+            {
+                "cls_id": 22,
+                "label": "text",
+                "score": 0.3208301365375519,
+                "coordinate": [
+                    340,
+                    530,
+                    811,
+                    725
+                ],
+                "order": 4,
+                "polygon_points": [
+                    [
+                        340.0,
+                        530.0
+                    ],
+                    [
+                        811.0,
+                        530.0
+                    ],
+                    [
+                        811.0,
+                        725.0
+                    ],
+                    [
+                        340.0,
+                        725.0
+                    ]
+                ]
+            },
+            {
+                "cls_id": 22,
+                "label": "text",
+                "score": 0.3106159567832947,
+                "coordinate": [
+                    510,
+                    601,
+                    639,
+                    648
+                ],
+                "order": 5,
+                "polygon_points": [
+                    [
+                        510.0,
+                        601.0
+                    ],
+                    [
+                        639.0,
+                        601.0
+                    ],
+                    [
+                        639.0,
+                        648.0
+                    ],
+                    [
+                        510.0,
+                        648.0
+                    ]
+                ]
+            },
+            {
+                "cls_id": 22,
+                "label": "text",
+                "score": 0.38015732169151306,
+                "coordinate": [
+                    498,
+                    676,
+                    652,
+                    722
+                ],
+                "order": 6,
+                "polygon_points": [
+                    [
+                        498.0,
+                        676.0
+                    ],
+                    [
+                        652.0,
+                        676.0
+                    ],
+                    [
+                        652.0,
+                        722.0
+                    ],
+                    [
+                        498.0,
+                        722.0
+                    ]
+                ]
+            },
+            {
+                "cls_id": 6,
+                "label": "doc_title",
+                "score": 0.596144437789917,
+                "coordinate": [
+                    336,
+                    803,
+                    811,
+                    848
+                ],
+                "order": 7,
+                "polygon_points": [
+                    [
+                        336.0,
+                        803.0
+                    ],
+                    [
+                        811.0,
+                        803.0
+                    ],
+                    [
+                        811.0,
+                        848.0
+                    ],
+                    [
+                        336.0,
+                        848.0
+                    ]
+                ]
+            },
+            {
+                "cls_id": 14,
+                "label": "image",
+                "score": 0.32493317127227783,
+                "coordinate": [
+                    383,
+                    1363,
+                    755,
+                    1425
+                ],
+                "order": null,
+                "polygon_points": [
+                    [
+                        383.0,
+                        1363.0
+                    ],
+                    [
+                        755.0,
+                        1363.0
+                    ],
+                    [
+                        755.0,
+                        1425.0
+                    ],
+                    [
+                        383.0,
+                        1425.0
+                    ]
+                ]
+            },
+            {
+                "cls_id": 22,
+                "label": "text",
+                "score": 0.6657336354255676,
+                "coordinate": [
+                    509,
+                    1448,
+                    629,
+                    1496
+                ],
+                "order": 8,
+                "polygon_points": [
+                    [
+                        509.0,
+                        1448.0
+                    ],
+                    [
+                        629.0,
+                        1448.0
+                    ],
+                    [
+                        629.0,
+                        1496.0
+                    ],
+                    [
+                        509.0,
+                        1496.0
+                    ]
+                ]
+            }
+        ]
+    }
+}

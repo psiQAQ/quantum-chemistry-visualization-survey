@@ -1,0 +1,217 @@
+{
+    "input_path": "learning\\chemblender_qc_learning\\materials\\catalog\\pages\\BK03\\BK03-p013.png",
+    "page_index": null,
+    "page_count": null,
+    "width": 995,
+    "height": 1452,
+    "model_settings": {
+        "use_doc_preprocessor": false,
+        "use_layout_detection": true,
+        "use_chart_recognition": false,
+        "use_seal_recognition": false,
+        "use_ocr_for_image_block": false,
+        "format_block_content": false,
+        "merge_layout_blocks": true,
+        "markdown_ignore_labels": [
+            "number",
+            "footnote",
+            "header",
+            "header_image",
+            "footer",
+            "footer_image",
+            "aside_text"
+        ],
+        "return_layout_polygon_points": true
+    },
+    "parsing_res_list": [
+        {
+            "block_label": "header",
+            "block_content": "目录",
+            "block_bbox": [
+                444,
+                40,
+                524,
+                64
+            ],
+            "block_id": 0,
+            "block_order": null,
+            "group_id": 0,
+            "block_polygon_points": [
+                [
+                    444.0,
+                    40.0
+                ],
+                [
+                    523.0,
+                    40.0
+                ],
+                [
+                    523.0,
+                    63.0
+                ],
+                [
+                    444.0,
+                    63.0
+                ]
+            ]
+        },
+        {
+            "block_label": "content",
+            "block_content": "3.5.5 分子的电子光谱..... (111)\n3.6 光电子能谱..... (112)\n3.6.1 原理..... (112)\n3.6.2 双原子分子的紫外光电子能谱..... (114)\n3.6.3 X射线光电子能谱..... (117)\n3.6.4 俄歇电子能谱..... (118)\n习题..... (119)\n参考文献..... (121)\n第4章 分子的对称性..... (122)\n4.1 对称操作和对称元素..... (122)\n4.1.1 旋转操作和旋转轴..... (122)\n4.1.2 反演操作和对称中心..... (125)\n4.1.3 反映操作和镜面..... (125)\n4.1.4 旋转反演操作和反轴..... (126)\n4.1.5 旋转反映操作和映轴..... (127)\n4.2 对称元素的组合与对称操作群..... (128)\n4.2.1 群的定义..... (128)\n4.2.2 群的乘法表..... (128)\n4.2.3 对称元素的组合..... (130)\n4.3 分子的点群..... (131)\n4.3.1 分子点群的分类..... (131)\n4.3.2 分子所属点群的判别..... (136)\n4.4 分子的偶极矩和极化率..... (137)\n4.4.1 分子的对称性和分子的偶极矩..... (138)\n4.4.2 分子的诱导偶极矩和极化率..... (140)\n4.5 分子的对称性和旋光性..... (142)\n4.6 群的表示..... (144)\n4.6.1 对称操作的表示矩阵..... (144)\n4.6.2 特征标的性质和特征标表..... (145)\n4.6.3 特征标表应用举例..... (147)\n习题..... (150)\n参考文献..... (152)\n第5章 多原子分子的结构和性质..... (153)\n5.1 多原子分子结构的一些原理和概念..... (153)\n5.1.1 非金属单质的成键特征..... (153)\n5.1.2 价电子对互斥(VSEPR)理论..... (154)\n5.1.3 二面角和扭角..... (156)\n5.2 杂化轨道理论..... (157)\n5.3 离域分子轨道理论..... (161)",
+            "block_bbox": [
+                36,
+                82,
+                930,
+                1403
+            ],
+            "block_id": 1,
+            "block_order": 1,
+            "group_id": 1,
+            "block_polygon_points": [
+                [
+                    36.0,
+                    82.0
+                ],
+                [
+                    930.0,
+                    82.0
+                ],
+                [
+                    930.0,
+                    1403.0
+                ],
+                [
+                    36.0,
+                    1403.0
+                ]
+            ]
+        },
+        {
+            "block_label": "number",
+            "block_content": "Ⅲ",
+            "block_bbox": [
+                888,
+                1387,
+                906,
+                1410
+            ],
+            "block_id": 2,
+            "block_order": null,
+            "group_id": 2,
+            "block_polygon_points": [
+                [
+                    888.0,
+                    1387.0
+                ],
+                [
+                    888.0,
+                    1409.0
+                ],
+                [
+                    905.0,
+                    1409.0
+                ],
+                [
+                    905.0,
+                    1387.0
+                ]
+            ]
+        }
+    ],
+    "layout_det_res": {
+        "input_path": null,
+        "page_index": null,
+        "boxes": [
+            {
+                "cls_id": 12,
+                "label": "header",
+                "score": 0.7930256724357605,
+                "coordinate": [
+                    444,
+                    40,
+                    524,
+                    64
+                ],
+                "order": null,
+                "polygon_points": [
+                    [
+                        444.0,
+                        40.0
+                    ],
+                    [
+                        523.0,
+                        40.0
+                    ],
+                    [
+                        523.0,
+                        63.0
+                    ],
+                    [
+                        444.0,
+                        63.0
+                    ]
+                ]
+            },
+            {
+                "cls_id": 4,
+                "label": "content",
+                "score": 0.9694204926490784,
+                "coordinate": [
+                    36,
+                    82,
+                    930,
+                    1403
+                ],
+                "order": 1,
+                "polygon_points": [
+                    [
+                        36.0,
+                        82.0
+                    ],
+                    [
+                        930.0,
+                        82.0
+                    ],
+                    [
+                        930.0,
+                        1403.0
+                    ],
+                    [
+                        36.0,
+                        1403.0
+                    ]
+                ]
+            },
+            {
+                "cls_id": 16,
+                "label": "number",
+                "score": 0.33264222741127014,
+                "coordinate": [
+                    888,
+                    1387,
+                    906,
+                    1410
+                ],
+                "order": 2,
+                "polygon_points": [
+                    [
+                        888.0,
+                        1387.0
+                    ],
+                    [
+                        888.0,
+                        1409.0
+                    ],
+                    [
+                        905.0,
+                        1409.0
+                    ],
+                    [
+                        905.0,
+                        1387.0
+                    ]
+                ]
+            }
+        ]
+    }
+}

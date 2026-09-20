@@ -1,0 +1,217 @@
+{
+    "input_path": "learning\\chemblender_qc_learning\\materials\\catalog\\pages\\BK04\\BK04-p011.png",
+    "page_index": null,
+    "page_count": null,
+    "width": 1106,
+    "height": 1724,
+    "model_settings": {
+        "use_doc_preprocessor": false,
+        "use_layout_detection": true,
+        "use_chart_recognition": false,
+        "use_seal_recognition": false,
+        "use_ocr_for_image_block": false,
+        "format_block_content": false,
+        "merge_layout_blocks": true,
+        "markdown_ignore_labels": [
+            "number",
+            "footnote",
+            "header",
+            "header_image",
+            "footer",
+            "footer_image",
+            "aside_text"
+        ],
+        "return_layout_polygon_points": true
+    },
+    "parsing_res_list": [
+        {
+            "block_label": "number",
+            "block_content": "xii",
+            "block_bbox": [
+                79,
+                110,
+                111,
+                131
+            ],
+            "block_id": 0,
+            "block_order": null,
+            "group_id": 0,
+            "block_polygon_points": [
+                [
+                    79.0,
+                    110.0
+                ],
+                [
+                    110.0,
+                    110.0
+                ],
+                [
+                    110.0,
+                    130.0
+                ],
+                [
+                    79.0,
+                    130.0
+                ]
+            ]
+        },
+        {
+            "block_label": "header",
+            "block_content": "量子化学——基本原理和从头计算法（中册）",
+            "block_bbox": [
+                316,
+                107,
+                786,
+                134
+            ],
+            "block_id": 1,
+            "block_order": null,
+            "group_id": 1,
+            "block_polygon_points": [
+                [
+                    316.0,
+                    107.0
+                ],
+                [
+                    786.0,
+                    107.0
+                ],
+                [
+                    786.0,
+                    134.0
+                ],
+                [
+                    316.0,
+                    134.0
+                ]
+            ]
+        },
+        {
+            "block_label": "content",
+            "block_content": "16.1.2 相对论模型势 …… 562\n16.2 原子赝势和赝波函数 …… 568\n16.2.1 原子赝势和赝波函数 …… 568\n16.2.2 形状一致赝势 (模守恒势) …… 572\n16.2.3 可分离赝势、超软赝势 …… 576\n16.2.4 能量一致赝势 …… 580\n16.3 分子和固体的有效芯势计算 …… 581\n16.3.1 分子和固体的有效芯势方程 …… 581\n16.3.2 芯极化赝势 …… 583\n参考文献 …… 585",
+            "block_bbox": [
+                113,
+                193,
+                1016,
+                571
+            ],
+            "block_id": 2,
+            "block_order": 1,
+            "group_id": 2,
+            "block_polygon_points": [
+                [
+                    113.0,
+                    193.0
+                ],
+                [
+                    1016.0,
+                    193.0
+                ],
+                [
+                    1016.0,
+                    571.0
+                ],
+                [
+                    113.0,
+                    571.0
+                ]
+            ]
+        }
+    ],
+    "layout_det_res": {
+        "input_path": null,
+        "page_index": null,
+        "boxes": [
+            {
+                "cls_id": 16,
+                "label": "number",
+                "score": 0.752123236656189,
+                "coordinate": [
+                    79,
+                    110,
+                    111,
+                    131
+                ],
+                "order": 1,
+                "polygon_points": [
+                    [
+                        79.0,
+                        110.0
+                    ],
+                    [
+                        110.0,
+                        110.0
+                    ],
+                    [
+                        110.0,
+                        130.0
+                    ],
+                    [
+                        79.0,
+                        130.0
+                    ]
+                ]
+            },
+            {
+                "cls_id": 12,
+                "label": "header",
+                "score": 0.860477089881897,
+                "coordinate": [
+                    316,
+                    107,
+                    786,
+                    134
+                ],
+                "order": null,
+                "polygon_points": [
+                    [
+                        316.0,
+                        107.0
+                    ],
+                    [
+                        786.0,
+                        107.0
+                    ],
+                    [
+                        786.0,
+                        134.0
+                    ],
+                    [
+                        316.0,
+                        134.0
+                    ]
+                ]
+            },
+            {
+                "cls_id": 4,
+                "label": "content",
+                "score": 0.9754604697227478,
+                "coordinate": [
+                    113,
+                    193,
+                    1016,
+                    571
+                ],
+                "order": 2,
+                "polygon_points": [
+                    [
+                        113.0,
+                        193.0
+                    ],
+                    [
+                        1016.0,
+                        193.0
+                    ],
+                    [
+                        1016.0,
+                        571.0
+                    ],
+                    [
+                        113.0,
+                        571.0
+                    ]
+                ]
+            }
+        ]
+    }
+}

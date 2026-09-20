@@ -1,0 +1,217 @@
+{
+    "input_path": "learning\\chemblender_qc_learning\\materials\\catalog\\pages\\BK04\\BK04-p008.png",
+    "page_index": null,
+    "page_count": null,
+    "width": 1106,
+    "height": 1724,
+    "model_settings": {
+        "use_doc_preprocessor": false,
+        "use_layout_detection": true,
+        "use_chart_recognition": false,
+        "use_seal_recognition": false,
+        "use_ocr_for_image_block": false,
+        "format_block_content": false,
+        "merge_layout_blocks": true,
+        "markdown_ignore_labels": [
+            "number",
+            "footnote",
+            "header",
+            "header_image",
+            "footer",
+            "footer_image",
+            "aside_text"
+        ],
+        "return_layout_polygon_points": true
+    },
+    "parsing_res_list": [
+        {
+            "block_label": "header",
+            "block_content": "目 录",
+            "block_bbox": [
+                555,
+                116,
+                652,
+                141
+            ],
+            "block_id": 0,
+            "block_order": null,
+            "group_id": 0,
+            "block_polygon_points": [
+                [
+                    555.0,
+                    116.0
+                ],
+                [
+                    652.0,
+                    116.0
+                ],
+                [
+                    652.0,
+                    141.0
+                ],
+                [
+                    555.0,
+                    141.0
+                ]
+            ]
+        },
+        {
+            "block_label": "number",
+            "block_content": "ix",
+            "block_bbox": [
+                1040,
+                116,
+                1065,
+                139
+            ],
+            "block_id": 1,
+            "block_order": null,
+            "group_id": 1,
+            "block_polygon_points": [
+                [
+                    1040.0,
+                    116.0
+                ],
+                [
+                    1064.0,
+                    116.0
+                ],
+                [
+                    1064.0,
+                    138.0
+                ],
+                [
+                    1040.0,
+                    138.0
+                ]
+            ]
+        },
+        {
+            "block_label": "content",
+            "block_content": "13.3.2 一个具体的例子 —— 氨分子的自洽场计算..... 239\n13.3.3 基函数的选择..... 245\n13.3.4 分子积分的存储和使用..... 259\n13.3.5 本征值方程的求解..... 265\n13.3.6 迭代收敛问题..... 272\n13.3.7 直接自洽场计算方法..... 278\n13.4 分子对称性的利用..... 280\n13.4.1 简化分子积分的计算..... 280\n13.4.2 节省内存..... 285\n13.4.3 简化本征值方程的求解..... 287\n13.5 物理量的计算..... 290\n13.5.1 体系总能量与分子几何构型优化..... 290\n13.5.2 分子振动频率..... 293\n13.5.3 电离能和激发能..... 296\n13.5.4 电荷密度分布与其形貌学分析..... 299\n13.5.5 电子布居分析..... 305\n13.6 定域分子轨道..... 315\n13.6.1 正则（离域）分子轨道与定域分子轨道的等价性..... 315\n13.6.2 定域准则. 正交定域轨道..... 317\n13.6.3 紧缩的非正交定域轨道..... 324\n13.6.4 直接计算自洽场定域轨道的方法..... 332\n参考文献..... 334\n习题..... 336\n第14章 电子相关问题..... 339\n14.1 电子相关作用..... 341\n14.1.1 物理图像..... 341\n14.1.2 电子相关能..... 342\n14.2 组态相互作用..... 344\n14.2.1 波函数的组态展开..... 344\n14.2.2 波函数的歧点条件..... 347\n14.2.3 动态相关能的计算..... 349\n14.2.4 非动态相关能的计算，多组态自洽场方法..... 352\n14.3 组态相互作用计算中的一些具体问题..... 357\n14.3.1 概述..... 357\n14.3.2 基组选择..... 358",
+            "block_bbox": [
+                152,
+                191,
+                1093,
+                1565
+            ],
+            "block_id": 2,
+            "block_order": 1,
+            "group_id": 2,
+            "block_polygon_points": [
+                [
+                    152.0,
+                    191.0
+                ],
+                [
+                    1093.0,
+                    191.0
+                ],
+                [
+                    1093.0,
+                    1565.0
+                ],
+                [
+                    152.0,
+                    1565.0
+                ]
+            ]
+        }
+    ],
+    "layout_det_res": {
+        "input_path": null,
+        "page_index": null,
+        "boxes": [
+            {
+                "cls_id": 12,
+                "label": "header",
+                "score": 0.8046296238899231,
+                "coordinate": [
+                    555,
+                    116,
+                    652,
+                    141
+                ],
+                "order": null,
+                "polygon_points": [
+                    [
+                        555.0,
+                        116.0
+                    ],
+                    [
+                        652.0,
+                        116.0
+                    ],
+                    [
+                        652.0,
+                        141.0
+                    ],
+                    [
+                        555.0,
+                        141.0
+                    ]
+                ]
+            },
+            {
+                "cls_id": 16,
+                "label": "number",
+                "score": 0.7110819816589355,
+                "coordinate": [
+                    1040,
+                    116,
+                    1065,
+                    139
+                ],
+                "order": 1,
+                "polygon_points": [
+                    [
+                        1040.0,
+                        116.0
+                    ],
+                    [
+                        1064.0,
+                        116.0
+                    ],
+                    [
+                        1064.0,
+                        138.0
+                    ],
+                    [
+                        1040.0,
+                        138.0
+                    ]
+                ]
+            },
+            {
+                "cls_id": 4,
+                "label": "content",
+                "score": 0.9630721807479858,
+                "coordinate": [
+                    152,
+                    191,
+                    1093,
+                    1565
+                ],
+                "order": 2,
+                "polygon_points": [
+                    [
+                        152.0,
+                        191.0
+                    ],
+                    [
+                        1093.0,
+                        191.0
+                    ],
+                    [
+                        1093.0,
+                        1565.0
+                    ],
+                    [
+                        152.0,
+                        1565.0
+                    ]
+                ]
+            }
+        ]
+    }
+}

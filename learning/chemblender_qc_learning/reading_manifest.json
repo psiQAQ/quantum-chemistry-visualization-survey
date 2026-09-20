@@ -1,0 +1,699 @@
+{
+  "schema_version": "1.0",
+  "title": "ChemBlender量子化学可视化学习资料清单",
+  "created_on": "2026-09-20",
+  "scope": "目标导向的选择性调研；不是全领域系统综述，也不证明已阅读所有全文。",
+  "priority_definition": {
+    "P0": "当前核心任务必须理解；可只读指定章节/文档",
+    "P1": "基础验收通过后、按专题选读",
+    "P2": "按实际开发需求查阅，不列入核心必读"
+  },
+  "project_snapshot": {
+    "repository": "psiQAQ/ChemBlender_2_x",
+    "branch": "feat/2.5-real-user-tutorials",
+    "commit": "1279313033320ec92d9d7981593d5919997c5f5b",
+    "commit_date": "2026-09-13T08:19:06Z",
+    "local_head_verified": false
+  },
+  "skill_snapshot": {
+    "repository": "psiQAQ/personal-tutor",
+    "commit": "d01ac82f511bdbdf82192c9ba9923f0e34f3137b",
+    "path": ".agents/skills/personal-tutor/SKILL.md",
+    "read_in_research": true,
+    "installed_on_user_machine": false
+  },
+  "resources": [
+    {
+      "id": "BK01",
+      "title": "Introduction to Computational Chemistry, 3rd edition",
+      "type": "textbook",
+      "year": 2017,
+      "priority": "P0",
+      "authors": [
+        "Frank Jensen"
+      ],
+      "venue": "Wiley",
+      "identifier": "ISBN 9781118825990",
+      "primary_url": "https://www.wiley-vch.de/de/fachgebiete/naturwissenschaften/introduction-to-computational-chemistry-978-1-118-82599-0",
+      "additional_urls": [],
+      "read_sections": [
+        "Ch. 3 Hartree–Fock Theory：3.1、3.5、3.7、3.8",
+        "Ch. 5 Basis Sets：5.1–5.4；5.12按需",
+        "Ch. 6 Density Functional Methods：6.2、6.7–6.9、6.11",
+        "Ch. 10 Wave Function Analysis：10.1–10.5",
+        "Ch. 11 Molecular Properties：11.7、11.9、11.10",
+        "Ch. 12 Illustrating Concepts：收敛与振动实例"
+      ],
+      "project_relevance": "英文主教材；把方法、基组、波函数分析和分子性质连接到可视化任务。",
+      "learning_output": "整理方法/基组/性质卡片；解释一个场的来源与限制，并设计独立收敛检查。",
+      "access_status": "商业教材；出版社、图书馆或合法电子书。样章不等于全书开放。",
+      "research_reading_depth": "出版社书目信息与目录；未通读全书。",
+      "notes": "指定第三版以便对齐章节；不宣称这是检索日最新版本。",
+      "checked_on": "2026-09-20",
+      "suggested_local_file": "materials/books/BK01.pdf",
+      "download_status": "downloaded",
+      "actual_local_file": "materials/books/Introduction to Computational Chemistry.pdf",
+      "sha256": "44b35ded30aef68f89a5a7333a9acb3c2b2ca772c41c9fef019824b161faa5a4",
+      "verified_local_edition": "Local title/author, Third Edition marker, 661 pages, and Contents outline page 6 verified."
+    },
+    {
+      "id": "BK02",
+      "title": "Modern Quantum Chemistry: Introduction to Advanced Electronic Structure Theory",
+      "type": "textbook",
+      "year": 1996,
+      "priority": "P1",
+      "authors": [
+        "Attila Szabo",
+        "Neil S. Ostlund"
+      ],
+      "venue": "Dover reprint",
+      "identifier": "ISBN 9780486691862",
+      "primary_url": "https://store.doverpublications.com/products/9780486691862",
+      "additional_urls": [
+        "https://www.harvard.com/book/9780486691862"
+      ],
+      "read_sections": [
+        "Ch. 2 多电子波函数、Slater行列式及相关记号",
+        "Ch. 3 Hartree–Fock、基组表示、密度矩阵与SCF",
+        "Ch. 1 仅补诊断暴露的线性代数缺口"
+      ],
+      "project_relevance": "补足非正交基组中的矩阵关系，不作为从头到尾的第一本入门书。",
+      "learning_output": "独立解释并验证 C^T S C=I、N=Tr(PS)，说明为什么不能用Tr(P)。",
+      "access_status": "商业教材；Dover或图书馆。",
+      "research_reading_depth": "出版社书目信息及目录资料；未通读。",
+      "notes": "1996是所选Dover再版本年份，不是把经典内容误称为1996年首创。",
+      "checked_on": "2026-09-20",
+      "suggested_local_file": "materials/books/BK02.pdf",
+      "download_status": "downloaded",
+      "actual_local_file": "materials/books/Modern quantum chemistry  introduction to advanced electronic structure theory 1.pdf",
+      "sha256": "3f1fe1ec6c8b2d8bb4c30481edf461faf55489ef05a106efb870347ba28e7d2c",
+      "verified_local_edition": "Local title/authors and 481 pages verified as the selected Dover reprint; two duplicate image-only scans were not selected."
+    },
+    {
+      "id": "BK03",
+      "title": "结构化学基础（第5版）",
+      "type": "textbook",
+      "year": 2017,
+      "priority": "P0",
+      "authors": [
+        "周公度",
+        "段连运"
+      ],
+      "venue": "北京大学出版社",
+      "identifier": "ISBN 9787301283073",
+      "primary_url": "https://metalib.nefu.edu.cn/mspace/searchDetailLocal/m6d4efecb2f8527b43bd2190a39412123",
+      "additional_urls": [
+        "https://chem.cqnu.edu.cn/info/1268/10205.htm",
+        "https://www.bookschina.com/7511063.htm"
+      ],
+      "read_sections": [
+        "第2章中“波函数和电子云的图形”",
+        "双原子与多原子分子的分子轨道、成键/反键、σ/π与孤对电子",
+        "对称性只学判断节点和轨道标签所需内容"
+      ],
+      "project_relevance": "中文化学术语桥梁；把已有量子力学知识连接到化学图像。",
+      "learning_output": "画出概念对照：轨道、电子云、电子密度、化学键；解释H2O和一个π体系的图。",
+      "access_status": "商业教材；出版社/高校图书馆/授权电子书。馆藏链接不保证个人具有访问权限。",
+      "research_reading_depth": "高校馆藏与教学书目核对，目录辅助核查；未通读。",
+      "notes": "选定2017年第5版；数字平台上线年份不当作出版年份；不是习题解答本。",
+      "checked_on": "2026-09-20",
+      "suggested_local_file": "materials/books/BK03.pdf",
+      "download_status": "downloaded",
+      "actual_local_file": "materials/books/结构化学基础(第5版) .pdf",
+      "sha256": "fd9b9dde7f16c88a34e03afa7be05e014fe14e90f1305410d57b3cf7a18f83b2",
+      "verified_local_edition": "Local metadata title/author and 416 pages verified for the fifth edition."
+    },
+    {
+      "id": "BK04",
+      "title": "量子化学——基本原理和从头计算法（中）（第二版）",
+      "type": "textbook",
+      "year": 2009,
+      "priority": "P1",
+      "authors": [
+        "徐光宪",
+        "黎乐民",
+        "王德民"
+      ],
+      "venue": "科学出版社",
+      "identifier": "ISBN 9787030220394",
+      "primary_url": "https://www.chem.pku.edu.cn/xyxw/171359.htm",
+      "additional_urls": [
+        "https://tl.zxhsd.com/kgsm/ts/big5/2026/04/03/5898435.shtml",
+        "https://www.sohu.com/a/403555250_488198"
+      ],
+      "read_sections": [
+        "高斯型基函数及相关积分的概念部分",
+        "分子自洽场理论",
+        "密度泛函理论；电子相关方法只读概览"
+      ],
+      "project_relevance": "中文严谨参考；用于理解基组、SCF及DFT，不要求购买并读完上中下三册。",
+      "learning_output": "解释primitive与contracted Gaussian的区别，定位归一化和矩阵表示问题。",
+      "access_status": "商业教材；科学出版社、图书馆或授权电子书。",
+      "research_reading_depth": "高校来源核对系列及作者；书目/目录资料核对所选分册ISBN与年份。",
+      "notes": "出版书目采用2009版次；书商页面更新或印刷年份不作为新版年份。章节页码由本地实际版本确认。",
+      "checked_on": "2026-09-20",
+      "suggested_local_file": "materials/books/BK04.pdf",
+      "download_status": "downloaded",
+      "actual_local_file": "materials/books/量子化学-基本原理和从头计算法-中册-1.pdf",
+      "sha256": "0167c7ac46d0043fb92a5996c36b4ad37cf32cdf006374f3c7d43b3f07adbe72",
+      "verified_local_edition": "Local outline names the second-edition middle volume; 521 pages verified. Directory OCR is saved under materials/catalog/raw/BK04."
+    },
+    {
+      "id": "BK05",
+      "title": "Molecular Electronic-Structure Theory",
+      "type": "textbook",
+      "year": 2000,
+      "priority": "P2",
+      "authors": [
+        "Trygve Helgaker",
+        "Poul Jørgensen",
+        "Jeppe Olsen"
+      ],
+      "venue": "Wiley",
+      "identifier": "ISBN 9780471967552",
+      "primary_url": "https://www.wiley-vch.de/de/fachgebiete/naturwissenschaften/molecular-electronic-structure-theory-978-0-471-96755-2",
+      "additional_urls": [],
+      "read_sections": [
+        "Gaussian basis、归一化、Cartesian/pure变换",
+        "HF与约化密度矩阵相关章节；按问题查阅"
+      ],
+      "project_relevance": "高级实现参考，用于基组约定或密度矩阵的棘手问题。",
+      "learning_output": "写出一个跨软件约定转换的数值等价性测试。",
+      "access_status": "商业教材；出版社/图书馆。",
+      "research_reading_depth": "出版社书目信息与主题范围；未通读。",
+      "notes": "不安排全书阅读，也不把两电子积分引擎、耦合簇求解器作为本轮开发目标。",
+      "checked_on": "2026-09-20",
+      "suggested_local_file": "materials/books/BK05.pdf",
+      "download_status": "downloaded",
+      "actual_local_file": "materials/books/Molecular Electronic-Structure Theory.pdf",
+      "sha256": "fe3626c39991c1998dec6ca482406ae4728cade5ae08852ed37534e6327ead98",
+      "verified_local_edition": "Local title/authors, 940 pages, and Contents outline page 7 verified; PDF selected over the duplicate DJVU."
+    },
+    {
+      "id": "RV01",
+      "title": "Visualization Analysis of Covalent and Noncovalent Interactions in Real Space",
+      "type": "review",
+      "year": 2025,
+      "priority": "P0",
+      "authors": [
+        "Tian Lu"
+      ],
+      "venue": "Angewandte Chemie International Edition 64(29), e202504895",
+      "identifier": "DOI 10.1002/anie.202504895",
+      "primary_url": "https://onlinelibrary.wiley.com/doi/10.1002/anie.202504895",
+      "additional_urls": [],
+      "read_sections": [
+        "ESP与deformation density",
+        "NCI、IGMH、IRI的定义与差别",
+        "ELF、LOL及图像解释边界；应用部分选择一个小分子案例"
+      ],
+      "project_relevance": "本次最直接匹配ChemBlender实空间科学量可视化的近期综述；国内研究者的英文国际期刊文章。",
+      "learning_output": "每种方法一张“输入—定义—几何场—着色场—解释边界”卡片。",
+      "access_status": "已核验摘要/书目；未确认全文OA。经出版社、机构订阅或作者授权获取。",
+      "research_reading_depth": "出版社摘要、文献类型、书目信息与参考文献入口；未精读全文。",
+      "notes": "",
+      "checked_on": "2026-09-20",
+      "suggested_local_file": "materials/reviews/RV01.pdf",
+      "download_status": "downloaded",
+      "actual_local_file": "materials/reviews/Visualization Analysis of Covalent and Noncovalent Interactions in Real Space.pdf",
+      "sha256": "c309836bcf87c0b3b93c9bc9925b828d38f861c5b36e5f18d1a558406a077324",
+      "verified_local_edition": "Local title, 2025 date, 52 pages, and section outline verified; DOI remains a citation-level cross-check."
+    },
+    {
+      "id": "RV02",
+      "title": "Best-Practice DFT Protocols for Basic Molecular Computational Chemistry",
+      "type": "perspective",
+      "year": 2022,
+      "priority": "P0",
+      "authors": [
+        "Markus Bursch",
+        "Jan-Michael Mewes",
+        "Andreas Hansen",
+        "Stefan Grimme"
+      ],
+      "venue": "Angewandte Chemie International Edition 61(42), e202205735",
+      "identifier": "DOI 10.1002/anie.202205735",
+      "primary_url": "https://onlinelibrary.wiley.com/doi/10.1002/anie.202205735",
+      "additional_urls": [
+        "https://doi.org/10.26434/chemrxiv-2022-n304h"
+      ],
+      "read_sections": [
+        "§2.1决策流程、§2.2电子结构、§2.5泛函",
+        "基组与计算设置相关部分",
+        "选择一个与小分子输入准备相关的实例，不读完所有热化学案例"
+      ],
+      "project_relevance": "学习何时可相信生成数据的模型与设置；避免把能量基准排名当作所有场性质的准确性证明。",
+      "learning_output": "为一个固定几何案例写方法选择说明，分开检查模型误差、基组误差与展示网格误差。",
+      "access_status": "出版社标注Open Access；可从页面获取合法全文。",
+      "research_reading_depth": "出版社HTML摘要及部分正文，类型与OA状态已核对。",
+      "notes": "正式类型是Scientific Perspective，不是把它改称纯Review；重点并非全面的激发态或实空间分析教程。",
+      "checked_on": "2026-09-20",
+      "suggested_local_file": "materials/reviews/RV02.pdf",
+      "download_status": "downloaded",
+      "actual_local_file": "materials/reviews/Best‐Practice DFT Protocols for Basic Molecular Computational Chemistry.pdf",
+      "sha256": "d10fa90f60b1698c3d3b772146c4e993b1ab7ce9da6621a16aa9d12362021de3",
+      "verified_local_edition": "Local title, subject DOI, and 27 pages verified."
+    },
+    {
+      "id": "RV03",
+      "title": "DFT exchange: sharing perspectives on the workhorse of quantum chemistry and materials science",
+      "type": "perspective",
+      "year": 2022,
+      "priority": "P2",
+      "authors": [
+        "A. M. Teale et al."
+      ],
+      "venue": "Physical Chemistry Chemical Physics 24, 28700–28781",
+      "identifier": "DOI 10.1039/D2CP02827A",
+      "primary_url": "https://doi.org/10.1039/D2CP02827A",
+      "additional_urls": [],
+      "read_sections": [
+        "密度质量、Kohn–Sham轨道解释、DFT限制的讨论",
+        "选读相关观点，不按全篇长度制定通读任务"
+      ],
+      "project_relevance": "帮助区分可证明的理论关系与实践解释、近似模型和争议观点。",
+      "learning_output": "列出三个不能从HOMO/LUMO截图直接推出的结论及原因。",
+      "access_status": "期刊开放获取入口；按出版社页面下载。",
+      "research_reading_depth": "出版信息与相关HTML讨论；未逐段精读整篇。",
+      "notes": "多观点Perspective；不能把不同作者观点拼成一致结论。",
+      "checked_on": "2026-09-20",
+      "suggested_local_file": "materials/reviews/RV03.pdf",
+      "download_status": "downloaded",
+      "actual_local_file": "materials/reviews/DFT exchange sharing perspectives on the workhorse of quantum chemistry and materials science.pdf",
+      "sha256": "c4bcd187cc4b60194dec848520676ad747ba531a6fea324757d71edce93e2233",
+      "verified_local_edition": "Local title, subject DOI, and 83 pages verified."
+    },
+    {
+      "id": "RV04",
+      "title": "Color-Pure Organic Luminophores: Characteristics, Definitions, Physical Basis and Fundamental Design Principles",
+      "type": "review",
+      "year": 2026,
+      "priority": "P1",
+      "authors": [
+        "Johannes Gierschner et al."
+      ],
+      "venue": "Angewandte Chemie International Edition 65(30), e9990265",
+      "identifier": "DOI 10.1002/anie.9990265",
+      "primary_url": "https://onlinelibrary.wiley.com/doi/full/10.1002/anie.9990265",
+      "additional_urls": [],
+      "read_sections": [
+        "§2 Spectral Characteristics",
+        "§3 Physical Basis of Spectral Width",
+        "分子设计案例初期略读"
+      ],
+      "project_relevance": "面向光学背景的光谱桥梁：线宽、能量/波长表示、振动与环境展宽；不是轨道求值入门必读。",
+      "learning_output": "设计光谱数据契约，区分跃迁线、人为展宽谱与实验光谱，明确横纵轴定义。",
+      "access_status": "出版社标注Open Access；首发2026-06-11。",
+      "research_reading_depth": "出版社摘要及相关HTML正文，类型、日期和DOI已核对。",
+      "notes": "作者列表请以出版社导出的完整引文为准；本清单不补造完整作者。",
+      "checked_on": "2026-09-20",
+      "suggested_local_file": "materials/reviews/RV04.pdf",
+      "download_status": "downloaded",
+      "actual_local_file": "materials/reviews/Angew Chem Int Ed - 2026 - Gierschner - Color‐Pure Organic Luminophores  Characteristics  Definitions  Physical Basis and.pdf",
+      "sha256": "1e2ca78f33c5ab0b3d161738c904b4fe9c3c669987677c92df1dbdd94e0d401e",
+      "verified_local_edition": "Local title, subject DOI, and 28 pages verified."
+    },
+    {
+      "id": "RV05",
+      "title": "Computation of Time-Resolved Nonlinear Electronic Spectra From Classical Trajectories",
+      "type": "review",
+      "year": 2025,
+      "priority": "P2",
+      "authors": [],
+      "venue": "WIREs Computational Molecular Science 15(3), e70012",
+      "identifier": "DOI 10.1002/wcms.70012",
+      "primary_url": "https://doi.org/10.1002/wcms.70012",
+      "additional_urls": [],
+      "read_sections": [
+        "电子态计算—轨迹—时间分辨光谱的概念联系；完成基础光谱模块后按需选读"
+      ],
+      "project_relevance": "远期扩展到超快光谱/时间分辨可视化；当前MO、密度、ESP开发不依赖它。",
+      "learning_output": "只在明确扩展任务后提交一个输入/输出/适用近似说明。",
+      "access_status": "出版社标注Open Access。",
+      "research_reading_depth": "出版社摘要与书目信息；未精读全文。",
+      "notes": "Advanced Review；不因发表新就提升为P0。完整作者用DOI从出版社导出。",
+      "checked_on": "2026-09-20",
+      "suggested_local_file": "materials/reviews/RV05.pdf",
+      "download_status": "downloaded",
+      "actual_local_file": "materials/reviews/WIREs Comput Mol Sci - 2025 - Gelin - Computation of Time‐Resolved Nonlinear Electronic Spectra From Classical Trajectories.pdf",
+      "sha256": "3daedb0cfa8d28b4c80edbc7ea163410e0ebfcadd05fda30f745d71583edcdf4",
+      "verified_local_edition": "Local title, subject DOI, and 40 pages verified."
+    },
+    {
+      "id": "SW01",
+      "title": "GBasis: A Python Library for Evaluating Functions, Functionals, and Integrals Expressed with Gaussian Basis Functions",
+      "type": "software_article",
+      "year": 2024,
+      "priority": "P0",
+      "authors": [
+        "Taewon David Kim et al."
+      ],
+      "venue": "The Journal of Chemical Physics 161, 042503",
+      "identifier": "DOI 10.1063/5.0216776",
+      "primary_url": "https://doi.org/10.1063/5.0216776",
+      "additional_urls": [
+        "https://gbasis.qcdevs.org/intro.html"
+      ],
+      "read_sections": [
+        "Gaussian函数/收缩/求值接口",
+        "MO、密度、ESP与导数的输入约定；结合项目锁定版本文档"
+      ],
+      "project_relevance": "与仓库既有外部数值后端直接对应。",
+      "learning_output": "给同一组基函数/系数/点构造求值和约定转换回归测试。",
+      "access_status": "项目文档公开；论文全文许可通过出版社核对，不预设OA。",
+      "research_reading_depth": "官方项目说明与引文信息；未精读论文全文。",
+      "notes": "项目快照固定qc-gbasis==0.1.0，import名gbasis；不要据在线文档默认升级。",
+      "checked_on": "2026-09-20",
+      "suggested_local_file": "materials/software/SW01.pdf",
+      "download_status": "downloaded",
+      "actual_local_file": "materials/software/GBasis A Python library for evaluating functions, functionals, and integrals expressed with Gaussian basis functions.pdf",
+      "sha256": "477776012ee3b216b1e2f0920f1318f5fc950a800ac59f00488896d8700cdf34",
+      "verified_local_edition": "Local title and 35 pages verified."
+    },
+    {
+      "id": "SW02",
+      "title": "IOData: A python library for reading, writing, and converting computational chemistry file formats and generating input files",
+      "type": "software_article",
+      "year": 2021,
+      "priority": "P0",
+      "authors": [
+        "Toon Verstraelen et al."
+      ],
+      "venue": "Journal of Computational Chemistry 42(6), 458–464",
+      "identifier": "DOI 10.1002/jcc.26468",
+      "primary_url": "https://doi.org/10.1002/jcc.26468",
+      "additional_urls": [
+        "https://iodata.readthedocs.io/en/latest/",
+        "https://iodata.readthedocs.io/en/latest/how_to_cite.html"
+      ],
+      "read_sections": [
+        "文件表示与转换边界；必须配合DT01 Basis set conventions"
+      ],
+      "project_relevance": "读取成功与科学量保真是两种验收；提供基组、轨道及RDM元数据的解释入口。",
+      "learning_output": "整理一个真实FCHK/Molden的读取能力与缺失字段表。",
+      "access_status": "官方文档公开；论文全文许可通过出版社核对。",
+      "research_reading_depth": "官方How to Cite核对DOI/卷期页，官方文档相关章节已读。",
+      "notes": "",
+      "checked_on": "2026-09-20",
+      "suggested_local_file": "materials/software/SW02.pdf",
+      "download_status": "downloaded",
+      "actual_local_file": "materials/software/IOData A python library for reading, writing, and converting computational chemistry file formats and generating input files.pdf",
+      "sha256": "054f0b358cfd443c3eac66e976d622d2a650208e6c31eb767954e1e1ff85bd8b",
+      "verified_local_edition": "Local title, subject DOI, and 7 pages verified."
+    },
+    {
+      "id": "SW03",
+      "title": "A comprehensive electron wavefunction analysis toolbox for chemists, Multiwfn",
+      "type": "software_article",
+      "year": 2024,
+      "priority": "P0",
+      "authors": [
+        "Tian Lu"
+      ],
+      "venue": "The Journal of Chemical Physics 161, 082503",
+      "identifier": "DOI 10.1063/5.0216272",
+      "primary_url": "https://doi.org/10.1063/5.0216272",
+      "additional_urls": [
+        "https://sobereva.com/multiwfn/"
+      ],
+      "read_sections": [
+        "与所选物理量相关的分析框架；实际操作查对应手册",
+        "本轮只选ESP或NCI的一项作交叉参照"
+      ],
+      "project_relevance": "国内波函数分析工具的较新总体介绍，可帮助建立外部分析与显示的边界。",
+      "learning_output": "生成与GBasis/项目后端相同定义的参考量，记录输入和参数差异。",
+      "access_status": "出版社显示购买入口；不能把软件免费下载等同于论文OA。官方手册另行获取。",
+      "research_reading_depth": "出版社元数据/摘要及官方说明；未精读全文。",
+      "notes": "官方网站本次访问有不稳定情况；保留官方入口，不保证自动下载成功。",
+      "checked_on": "2026-09-20",
+      "suggested_local_file": "materials/software/SW03.pdf",
+      "download_status": "not_downloaded",
+      "actual_local_file": null,
+      "sha256": null,
+      "verified_local_edition": null
+    },
+    {
+      "id": "SW04",
+      "title": "Recent developments in the PySCF program package",
+      "type": "software_article",
+      "year": 2020,
+      "priority": "P1",
+      "authors": [
+        "Qiming Sun et al."
+      ],
+      "venue": "The Journal of Chemical Physics 153, 024109",
+      "identifier": "DOI 10.1063/5.0006074",
+      "primary_url": "https://doi.org/10.1063/5.0006074",
+      "additional_urls": [
+        "https://arxiv.org/abs/2002.12531",
+        "https://pyscf.org/"
+      ],
+      "read_sections": [
+        "程序整体架构与分子HF/DFT相关部分；具体调用查本地版本与官方文档"
+      ],
+      "project_relevance": "作为生成受控计算输入、理解结果和独立数值对照的工具，不替换项目既有解析/GBasis边界。",
+      "learning_output": "固定几何、方法和基组生成可追溯小分子fixture，并区分重新SCF和对同一波函数求值。",
+      "access_status": "出版社版本访问权单独核对；作者预印本arXiv:2002.12531可合法获取。",
+      "research_reading_depth": "出版信息、摘要及预印本入口；未精读全文。",
+      "notes": "",
+      "checked_on": "2026-09-20",
+      "suggested_local_file": "materials/software/SW04.pdf",
+      "download_status": "downloaded",
+      "actual_local_file": "materials/software/Recent developments in the PySCF program package.pdf",
+      "sha256": "5fbab892e92faa934d7ce7b84e3eac55913bdb6443bd558462fc4f406192fadb",
+      "verified_local_edition": "Local title, subject DOI, and 22 pages verified."
+    },
+    {
+      "id": "SW05",
+      "title": "libwfa: Wavefunction analysis tools for excited and open-shell electronic states",
+      "type": "software_focus",
+      "year": 2022,
+      "priority": "P1",
+      "authors": [
+        "Felix Plasser",
+        "Anna I. Krylov",
+        "Andreas Dreuw"
+      ],
+      "venue": "WIREs Computational Molecular Science 12(4), e1595",
+      "identifier": "DOI 10.1002/wcms.1595",
+      "primary_url": "https://wires.onlinelibrary.wiley.com/doi/10.1002/wcms.1595",
+      "additional_urls": [],
+      "read_sections": [
+        "state/transition density matrices",
+        "NTO与电子—空穴分析；开壳层只读当前目标所需部分"
+      ],
+      "project_relevance": "支持激发态和开壳层数据语义学习；比只看HOMO→LUMO示意图更接近开发需求。",
+      "learning_output": "写出state density、difference density、transition density、NTO之间的区别。",
+      "access_status": "出版社标注Open Access；个别入口本次发生访问错误，可用DOI解析。",
+      "research_reading_depth": "期刊摘要与元数据核对；未精读全文。",
+      "notes": "正式类型Software Focus，不与纯Review混列。",
+      "checked_on": "2026-09-20",
+      "suggested_local_file": "materials/software/SW05.pdf",
+      "download_status": "downloaded",
+      "actual_local_file": "materials/software/libwfa Wavefunction analysis tools for excited andopen-shell electronic states.pdf",
+      "sha256": "77fece3ccf8c870bd90353ac1d64725902660d30c19cacd78303bac0a472c640",
+      "verified_local_edition": "Local title, subject DOI, and 15 pages verified."
+    },
+    {
+      "id": "FD01",
+      "title": "Revealing Noncovalent Interactions",
+      "type": "method_article",
+      "year": 2010,
+      "priority": "P1",
+      "authors": [
+        "Erin R. Johnson et al."
+      ],
+      "venue": "Journal of the American Chemical Society 132(18), 6498–6506",
+      "identifier": "DOI 10.1021/ja100936w",
+      "primary_url": "https://pubs.acs.org/doi/abs/10.1021/ja100936w",
+      "additional_urls": [],
+      "read_sections": [
+        "RDG定义、密度Hessian第二特征值与颜色映射",
+        "真实密度与近似密度输入的区别"
+      ],
+      "project_relevance": "NCI原始方法依据，不是综述。",
+      "learning_output": "把低RDG几何面与sign(lambda2)*rho着色场分开保存、校验。",
+      "access_status": "全文通过出版社/机构；补充资料可另行获取，不能由此推断全文OA。",
+      "research_reading_depth": "出版信息、摘要与方法定义核对；未全面精读全文。",
+      "notes": "",
+      "checked_on": "2026-09-20",
+      "suggested_local_file": "materials/methods/FD01.pdf",
+      "download_status": "downloaded",
+      "actual_local_file": "materials/methods/Revealing Noncovalent Interactions.pdf",
+      "sha256": "a309772b9cc0fdd5929e6287f024d72c76e7b3d5e89b9889a83af60fc40b7377",
+      "verified_local_edition": "Local title, first-page citation, and 9 pages verified."
+    },
+    {
+      "id": "FD02",
+      "title": "Independent gradient model based on Hirshfeld partition: A new method for visual study of interactions in chemical systems",
+      "type": "method_article",
+      "year": 2022,
+      "priority": "P1",
+      "authors": [
+        "Tian Lu",
+        "Qinxue Chen"
+      ],
+      "venue": "Journal of Computational Chemistry 43(8), 539–555",
+      "identifier": "DOI 10.1002/jcc.26812",
+      "primary_url": "https://onlinelibrary.wiley.com/doi/10.1002/jcc.26812",
+      "additional_urls": [
+        "https://www.cambridge.org/engage/chemrxiv/article-details/61aa3e9763557cde10956907"
+      ],
+      "read_sections": [
+        "IGMH与IGM的密度来源和分区差别",
+        "fragment定义与分子间/分子内作用显示"
+      ],
+      "project_relevance": "掌握NCI相关方法不是可随意替换的同义词；国内研究的原始方法文章。",
+      "learning_output": "解释一次改fragment划分为何会改变输出，并保留partition provenance。",
+      "access_status": "正式版权限按出版社；ChemRxiv作者预印本与教程附件可合法获取。",
+      "research_reading_depth": "出版信息、摘要和作者预印本/教程入口核对。",
+      "notes": "正式版与预印本版本分别记录；不把Research Article写成Review。",
+      "checked_on": "2026-09-20",
+      "suggested_local_file": "materials/methods/FD02.pdf",
+      "download_status": "downloaded",
+      "actual_local_file": "materials/methods/Independent gradient model based on Hirshfeld partition A new method for visual study of interactions in chemical systems.pdf",
+      "sha256": "efd6fff3eb910c4a1d6ede7151ac27f61631c659de0dafa659ccf05957ff67cf",
+      "verified_local_edition": "Local title, first-page citation, DOI, and 4 pages verified."
+    },
+    {
+      "id": "FD03",
+      "title": "Natural transition orbitals",
+      "type": "method_article",
+      "year": 2003,
+      "priority": "P2",
+      "authors": [
+        "Richard L. Martin"
+      ],
+      "venue": "The Journal of Chemical Physics 118(11), 4775–4777",
+      "identifier": "DOI 10.1063/1.1558471",
+      "primary_url": "https://doi.org/10.1063/1.1558471",
+      "additional_urls": [
+        "https://cir.nii.ac.jp/crid/1362262945225389568"
+      ],
+      "read_sections": [
+        "跃迁密度矩阵的紧凑轨道表示；配合SW05理解"
+      ],
+      "project_relevance": "NTO原始方法依据；在实际扩展激发态展示时再精读。",
+      "learning_output": "对正交化后跃迁矩阵作SVD，检查重构与权重定义。",
+      "access_status": "出版社/机构；未核实全文OA。",
+      "research_reading_depth": "书目信息与方法摘要核对；未精读全文。",
+      "notes": "",
+      "checked_on": "2026-09-20",
+      "suggested_local_file": "materials/methods/FD03.pdf",
+      "download_status": "downloaded",
+      "actual_local_file": "materials/methods/Natural transition orbitals.pdf",
+      "sha256": "27954460ccea5bdfac2749279c73143a839750de147b894b15852b137b184400",
+      "verified_local_edition": "Local title, first-page citation, DOI, and 4 pages verified."
+    },
+    {
+      "id": "DT01",
+      "title": "IOData — Basis set conventions",
+      "type": "documentation",
+      "year": null,
+      "priority": "P0",
+      "authors": [],
+      "venue": "IOData official documentation",
+      "identifier": "Live documentation",
+      "primary_url": "https://iodata.readthedocs.io/en/latest/basis.html",
+      "additional_urls": [],
+      "read_sections": [
+        "Gaussian basis functions",
+        "conventions / primitive_normalization",
+        "Cartesian to pure functions"
+      ],
+      "project_relevance": "规范AO排列、归一化和Cartesian/pure表示。",
+      "learning_output": "检查primitive与contraction归一化分别由谁负责。",
+      "access_status": "公开HTML；保存使用版本及日期。",
+      "research_reading_depth": "相关官方HTML正文已读。",
+      "notes": "",
+      "checked_on": "2026-09-20",
+      "suggested_local_file": "materials/docs/DT01.html",
+      "download_status": "not_downloaded",
+      "actual_local_file": null,
+      "sha256": null,
+      "verified_local_edition": null
+    },
+    {
+      "id": "DT02",
+      "title": "PySCF — pyscf.tools.cubegen source",
+      "type": "documentation",
+      "year": null,
+      "priority": "P0",
+      "authors": [],
+      "venue": "PySCF official source documentation",
+      "identifier": "Live documentation",
+      "primary_url": "https://pyscf.org/_modules/pyscf/tools/cubegen.html",
+      "additional_urls": [],
+      "read_sections": [
+        "orbital",
+        "density",
+        "mep",
+        "Cube.get_coords及写出网格坐标"
+      ],
+      "project_relevance": "从公式到数组的短路径；用于诊断量纲、采样、注释与数值来源。",
+      "learning_output": "核对生成MO的实际表达式与输出注释，写出正确物理量合同。",
+      "access_status": "公开HTML；与本地安装版本比对。",
+      "research_reading_depth": "相关源码已读。",
+      "notes": "检索时orbital写入的注释为1/Bohr^3，但数值由AO乘系数直接得到；这与归一化MO幅度量纲不一致。不要静默篡改用户源文件，应保存来源并报告冲突。",
+      "checked_on": "2026-09-20",
+      "suggested_local_file": "materials/docs/DT02.html",
+      "download_status": "not_downloaded",
+      "actual_local_file": null,
+      "sha256": null,
+      "verified_local_edition": null
+    },
+    {
+      "id": "DT03",
+      "title": "PySCF — Density functional theory",
+      "type": "documentation",
+      "year": null,
+      "priority": "P0",
+      "authors": [],
+      "venue": "PySCF official documentation",
+      "identifier": "Live documentation",
+      "primary_url": "https://pyscf.org/user/dft.html",
+      "additional_urls": [],
+      "read_sections": [
+        "DFT计算与数值积分网格相关部分"
+      ],
+      "project_relevance": "区分SCF积分网格和用于显示的规则三维网格。",
+      "learning_output": "设计两类网格分别改变的受控实验。",
+      "access_status": "公开HTML；API以本地版本为准。",
+      "research_reading_depth": "相关官方文档已读。",
+      "notes": "",
+      "checked_on": "2026-09-20",
+      "suggested_local_file": "materials/docs/DT03.html",
+      "download_status": "not_downloaded",
+      "actual_local_file": null,
+      "sha256": null,
+      "verified_local_edition": null
+    },
+    {
+      "id": "DT04",
+      "title": "GBasis — Introduction",
+      "type": "documentation",
+      "year": null,
+      "priority": "P0",
+      "authors": [],
+      "venue": "GBasis official documentation",
+      "identifier": "Live documentation",
+      "primary_url": "https://gbasis.qcdevs.org/intro.html",
+      "additional_urls": [],
+      "read_sections": [
+        "Overview与Gaussian函数求值相关入口"
+      ],
+      "project_relevance": "核对后端职责与论文引文。",
+      "learning_output": "说明GBasis与SCF solver、parser、renderer的不同职责。",
+      "access_status": "公开HTML；安装服从ChemBlender锁文件。",
+      "research_reading_depth": "官方介绍与引文核对。",
+      "notes": "",
+      "checked_on": "2026-09-20",
+      "suggested_local_file": "materials/docs/DT04.html",
+      "download_status": "not_downloaded",
+      "actual_local_file": null,
+      "sha256": null,
+      "verified_local_edition": null
+    }
+  ],
+  "copyright_notice": "未附带教材、论文全文或第三方skill副本；经合法渠道获取后填入本地路径和哈希。"
+}

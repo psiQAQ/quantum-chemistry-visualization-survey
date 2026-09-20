@@ -1,0 +1,217 @@
+{
+    "input_path": "learning\\chemblender_qc_learning\\materials\\catalog\\pages\\BK04\\BK04-p010.png",
+    "page_index": null,
+    "page_count": null,
+    "width": 1106,
+    "height": 1724,
+    "model_settings": {
+        "use_doc_preprocessor": false,
+        "use_layout_detection": true,
+        "use_chart_recognition": false,
+        "use_seal_recognition": false,
+        "use_ocr_for_image_block": false,
+        "format_block_content": false,
+        "merge_layout_blocks": true,
+        "markdown_ignore_labels": [
+            "number",
+            "footnote",
+            "header",
+            "header_image",
+            "footer",
+            "footer_image",
+            "aside_text"
+        ],
+        "return_layout_polygon_points": true
+    },
+    "parsing_res_list": [
+        {
+            "block_label": "header",
+            "block_content": "目 录",
+            "block_bbox": [
+                552,
+                103,
+                650,
+                129
+            ],
+            "block_id": 0,
+            "block_order": null,
+            "group_id": 0,
+            "block_polygon_points": [
+                [
+                    552.0,
+                    103.0
+                ],
+                [
+                    650.0,
+                    103.0
+                ],
+                [
+                    650.0,
+                    129.0
+                ],
+                [
+                    552.0,
+                    129.0
+                ]
+            ]
+        },
+        {
+            "block_label": "number",
+            "block_content": "xi",
+            "block_bbox": [
+                1037,
+                106,
+                1062,
+                129
+            ],
+            "block_id": 1,
+            "block_order": null,
+            "group_id": 1,
+            "block_polygon_points": [
+                [
+                    1037.0,
+                    106.0
+                ],
+                [
+                    1061.0,
+                    106.0
+                ],
+                [
+                    1061.0,
+                    128.0
+                ],
+                [
+                    1037.0,
+                    128.0
+                ]
+            ]
+        },
+        {
+            "block_label": "content",
+            "block_content": "第15章 密度泛函理论方法..... 467\n15.1 基态密度泛函理论..... 469\n15.1.1 历史回顾..... 469\n15.1.2 Hohenberg-Kohn 定理..... 475\n15.1.3 约束搜索方法定义的能量密度泛函..... 477\n15.1.4 Kohn-Sham 方程..... 478\n15.1.5 Janak 定理——过渡态方法..... 479\n15.1.6 一些化学概念的明确定义..... 481\n15.1.7 自旋密度泛函理论..... 485\n15.1.8 相对论性密度泛函理论..... 487\n15.2 近似密度泛函的显表达式..... 490\n15.2.1 局域密度近似 (LDA 泛函)..... 490\n15.2.2 含密度梯度校正的泛函 (GGA 类泛函)..... 494\n15.2.3 含密度梯度和动能密度的交换-相关能泛函 (meta-GGA 类泛函)..... 497\n15.2.4 绝热关联. 杂化型泛函..... 500\n15.2.5 优化有效势方法..... 502\n15.2.6 交换-相关能密度泛函应该满足的一般性条件..... 505\n15.2.7 近似能量密度泛函的质量评估..... 508\n15.2.8 目前存在的主要问题和前景展望..... 513\n15.3 密度泛函计算方法..... 515\n15.3.1 求解 Kohn-Sham (K-S) 方程的计算过程..... 515\n15.3.2 库仑势的计算..... 516\n15.3.3 矩阵元的数值计算方法..... 520\n15.3.4 能量差值的直接计算..... 522\n15.3.5 含重元素体系的密度泛函计算..... 524\n15.4 激发态与电子多重态结构的能级..... 530\n15.4.1 系综密度泛函理论与过渡态方法..... 530\n15.4.2 多重态结构能级的计算..... 535\n15.4.3 绝热关联-微扰理论方法..... 540\n15.4.4 MRCI-DFT 方法..... 543\n15.4.5 含时密度泛函理论方法..... 546\n参考文献..... 551\n第16章 有效芯势方法..... 555\n16.1 原子模型势..... 558\n16.1.1 非相对论模型势..... 558",
+            "block_bbox": [
+                148,
+                171,
+                1087,
+                1554
+            ],
+            "block_id": 2,
+            "block_order": 1,
+            "group_id": 2,
+            "block_polygon_points": [
+                [
+                    148.0,
+                    171.0
+                ],
+                [
+                    1087.0,
+                    171.0
+                ],
+                [
+                    1087.0,
+                    1554.0
+                ],
+                [
+                    148.0,
+                    1554.0
+                ]
+            ]
+        }
+    ],
+    "layout_det_res": {
+        "input_path": null,
+        "page_index": null,
+        "boxes": [
+            {
+                "cls_id": 12,
+                "label": "header",
+                "score": 0.8204424381256104,
+                "coordinate": [
+                    552,
+                    103,
+                    650,
+                    129
+                ],
+                "order": null,
+                "polygon_points": [
+                    [
+                        552.0,
+                        103.0
+                    ],
+                    [
+                        650.0,
+                        103.0
+                    ],
+                    [
+                        650.0,
+                        129.0
+                    ],
+                    [
+                        552.0,
+                        129.0
+                    ]
+                ]
+            },
+            {
+                "cls_id": 16,
+                "label": "number",
+                "score": 0.7290610074996948,
+                "coordinate": [
+                    1037,
+                    106,
+                    1062,
+                    129
+                ],
+                "order": 1,
+                "polygon_points": [
+                    [
+                        1037.0,
+                        106.0
+                    ],
+                    [
+                        1061.0,
+                        106.0
+                    ],
+                    [
+                        1061.0,
+                        128.0
+                    ],
+                    [
+                        1037.0,
+                        128.0
+                    ]
+                ]
+            },
+            {
+                "cls_id": 4,
+                "label": "content",
+                "score": 0.9677205085754395,
+                "coordinate": [
+                    148,
+                    171,
+                    1087,
+                    1554
+                ],
+                "order": 2,
+                "polygon_points": [
+                    [
+                        148.0,
+                        171.0
+                    ],
+                    [
+                        1087.0,
+                        171.0
+                    ],
+                    [
+                        1087.0,
+                        1554.0
+                    ],
+                    [
+                        148.0,
+                        1554.0
+                    ]
+                ]
+            }
+        ]
+    }
+}

@@ -1,0 +1,217 @@
+{
+    "input_path": "learning\\chemblender_qc_learning\\materials\\catalog\\pages\\BK03\\BK03-p018.png",
+    "page_index": null,
+    "page_count": null,
+    "width": 995,
+    "height": 1452,
+    "model_settings": {
+        "use_doc_preprocessor": false,
+        "use_layout_detection": true,
+        "use_chart_recognition": false,
+        "use_seal_recognition": false,
+        "use_ocr_for_image_block": false,
+        "format_block_content": false,
+        "merge_layout_blocks": true,
+        "markdown_ignore_labels": [
+            "number",
+            "footnote",
+            "header",
+            "header_image",
+            "footer",
+            "footer_image",
+            "aside_text"
+        ],
+        "return_layout_polygon_points": true
+    },
+    "parsing_res_list": [
+        {
+            "block_label": "header",
+            "block_content": "目录",
+            "block_bbox": [
+                479,
+                45,
+                558,
+                67
+            ],
+            "block_id": 0,
+            "block_order": null,
+            "group_id": 0,
+            "block_polygon_points": [
+                [
+                    479.0,
+                    45.0
+                ],
+                [
+                    557.0,
+                    45.0
+                ],
+                [
+                    557.0,
+                    66.0
+                ],
+                [
+                    479.0,
+                    66.0
+                ]
+            ]
+        },
+        {
+            "block_label": "content",
+            "block_content": "附录 单位、物理常数和换算因子..... (388)\n表1 国际单位制的基本单位..... (388)\n表2 若干重要的导出单位..... (388)\n表3 常用物理常数..... (388)\n表4 能量和其他一些物理量单位间的换算..... (389)\n表5 原子单位(au)..... (389)\n表6 用于构成十进倍数和分数单位的词头..... (389)\n索引..... (390)",
+            "block_bbox": [
+                77,
+                97,
+                959,
+                352
+            ],
+            "block_id": 1,
+            "block_order": 1,
+            "group_id": 1,
+            "block_polygon_points": [
+                [
+                    77.0,
+                    97.0
+                ],
+                [
+                    959.0,
+                    97.0
+                ],
+                [
+                    959.0,
+                    352.0
+                ],
+                [
+                    77.0,
+                    352.0
+                ]
+            ]
+        },
+        {
+            "block_label": "number",
+            "block_content": "VIII",
+            "block_bbox": [
+                86,
+                1388,
+                106,
+                1410
+            ],
+            "block_id": 2,
+            "block_order": null,
+            "group_id": 2,
+            "block_polygon_points": [
+                [
+                    86.0,
+                    1388.0
+                ],
+                [
+                    105.0,
+                    1388.0
+                ],
+                [
+                    105.0,
+                    1409.0
+                ],
+                [
+                    86.0,
+                    1409.0
+                ]
+            ]
+        }
+    ],
+    "layout_det_res": {
+        "input_path": null,
+        "page_index": null,
+        "boxes": [
+            {
+                "cls_id": 12,
+                "label": "header",
+                "score": 0.82695472240448,
+                "coordinate": [
+                    479,
+                    45,
+                    558,
+                    67
+                ],
+                "order": null,
+                "polygon_points": [
+                    [
+                        479.0,
+                        45.0
+                    ],
+                    [
+                        557.0,
+                        45.0
+                    ],
+                    [
+                        557.0,
+                        66.0
+                    ],
+                    [
+                        479.0,
+                        66.0
+                    ]
+                ]
+            },
+            {
+                "cls_id": 4,
+                "label": "content",
+                "score": 0.9770702123641968,
+                "coordinate": [
+                    77,
+                    97,
+                    959,
+                    352
+                ],
+                "order": 1,
+                "polygon_points": [
+                    [
+                        77.0,
+                        97.0
+                    ],
+                    [
+                        959.0,
+                        97.0
+                    ],
+                    [
+                        959.0,
+                        352.0
+                    ],
+                    [
+                        77.0,
+                        352.0
+                    ]
+                ]
+            },
+            {
+                "cls_id": 16,
+                "label": "number",
+                "score": 0.759373128414154,
+                "coordinate": [
+                    86,
+                    1388,
+                    106,
+                    1410
+                ],
+                "order": 2,
+                "polygon_points": [
+                    [
+                        86.0,
+                        1388.0
+                    ],
+                    [
+                        105.0,
+                        1388.0
+                    ],
+                    [
+                        105.0,
+                        1409.0
+                    ],
+                    [
+                        86.0,
+                        1409.0
+                    ]
+                ]
+            }
+        ]
+    }
+}

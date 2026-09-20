@@ -1,0 +1,95 @@
+{
+    "input_path": "learning\\chemblender_qc_learning\\materials\\catalog\\pages\\BK04\\BK04-p013.png",
+    "page_index": null,
+    "page_count": null,
+    "width": 1105,
+    "height": 1724,
+    "model_settings": {
+        "use_doc_preprocessor": false,
+        "use_layout_detection": true,
+        "use_chart_recognition": false,
+        "use_seal_recognition": false,
+        "use_ocr_for_image_block": false,
+        "format_block_content": false,
+        "merge_layout_blocks": true,
+        "markdown_ignore_labels": [
+            "number",
+            "footnote",
+            "header",
+            "header_image",
+            "footer",
+            "footer_image",
+            "aside_text"
+        ],
+        "return_layout_polygon_points": true
+    },
+    "parsing_res_list": [
+        {
+            "block_label": "footer_image",
+            "block_content": "",
+            "block_bbox": [
+                725,
+                1187,
+                1104,
+                1563
+            ],
+            "block_id": 0,
+            "block_order": null,
+            "group_id": 0,
+            "block_polygon_points": [
+                [
+                    725.0,
+                    1187.0
+                ],
+                [
+                    1104.0,
+                    1187.0
+                ],
+                [
+                    1104.0,
+                    1563.0
+                ],
+                [
+                    725.0,
+                    1563.0
+                ]
+            ]
+        }
+    ],
+    "layout_det_res": {
+        "input_path": null,
+        "page_index": null,
+        "boxes": [
+            {
+                "cls_id": 9,
+                "label": "footer_image",
+                "score": 0.33589375019073486,
+                "coordinate": [
+                    725,
+                    1187,
+                    1104,
+                    1563
+                ],
+                "order": null,
+                "polygon_points": [
+                    [
+                        725.0,
+                        1187.0
+                    ],
+                    [
+                        1104.0,
+                        1187.0
+                    ],
+                    [
+                        1104.0,
+                        1563.0
+                    ],
+                    [
+                        725.0,
+                        1563.0
+                    ]
+                ]
+            }
+        ]
+    }
+}

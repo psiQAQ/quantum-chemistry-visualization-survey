@@ -1,0 +1,224 @@
+{
+  "schema_version": "1.0",
+  "created_on": "2026-09-20",
+  "source_pdfs_modified": false,
+  "ocr_policy": {
+    "text_layer": "fitz extraction or embedded PDF outline when reliable",
+    "image_only_or_unreadable": "render candidate directory pages only, then examforge.cli ocr",
+    "scientific_verification": "page image and source data remain authoritative"
+  },
+  "resources": [
+    {
+      "id": "BK01",
+      "source": "materials/books/Introduction to Computational Chemistry.pdf",
+      "sha256": "44b35ded30aef68f89a5a7333a9acb3c2b2ca772c41c9fef019824b161faa5a4",
+      "page_count": 661,
+      "directory": {
+        "method": "fitz_pdf_outline",
+        "pdf_pages": [6],
+        "chapter_anchors": {
+          "3": 111,
+          "5": 211,
+          "6": 256,
+          "10": 340,
+          "11": 364,
+          "12": 403
+        }
+      }
+    },
+    {
+      "id": "BK02",
+      "source": "materials/books/Modern quantum chemistry  introduction to advanced electronic structure theory 1.pdf",
+      "sha256": "3f1fe1ec6c8b2d8bb4c30481edf461faf55489ef05a106efb870347ba28e7d2c",
+      "page_count": 481,
+      "directory": {
+        "method": "fitz_text_layer",
+        "pdf_pages": [4, 6, 8],
+        "printed_pages": ["iii", "v", "vii"],
+        "note": "TABLE OF CONTENTS spans these pages; no embedded PDF outline."
+      }
+    },
+    {
+      "id": "BK03",
+      "source": "materials/books/结构化学基础(第5版) .pdf",
+      "sha256": "fd9b9dde7f16c88a34e03afa7be05e014fe14e90f1305410d57b3cf7a18f83b2",
+      "page_count": 416,
+      "directory": {
+        "method": "paddleocr_vl_candidate_pages",
+        "pdf_pages": [11, 12, 13, 14, 15, 16, 17, 18],
+        "printed_pages": ["I", "II", "III", "IV", "V", "VI", "VII"],
+        "raw_json_dir": "materials/catalog/raw/BK03",
+        "markdown_pages": "materials/catalog/raw/BK03/BK03-p011_0.md through BK03-p018_0.md"
+      }
+    },
+    {
+      "id": "BK04",
+      "source": "materials/books/量子化学-基本原理和从头计算法-中册-1.pdf",
+      "sha256": "0167c7ac46d0043fb92a5996c36b4ad37cf32cdf006374f3c7d43b3f07adbe72",
+      "page_count": 521,
+      "directory": {
+        "method": "paddleocr_vl_candidate_pages",
+        "rendered_candidate_pdf_pages": [1, 2, 3, 4, 5, 6, 7, 8, 9, 10, 11, 12, 13, 14, 15, 16, 17, 18, 19, 20, 21, 22, 23, 24, 25, 26, 27, 28, 29, 30],
+        "directory_pdf_pages": [4, 6, 7, 8, 10],
+        "chapter_anchors": {
+          "9": 1,
+          "10": 47,
+          "11": 83,
+          "12": 151,
+          "13": 213,
+          "14": 339,
+          "15": 467,
+          "16": 555
+        },
+        "raw_json_dir": "materials/catalog/raw/BK04",
+        "markdown_pages": "materials/catalog/raw/BK04/BK04-p004_0.md, p006_0.md, p007_0.md, p008_0.md, p010_0.md"
+      }
+    },
+    {
+      "id": "BK05",
+      "source": "materials/books/Molecular Electronic-Structure Theory.pdf",
+      "sha256": "fe3626c39991c1998dec6ca482406ae4728cade5ae08852ed37534e6327ead98",
+      "page_count": 940,
+      "directory": {
+        "method": "fitz_pdf_outline",
+        "pdf_pages": [7],
+        "chapter_anchors": {
+          "1": 33,
+          "2": 66,
+          "3": 112,
+          "4": 139,
+          "5": 174,
+          "6": 233,
+          "8": 319,
+          "10": 465
+        }
+      }
+    },
+    {
+      "id": "RV01",
+      "source": "materials/reviews/Visualization Analysis of Covalent and Noncovalent Interactions in Real Space.pdf",
+      "sha256": "c309836bcf87c0b3b93c9bc9925b828d38f861c5b36e5f18d1a558406a077324",
+      "page_count": 52,
+      "directory": {
+        "method": "fitz_pdf_outline",
+        "chapter_anchors": {
+          "1": 3,
+          "2": 4,
+          "3": 36,
+          "4": 46,
+          "5": 47
+        }
+      }
+    },
+    {
+      "id": "RV02",
+      "source": "materials/reviews/Best‐Practice DFT Protocols for Basic Molecular Computational Chemistry.pdf",
+      "sha256": "d10fa90f60b1698c3d3b772146c4e993b1ab7ce9da6621a16aa9d12362021de3",
+      "page_count": 27,
+      "directory": {
+        "method": "fitz_text_layer_no_embedded_toc",
+        "title_page": 1
+      }
+    },
+    {
+      "id": "RV03",
+      "source": "materials/reviews/DFT exchange sharing perspectives on the workhorse of quantum chemistry and materials science.pdf",
+      "sha256": "c4bcd187cc4b60194dec848520676ad747ba531a6fea324757d71edce93e2233",
+      "page_count": 83,
+      "directory": {
+        "method": "fitz_text_layer_no_embedded_toc",
+        "title_page": 1
+      }
+    },
+    {
+      "id": "RV04",
+      "source": "materials/reviews/Angew Chem Int Ed - 2026 - Gierschner - Color‐Pure Organic Luminophores  Characteristics  Definitions  Physical Basis and.pdf",
+      "sha256": "1e2ca78f33c5ab0b3d161738c904b4fe9c3c669987677c92df1dbdd94e0d401e",
+      "page_count": 28,
+      "directory": {
+        "method": "fitz_pdf_outline",
+        "title_page": 1
+      }
+    },
+    {
+      "id": "RV05",
+      "source": "materials/reviews/WIREs Comput Mol Sci - 2025 - Gelin - Computation of Time‐Resolved Nonlinear Electronic Spectra From Classical Trajectories.pdf",
+      "sha256": "3daedb0cfa8d28b4c80edbc7ea163410e0ebfcadd05fda30f745d71583edcdf4",
+      "page_count": 40,
+      "directory": {
+        "method": "fitz_pdf_outline",
+        "title_page": 1
+      }
+    },
+    {
+      "id": "SW01",
+      "source": "materials/software/GBasis A Python library for evaluating functions, functionals, and integrals expressed with Gaussian basis functions.pdf",
+      "sha256": "477776012ee3b216b1e2f0920f1318f5fc950a800ac59f00488896d8700cdf34",
+      "page_count": 35,
+      "directory": {
+        "method": "fitz_pdf_outline",
+        "title_page": 1
+      }
+    },
+    {
+      "id": "SW02",
+      "source": "materials/software/IOData A python library for reading, writing, and converting computational chemistry file formats and generating input files.pdf",
+      "sha256": "054f0b358cfd443c3eac66e976d622d2a650208e6c31eb767954e1e1ff85bd8b",
+      "page_count": 7,
+      "directory": {
+        "method": "fitz_pdf_outline",
+        "title_page": 1
+      }
+    },
+    {
+      "id": "SW04",
+      "source": "materials/software/Recent developments in the PySCF program package.pdf",
+      "sha256": "5fbab892e92faa934d7ce7b84e3eac55913bdb6443bd558462fc4f406192fadb",
+      "page_count": 22,
+      "directory": {
+        "method": "fitz_text_layer_no_embedded_toc",
+        "title_page": 1
+      }
+    },
+    {
+      "id": "SW05",
+      "source": "materials/software/libwfa Wavefunction analysis tools for excited andopen-shell electronic states.pdf",
+      "sha256": "77fece3ccf8c870bd90353ac1d64725902660d30c19cacd78303bac0a472c640",
+      "page_count": 15,
+      "directory": {
+        "method": "fitz_pdf_outline",
+        "title_page": 1
+      }
+    },
+    {
+      "id": "FD01",
+      "source": "materials/methods/Revealing Noncovalent Interactions.pdf",
+      "sha256": "a309772b9cc0fdd5929e6287f024d72c76e7b3d5e89b9889a83af60fc40b7377",
+      "page_count": 9,
+      "directory": {
+        "method": "fitz_text_layer_no_embedded_toc",
+        "title_page": 1
+      }
+    },
+    {
+      "id": "FD02",
+      "source": "materials/methods/Independent gradient model based on Hirshfeld partition A new method for visual study of interactions in chemical systems.pdf",
+      "sha256": "efd6fff3eb910c4a1d6ede7151ac27f61631c659de0dafa659ccf05957ff67cf",
+      "page_count": 30,
+      "directory": {
+        "method": "fitz_text_layer_no_embedded_toc",
+        "title_page": 1
+      }
+    },
+    {
+      "id": "FD03",
+      "source": "materials/methods/Natural transition orbitals.pdf",
+      "sha256": "27954460ccea5bdfac2749279c73143a839750de147b894b15852b137b184400",
+      "page_count": 4,
+      "directory": {
+        "method": "fitz_text_layer",
+        "title_page": 1
+      }
+    }
+  ]
+}

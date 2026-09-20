@@ -1,0 +1,11 @@
+{
+  "version": 1,
+  "skills": {
+    "personal-tutor": {
+      "source": "psiQAQ/personal-tutor",
+      "sourceType": "github",
+      "skillPath": ".agents/skills/personal-tutor/SKILL.md",
+      "computedHash": "55d66c068748fb17b9374807000bdf12cccc91d5acf2e7f955117b2135381651"
+    }
+  }
+}

@@ -1,0 +1,156 @@
+{
+    "input_path": "learning\\chemblender_qc_learning\\materials\\catalog\\pages\\BK03\\BK03-p011.png",
+    "page_index": null,
+    "page_count": null,
+    "width": 995,
+    "height": 1452,
+    "model_settings": {
+        "use_doc_preprocessor": false,
+        "use_layout_detection": true,
+        "use_chart_recognition": false,
+        "use_seal_recognition": false,
+        "use_ocr_for_image_block": false,
+        "format_block_content": false,
+        "merge_layout_blocks": true,
+        "markdown_ignore_labels": [
+            "number",
+            "footnote",
+            "header",
+            "header_image",
+            "footer",
+            "footer_image",
+            "aside_text"
+        ],
+        "return_layout_polygon_points": true
+    },
+    "parsing_res_list": [
+        {
+            "block_label": "paragraph_title",
+            "block_content": "目录",
+            "block_bbox": [
+                417,
+                152,
+                573,
+                197
+            ],
+            "block_id": 0,
+            "block_order": 1,
+            "group_id": 0,
+            "block_polygon_points": [
+                [
+                    417.0,
+                    152.0
+                ],
+                [
+                    573.0,
+                    152.0
+                ],
+                [
+                    573.0,
+                    197.0
+                ],
+                [
+                    417.0,
+                    197.0
+                ]
+            ]
+        },
+        {
+            "block_label": "content",
+            "block_content": "第1章 量子力学基础知识..... (1)\n1.1 微观粒子的运动特征..... (1)\n1.1.1 黑体辐射和能量量子化..... (1)\n1.1.2 光电效应和光子学说..... (2)\n1.1.3 实物微粒的波粒二象性..... (4)\n1.1.4 不确定度关系..... (6)\n1.2 量子力学基本假设..... (8)\n1.2.1 波函数和微观粒子的状态..... (8)\n1.2.2 物理量和算符..... (10)\n1.2.3 本征态、本征值和 Schrödinger 方程..... (11)\n1.2.4 态叠加原理..... (13)\n1.2.5 Pauli(泡利)原理..... (14)\n1.3 箱中粒子的 Schrödinger 方程及其解..... (15)\n1.3.1 箱中粒子..... (15)\n1.3.2 隧道效应和扫描隧道显微镜..... (20)\n习题..... (21)\n参考文献..... (23)\n第2章 原子的结构和性质..... (24)\n2.1 单电子原子的 Schrödinger 方程及其解..... (26)\n2.1.1 单电子原子的 Schrödinger 方程..... (26)\n2.1.2 变数分离法..... (27)\n2.1.3  $ \\Phi $ 方程的解..... (28)\n2.1.4 单电子原子的波函数..... (30)\n2.2 量子数的物理意义..... (31)\n2.3 波函数和电子云的图形..... (34)\n2.3.1  $ \\psi-r $ 图和  $ \\psi^{2}-r $ 图..... (34)\n2.3.2 径向分布图..... (35)\n2.3.3 原子轨道等值线图..... (37)\n2.3.4 f 轨道轮廓图..... (40)\n2.4 多电子原子的结构..... (41)\n2.4.1 多电子原子的 Schrödinger 方程及其近似解..... (41)\n2.4.2 单电子原子轨道能和电子结合能..... (43)\n2.4.3 基态原子的电子排布..... (47)",
+            "block_bbox": [
+                44,
+                253,
+                939,
+                1393
+            ],
+            "block_id": 1,
+            "block_order": 2,
+            "group_id": 1,
+            "block_polygon_points": [
+                [
+                    44.0,
+                    253.0
+                ],
+                [
+                    939.0,
+                    253.0
+                ],
+                [
+                    939.0,
+                    1393.0
+                ],
+                [
+                    44.0,
+                    1393.0
+                ]
+            ]
+        }
+    ],
+    "layout_det_res": {
+        "input_path": null,
+        "page_index": null,
+        "boxes": [
+            {
+                "cls_id": 17,
+                "label": "paragraph_title",
+                "score": 0.8689126372337341,
+                "coordinate": [
+                    417,
+                    152,
+                    573,
+                    197
+                ],
+                "order": 1,
+                "polygon_points": [
+                    [
+                        417.0,
+                        152.0
+                    ],
+                    [
+                        573.0,
+                        152.0
+                    ],
+                    [
+                        573.0,
+                        197.0
+                    ],
+                    [
+                        417.0,
+                        197.0
+                    ]
+                ]
+            },
+            {
+                "cls_id": 4,
+                "label": "content",
+                "score": 0.9757222533226013,
+                "coordinate": [
+                    44,
+                    253,
+                    939,
+                    1393
+                ],
+                "order": 2,
+                "polygon_points": [
+                    [
+                        44.0,
+                        253.0
+                    ],
+                    [
+                        939.0,
+                        253.0
+                    ],
+                    [
+                        939.0,
+                        1393.0
+                    ],
+                    [
+                        44.0,
+                        1393.0
+                    ]
+                ]
+            }
+        ]
+    }
+}

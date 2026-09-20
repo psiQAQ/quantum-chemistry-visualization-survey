@@ -1,0 +1,247 @@
+{
+    "input_path": "learning\\chemblender_qc_learning\\materials\\catalog\\pages\\BK03\\BK03-p012.png",
+    "page_index": null,
+    "page_count": null,
+    "width": 995,
+    "height": 1452,
+    "model_settings": {
+        "use_doc_preprocessor": false,
+        "use_layout_detection": true,
+        "use_chart_recognition": false,
+        "use_seal_recognition": false,
+        "use_ocr_for_image_block": false,
+        "format_block_content": false,
+        "merge_layout_blocks": true,
+        "markdown_ignore_labels": [
+            "number",
+            "footnote",
+            "header",
+            "header_image",
+            "footer",
+            "footer_image",
+            "aside_text"
+        ],
+        "return_layout_polygon_points": true
+    },
+    "parsing_res_list": [
+        {
+            "block_label": "header",
+            "block_content": "目录",
+            "block_bbox": [
+                468,
+                37,
+                549,
+                60
+            ],
+            "block_id": 0,
+            "block_order": null,
+            "group_id": 0,
+            "block_polygon_points": [
+                [
+                    468.0,
+                    37.0
+                ],
+                [
+                    548.0,
+                    37.0
+                ],
+                [
+                    548.0,
+                    59.0
+                ],
+                [
+                    468.0,
+                    59.0
+                ]
+            ]
+        },
+        {
+            "block_label": "content",
+            "block_content": "2.5 元素周期表与元素周期性质..... (48)\n2.5.1 元素周期表..... (48)\n2.5.2 原子结构参数..... (51)\n2.5.3 原子的电离能..... (51)\n2.5.4 电子亲和能..... (53)\n2.5.5 电负性..... (54)\n2.5.6 相对论效应对元素周期性质的影响..... (55)\n2.6 原子光谱..... (58)\n2.6.1 原子光谱和光谱项..... (58)\n2.6.2 电子的状态和原子的能态..... (59)\n2.6.3 单电子原子的光谱项和原子光谱..... (60)\n2.6.4 多电子原子的光谱项..... (63)\n2.6.5 原子光谱的应用..... (67)\n习题..... (69)\n参考文献..... (71)\n第3章 共价键和双原子分子的结构化学..... (73)\n3.1 化学键概述..... (73)\n3.1.1 化学键的定义和类型..... (73)\n3.1.2 键型的多样性..... (74)\n3.2  $ H_{2}^{+} $ 的结构和共价键的本质..... (77)\n3.2.1  $ H_{2}^{+} $ 的 Schrödinger 方程..... (77)\n3.2.2 变分法解 Schrödinger 方程..... (78)\n3.2.3 积分  $ H_{as}, H_{ab}, S_{ab} $ 的意义和  $ H_{2}^{+} $ 的结构..... (80)\n3.2.4 共价键的本质..... (82)\n3.3 分子轨道理论和双原子分子的结构..... (83)\n3.3.1 简单分子轨道理论..... (83)\n3.3.2 分子轨道的分类和分布特点..... (86)\n3.3.3 同核双原子分子的结构..... (88)\n3.3.4 异核双原子分子的结构..... (92)\n3.3.5 双原子分子的光谱项..... (93)\n3.4  $ H_{2} $ 分子的结构和价键理论..... (94)\n3.4.1 价键法解  $ H_{2} $ 的结构..... (94)\n3.4.2 价键理论..... (97)\n3.4.3 价键理论和分子轨道理论的比较..... (98)\n3.5 分子光谱..... (100)\n3.5.1 分子光谱简介..... (100)\n3.5.2 双原子分子的转动光谱..... (102)\n3.5.3 双原子分子的振动光谱..... (104)\n3.5.4 Raman 光谱..... (110)",
+            "block_bbox": [
+                66,
+                79,
+                954,
+                1381
+            ],
+            "block_id": 1,
+            "block_order": 1,
+            "group_id": 1,
+            "block_polygon_points": [
+                [
+                    66.0,
+                    79.0
+                ],
+                [
+                    954.0,
+                    79.0
+                ],
+                [
+                    954.0,
+                    1381.0
+                ],
+                [
+                    66.0,
+                    1381.0
+                ]
+            ]
+        },
+        {
+            "block_label": "number",
+            "block_content": "Ⅱ",
+            "block_bbox": [
+                82,
+                1384,
+                97,
+                1406
+            ],
+            "block_id": 2,
+            "block_order": null,
+            "group_id": 2,
+            "block_polygon_points": [
+                [
+                    82.0,
+                    1384.0
+                ],
+                [
+                    96.0,
+                    1384.0
+                ],
+                [
+                    96.0,
+                    1405.0
+                ],
+                [
+                    82.0,
+                    1405.0
+                ]
+            ]
+        }
+    ],
+    "layout_det_res": {
+        "input_path": null,
+        "page_index": null,
+        "boxes": [
+            {
+                "cls_id": 12,
+                "label": "header",
+                "score": 0.809386670589447,
+                "coordinate": [
+                    468,
+                    37,
+                    549,
+                    60
+                ],
+                "order": null,
+                "polygon_points": [
+                    [
+                        468.0,
+                        37.0
+                    ],
+                    [
+                        548.0,
+                        37.0
+                    ],
+                    [
+                        548.0,
+                        59.0
+                    ],
+                    [
+                        468.0,
+                        59.0
+                    ]
+                ]
+            },
+            {
+                "cls_id": 4,
+                "label": "content",
+                "score": 0.9755879044532776,
+                "coordinate": [
+                    66,
+                    79,
+                    954,
+                    1381
+                ],
+                "order": 1,
+                "polygon_points": [
+                    [
+                        66.0,
+                        79.0
+                    ],
+                    [
+                        954.0,
+                        79.0
+                    ],
+                    [
+                        954.0,
+                        1381.0
+                    ],
+                    [
+                        66.0,
+                        1381.0
+                    ]
+                ]
+            },
+            {
+                "cls_id": 15,
+                "label": "inline_formula",
+                "score": 0.3556798994541168,
+                "coordinate": [
+                    220,
+                    823,
+                    320,
+                    845
+                ],
+                "order": 2,
+                "polygon_points": [
+                    [
+                        220.0,
+                        823.0
+                    ],
+                    [
+                        220.0,
+                        844.0
+                    ],
+                    [
+                        319.0,
+                        844.0
+                    ],
+                    [
+                        319.0,
+                        823.0
+                    ]
+                ]
+            },
+            {
+                "cls_id": 16,
+                "label": "number",
+                "score": 0.5857700705528259,
+                "coordinate": [
+                    82,
+                    1384,
+                    97,
+                    1406
+                ],
+                "order": 3,
+                "polygon_points": [
+                    [
+                        82.0,
+                        1384.0
+                    ],
+                    [
+                        96.0,
+                        1384.0
+                    ],
+                    [
+                        96.0,
+                        1405.0
+                    ],
+                    [
+                        82.0,
+                        1405.0
+                    ]
+                ]
+            }
+        ]
+    }
+}

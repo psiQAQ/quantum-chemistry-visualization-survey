@@ -1,0 +1,456 @@
+{
+    "input_path": "learning\\chemblender_qc_learning\\materials\\catalog\\pages\\BK04\\BK04-p004.png",
+    "page_index": null,
+    "page_count": null,
+    "width": 1106,
+    "height": 1724,
+    "model_settings": {
+        "use_doc_preprocessor": false,
+        "use_layout_detection": true,
+        "use_chart_recognition": false,
+        "use_seal_recognition": false,
+        "use_ocr_for_image_block": false,
+        "format_block_content": false,
+        "merge_layout_blocks": true,
+        "markdown_ignore_labels": [
+            "number",
+            "footnote",
+            "header",
+            "header_image",
+            "footer",
+            "footer_image",
+            "aside_text"
+        ],
+        "return_layout_polygon_points": true
+    },
+    "parsing_res_list": [
+        {
+            "block_label": "paragraph_title",
+            "block_content": "目录",
+            "block_bbox": [
+                499,
+                289,
+                669,
+                341
+            ],
+            "block_id": 0,
+            "block_order": 1,
+            "group_id": 0,
+            "block_polygon_points": [
+                [
+                    499.0,
+                    289.0
+                ],
+                [
+                    669.0,
+                    289.0
+                ],
+                [
+                    669.0,
+                    341.0
+                ],
+                [
+                    499.0,
+                    341.0
+                ]
+            ]
+        },
+        {
+            "block_label": "content",
+            "block_content": "第二版序\n第一版序\n第9章 量子化学积分（一） Slater 函数..... 1\n9.1 引言..... 3\n9.2 正交曲线坐标系..... 4\n9.2.1 矢量微分算符..... 4\n9.2.2 Laplace 算符  $ \\nabla^{2} $ 在球坐标系的表达式..... 5\n9.2.3 广义坐标系..... 9\n9.2.4 Laplace 算符在正交广义坐标系的表达式..... 12\n9.2.5 椭圆坐标系..... 13\n9.2.6 圆柱坐标系中的  $ \\nabla^{2} $..... 16\n9.3  $ \\frac{1}{r_{12}} $ 的展开式..... 16\n9.3.1  $ \\frac{1}{r_{12}} $ 在球坐标系的展开式..... 16\n9.3.2  $ \\frac{1}{r_{12}} $ 在椭圆坐标系中的展开式 (Neumann 展开)..... 21\n9.4 某些有用的定积分..... 22\n9.4.1  $ A_{n} $ 和  $ B_{n} $ 积分..... 22\n9.4.2  $ C_{n} $、 $ D_{n} $、 $ F_{n} $ 和  $ G_{n} $ 积分..... 23\n9.4.3  $ S_{\\alpha}^{\\beta}(p,q,n) $ 函数..... 24\n9.5 单中心积分..... 25\n9.5.1 动能积分..... 25\n9.5.2 电子-核吸引能积分..... 28\n9.5.3 单中心电子-电子相互作用能积分..... 28\n9.6 双中心积分..... 36\n9.6.1 重叠积分..... 36\n9.6.2 动能积分..... 40\n9.6.3 电子-核吸引能积分..... 41\n9.6.4 电子-电子相互作用能积分..... 41\n参考文献..... 43\n习题..... 43\n第10章 量子化学积分（二） Gauss 函数..... 47\n10.1 Gauss 函数..... 49",
+            "block_bbox": [
+                113,
+                389,
+                1061,
+                1560
+            ],
+            "block_id": 1,
+            "block_order": 2,
+            "group_id": 1,
+            "block_polygon_points": [
+                [
+                    113.0,
+                    389.0
+                ],
+                [
+                    1061.0,
+                    389.0
+                ],
+                [
+                    1061.0,
+                    1560.0
+                ],
+                [
+                    113.0,
+                    1560.0
+                ]
+            ]
+        }
+    ],
+    "layout_det_res": {
+        "input_path": null,
+        "page_index": null,
+        "boxes": [
+            {
+                "cls_id": 17,
+                "label": "paragraph_title",
+                "score": 0.8555325865745544,
+                "coordinate": [
+                    499,
+                    289,
+                    669,
+                    341
+                ],
+                "order": 1,
+                "polygon_points": [
+                    [
+                        499.0,
+                        289.0
+                    ],
+                    [
+                        669.0,
+                        289.0
+                    ],
+                    [
+                        669.0,
+                        341.0
+                    ],
+                    [
+                        499.0,
+                        341.0
+                    ]
+                ]
+            },
+            {
+                "cls_id": 4,
+                "label": "content",
+                "score": 0.9747995138168335,
+                "coordinate": [
+                    113,
+                    389,
+                    1061,
+                    1560
+                ],
+                "order": 2,
+                "polygon_points": [
+                    [
+                        113.0,
+                        389.0
+                    ],
+                    [
+                        1061.0,
+                        389.0
+                    ],
+                    [
+                        1061.0,
+                        1560.0
+                    ],
+                    [
+                        113.0,
+                        1560.0
+                    ]
+                ]
+            },
+            {
+                "cls_id": 15,
+                "label": "inline_formula",
+                "score": 0.7170058488845825,
+                "coordinate": [
+                    425,
+                    617,
+                    460,
+                    643
+                ],
+                "order": 3,
+                "polygon_points": [
+                    [
+                        425.0,
+                        617.0
+                    ],
+                    [
+                        425.0,
+                        642.0
+                    ],
+                    [
+                        459.0,
+                        642.0
+                    ],
+                    [
+                        459.0,
+                        617.0
+                    ]
+                ]
+            },
+            {
+                "cls_id": 15,
+                "label": "inline_formula",
+                "score": 0.7416057586669922,
+                "coordinate": [
+                    219,
+                    805,
+                    256,
+                    843
+                ],
+                "order": 4,
+                "polygon_points": [
+                    [
+                        219.0,
+                        805.0
+                    ],
+                    [
+                        255.0,
+                        805.0
+                    ],
+                    [
+                        255.0,
+                        842.0
+                    ],
+                    [
+                        219.0,
+                        842.0
+                    ]
+                ]
+            },
+            {
+                "cls_id": 15,
+                "label": "inline_formula",
+                "score": 0.6834355592727661,
+                "coordinate": [
+                    455,
+                    768,
+                    490,
+                    796
+                ],
+                "order": 5,
+                "polygon_points": [
+                    [
+                        455.0,
+                        768.0
+                    ],
+                    [
+                        489.0,
+                        768.0
+                    ],
+                    [
+                        489.0,
+                        795.0
+                    ],
+                    [
+                        455.0,
+                        795.0
+                    ]
+                ]
+            },
+            {
+                "cls_id": 15,
+                "label": "inline_formula",
+                "score": 0.7257760167121887,
+                "coordinate": [
+                    285,
+                    845,
+                    319,
+                    881
+                ],
+                "order": 6,
+                "polygon_points": [
+                    [
+                        285.0,
+                        845.0
+                    ],
+                    [
+                        318.0,
+                        845.0
+                    ],
+                    [
+                        318.0,
+                        880.0
+                    ],
+                    [
+                        285.0,
+                        880.0
+                    ]
+                ]
+            },
+            {
+                "cls_id": 15,
+                "label": "inline_formula",
+                "score": 0.6784505248069763,
+                "coordinate": [
+                    286,
+                    885,
+                    319,
+                    918
+                ],
+                "order": 7,
+                "polygon_points": [
+                    [
+                        286.0,
+                        885.0
+                    ],
+                    [
+                        318.0,
+                        885.0
+                    ],
+                    [
+                        318.0,
+                        917.0
+                    ],
+                    [
+                        286.0,
+                        917.0
+                    ]
+                ]
+            },
+            {
+                "cls_id": 15,
+                "label": "inline_formula",
+                "score": 0.6958781480789185,
+                "coordinate": [
+                    285,
+                    963,
+                    317,
+                    987
+                ],
+                "order": 8,
+                "polygon_points": [
+                    [
+                        285.0,
+                        963.0
+                    ],
+                    [
+                        316.0,
+                        963.0
+                    ],
+                    [
+                        316.0,
+                        986.0
+                    ],
+                    [
+                        285.0,
+                        986.0
+                    ]
+                ]
+            },
+            {
+                "cls_id": 15,
+                "label": "inline_formula",
+                "score": 0.7074072957038879,
+                "coordinate": [
+                    356,
+                    962,
+                    385,
+                    987
+                ],
+                "order": 9,
+                "polygon_points": [
+                    [
+                        356.0,
+                        962.0
+                    ],
+                    [
+                        384.0,
+                        962.0
+                    ],
+                    [
+                        384.0,
+                        986.0
+                    ],
+                    [
+                        356.0,
+                        986.0
+                    ]
+                ]
+            },
+            {
+                "cls_id": 15,
+                "label": "inline_formula",
+                "score": 0.5235539078712463,
+                "coordinate": [
+                    284,
+                    999,
+                    412,
+                    1025
+                ],
+                "order": 10,
+                "polygon_points": [
+                    [
+                        284.0,
+                        999.0
+                    ],
+                    [
+                        412.0,
+                        999.0
+                    ],
+                    [
+                        412.0,
+                        1025.0
+                    ],
+                    [
+                        284.0,
+                        1025.0
+                    ]
+                ]
+            },
+            {
+                "cls_id": 15,
+                "label": "inline_formula",
+                "score": 0.6664634943008423,
+                "coordinate": [
+                    451,
+                    1000,
+                    485,
+                    1025
+                ],
+                "order": 11,
+                "polygon_points": [
+                    [
+                        451.0,
+                        1000.0
+                    ],
+                    [
+                        484.0,
+                        1000.0
+                    ],
+                    [
+                        484.0,
+                        1024.0
+                    ],
+                    [
+                        451.0,
+                        1024.0
+                    ]
+                ]
+            },
+            {
+                "cls_id": 15,
+                "label": "inline_formula",
+                "score": 0.7395354509353638,
+                "coordinate": [
+                    284,
+                    1034,
+                    389,
+                    1065
+                ],
+                "order": 12,
+                "polygon_points": [
+                    [
+                        284.0,
+                        1034.0
+                    ],
+                    [
+                        389.0,
+                        1034.0
+                    ],
+                    [
+                        389.0,
+                        1065.0
+                    ],
+                    [
+                        284.0,
+                        1065.0
+                    ]
+                ]
+            }
+        ]
+    }
+}

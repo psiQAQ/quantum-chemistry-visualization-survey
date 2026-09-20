@@ -1,1 +1,21 @@
 tmp/
+
+# Local learning source documents and rendered/extracted images.
+# Keep Markdown/JSON indexes, OCR text, and source hashes tracked; keep bulky
+# source files and page images local for on-demand reading and OCR.
+learning/**/*.pdf
+learning/**/*.djvu
+learning/**/*.epub
+learning/**/*.mobi
+learning/**/*.doc
+learning/**/*.docx
+learning/**/*.zip
+learning/**/*.png
+learning/**/*.jpg
+learning/**/*.jpeg
+learning/**/*.webp
+learning/**/*.tif
+learning/**/*.tiff
+learning/**/*.gif
+learning/**/*.bmp
+learning/**/*.svg

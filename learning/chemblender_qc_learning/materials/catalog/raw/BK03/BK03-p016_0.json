@@ -1,0 +1,217 @@
+{
+    "input_path": "learning\\chemblender_qc_learning\\materials\\catalog\\pages\\BK03\\BK03-p016.png",
+    "page_index": null,
+    "page_count": null,
+    "width": 995,
+    "height": 1452,
+    "model_settings": {
+        "use_doc_preprocessor": false,
+        "use_layout_detection": true,
+        "use_chart_recognition": false,
+        "use_seal_recognition": false,
+        "use_ocr_for_image_block": false,
+        "format_block_content": false,
+        "merge_layout_blocks": true,
+        "markdown_ignore_labels": [
+            "number",
+            "footnote",
+            "header",
+            "header_image",
+            "footer",
+            "footer_image",
+            "aside_text"
+        ],
+        "return_layout_polygon_points": true
+    },
+    "parsing_res_list": [
+        {
+            "block_label": "header",
+            "block_content": "目 录",
+            "block_bbox": [
+                482,
+                44,
+                561,
+                68
+            ],
+            "block_id": 0,
+            "block_order": null,
+            "group_id": 0,
+            "block_polygon_points": [
+                [
+                    482.0,
+                    44.0
+                ],
+                [
+                    560.0,
+                    44.0
+                ],
+                [
+                    560.0,
+                    67.0
+                ],
+                [
+                    482.0,
+                    67.0
+                ]
+            ]
+        },
+        {
+            "block_label": "content",
+            "block_content": "7.8.2 准晶的结构特点..... (276)\n7.8.3 准晶的寻找、制备和应用..... (277)\n7.8.4 液晶..... (281)\n习题..... (282)\n参考文献..... (286)\n第8章 金属的结构和性质..... (287)\n8.1 金属键和金属的一般性质..... (287)\n8.1.1 金属键的“自由电子”模型..... (287)\n8.1.2 固体能带理论..... (289)\n8.2 等径圆球的密堆积..... (292)\n8.2.1 等径圆球的最密堆积..... (292)\n8.2.2 等径圆球的体心立方密堆积..... (294)\n8.2.3 等径圆球密堆积中空隙的大小和分布..... (295)\n8.3 金属单质的结构..... (296)\n8.3.1 金属单质的结构概况..... (296)\n8.3.2 金属原子半径..... (297)\n8.4 合金的结构和性质..... (298)\n8.4.1 金属固溶体..... (298)\n8.4.2 金属化合物..... (300)\n8.4.3 钢铁..... (301)\n8.4.4 形状记忆合金..... (303)\n8.4.5 金属间隙化合物..... (305)\n8.5 固体的表面结构和性质..... (305)\n习题..... (306)\n参考文献..... (308)\n第9章 离子化合物的结构化学..... (309)\n9.1 离子晶体的若干简单结构型式..... (309)\n9.2 离子键和点阵能..... (314)\n9.2.1 点阵能的计算和测定..... (314)\n9.2.2 点阵能的应用..... (317)\n9.2.3 键型变异原理..... (319)\n9.3 离子半径..... (320)\n9.3.1 离子半径的测定和 Pauling 离子半径..... (321)\n9.3.2 有效离子半径..... (323)\n9.3.3 离子半径的变化趋势..... (323)\n9.4 离子配位多面体及其连接规律..... (325)\n9.4.1 正负离子半径比和离子的配位多面体..... (325)\n9.4.2 配位多面体的连接..... (326)\n9.4.3 Pauling 离子晶体结构规则..... (327)",
+            "block_bbox": [
+                78,
+                86,
+                976,
+                1398
+            ],
+            "block_id": 1,
+            "block_order": 1,
+            "group_id": 1,
+            "block_polygon_points": [
+                [
+                    78.0,
+                    86.0
+                ],
+                [
+                    976.0,
+                    86.0
+                ],
+                [
+                    976.0,
+                    1398.0
+                ],
+                [
+                    78.0,
+                    1398.0
+                ]
+            ]
+        },
+        {
+            "block_label": "number",
+            "block_content": "VI",
+            "block_bbox": [
+                94,
+                1390,
+                113,
+                1412
+            ],
+            "block_id": 2,
+            "block_order": null,
+            "group_id": 2,
+            "block_polygon_points": [
+                [
+                    94.0,
+                    1390.0
+                ],
+                [
+                    94.0,
+                    1411.0
+                ],
+                [
+                    112.0,
+                    1411.0
+                ],
+                [
+                    112.0,
+                    1390.0
+                ]
+            ]
+        }
+    ],
+    "layout_det_res": {
+        "input_path": null,
+        "page_index": null,
+        "boxes": [
+            {
+                "cls_id": 12,
+                "label": "header",
+                "score": 0.8082883954048157,
+                "coordinate": [
+                    482,
+                    44,
+                    561,
+                    68
+                ],
+                "order": null,
+                "polygon_points": [
+                    [
+                        482.0,
+                        44.0
+                    ],
+                    [
+                        560.0,
+                        44.0
+                    ],
+                    [
+                        560.0,
+                        67.0
+                    ],
+                    [
+                        482.0,
+                        67.0
+                    ]
+                ]
+            },
+            {
+                "cls_id": 4,
+                "label": "content",
+                "score": 0.9709406495094299,
+                "coordinate": [
+                    78,
+                    86,
+                    976,
+                    1398
+                ],
+                "order": 1,
+                "polygon_points": [
+                    [
+                        78.0,
+                        86.0
+                    ],
+                    [
+                        976.0,
+                        86.0
+                    ],
+                    [
+                        976.0,
+                        1398.0
+                    ],
+                    [
+                        78.0,
+                        1398.0
+                    ]
+                ]
+            },
+            {
+                "cls_id": 16,
+                "label": "number",
+                "score": 0.5919452905654907,
+                "coordinate": [
+                    94,
+                    1390,
+                    113,
+                    1412
+                ],
+                "order": 2,
+                "polygon_points": [
+                    [
+                        94.0,
+                        1390.0
+                    ],
+                    [
+                        94.0,
+                        1411.0
+                    ],
+                    [
+                        112.0,
+                        1411.0
+                    ],
+                    [
+                        112.0,
+                        1390.0
+                    ]
+                ]
+            }
+        ]
+    }
+}
