@@ -1,6 +1,6 @@
 # PySCF × ChemBlender 量子化学可视化调研
 
-本仓库整理 PySCF、主流量子化学软件、量子化学场/波函数文件、OpenVDB / Blender 可视化工作流，以及软件采用度问卷设计的阶段性调研资料。检索日期为 **2026-07-19**，全文笔记与第一版问卷依据更新至 **2026-07-20**；2026-09-22 另增面向 QCBlender 的第二版问卷草案。
+本仓库整理 PySCF、主流量子化学软件、量子化学场/波函数文件、OpenVDB / Blender 可视化工作流，以及软件采用度问卷设计的阶段性调研资料。检索日期为 **2026-07-19**，全文笔记与问卷构念依据更新至 **2026-07-20**；QCBlender 当前问卷自 2026-09-27 起统一维护于同一文件。
 
 > 核心结论：该方向值得继续研究，但项目不宜只定位为“PySCF 专用 `.cube` → OpenVDB 转换器”。更有价值的方向是构建一个引擎无关、物理语义完整、可验证、可复现，并适合大规模稀疏体数据与时间序列的量子化学计算到 Blender 场景工作流。
 
@@ -12,8 +12,7 @@
 | A 级优先证据 | 31 | 直接支撑核心判断或问卷构念的优先精读资料 |
 | 全文阅读笔记 | 61 | 与 2026-07-20 BibTeX 及 Zotero 父分类按 DOI 一一对应 |
 | 软件矩阵条目 | 18 | 常见量子化学或电子结构软件的定位与适配比较 |
-| 第一版问卷题目 | 19 | ChemBlender 方向；18 道封闭题共 121 个选项 |
-| QCBlender 第二版问卷题目 | 17 | 16 道封闭题和 1 道可选留言题；目标用时 6–9 分钟，待预测试核验 |
+| QCBlender 当前问卷题目 | 17 | 面向高级分析结果用户，聚焦输入、目标视图、可调操作和案例共建；目标用时 6–9 分钟，待预测试核验 |
 | 验证测试 | 20 | 覆盖格式、数值、跨引擎、可视化和回归验证 |
 
 ### 证据主题分布
@@ -42,8 +41,7 @@
 
 | 文档 | 内容 | 建议用途 |
 | --- | --- | --- |
-| [QCBlender 量子化学结果可视化需求调查（第二版草案）](docs/survey/qcblender_survey_draft_2026-09-22.md) | 17 题；验证 Gaussian 首版工作流并排序后续方向，末题征集新想法与共建建议 | 当前 QCBlender 方向的认知访谈与预测试 |
-| [量子化学结果交付与三维场可视化需求调查（第一版）](docs/survey/quantum_chemistry_software_survey_draft_2026-07-19.md) | 19 题；基于 ChemBlender 方向的历史预测试稿 | 回查原有构念、措辞和设计依据 |
+| [QCBlender 高级分析结果可视化需求调查（当前版）](docs/survey/quantum_chemistry_software_survey.md) | 17 题；面向高级分析结果用户，收集输入、目标视图、可调操作及案例共建意愿 | 当前 QCBlender 方向的认知访谈与预测试；版本差异见 Git 提交历史 |
 
 ### 数据与参考文献
 
@@ -77,7 +75,7 @@
 2. 阅读[跨主题精读发现](docs/research/literature_review_cross_cutting_findings_2026-07-19.md)，区分论文事实与项目综合推论。
 3. 通过[文献总结引用索引](data/literature-notes/README.md)回查每项结论对应的 Zotero 阅读笔记。
 4. 在[研究证据目录](data/research-evidence-catalog-2026-07-20.md)中按优先级、证据等级和主题筛选资料，并通过[软件与验证参考](docs/research/software_and_validation_reference_2026-07-20.md)查看软件矩阵和测试清单。
-5. 使用[QCBlender 第二版问卷草案](docs/survey/qcblender_survey_draft_2026-09-22.md)进行 10–15 人认知访谈；[第一版问卷](docs/survey/quantum_chemistry_software_survey_draft_2026-07-19.md)保留作历史对照。
+5. 使用[QCBlender 当前问卷](docs/survey/quantum_chemistry_software_survey.md)进行 10–15 名高级分析用户的认知访谈，检查题目理解、文件类别、分支、实际完成时间和隐私提示。
 
 ## 主要判断
 
@@ -118,4 +116,4 @@ OpenVDB 应被视为派生可视化数据，不能替代原始 `.cube`、checkpo
 
 ## 当前状态
 
-本仓库是**调研资料包**，不包含 `.cube` → OpenVDB 转换器或 Blender 插件。第一版 19 题问卷保留 ChemBlender 方向的文献支撑预测试稿；第二版 17 题草案面向独立的 QCBlender 项目。第二版正式投放前仍需用 10–15 人认知访谈覆盖亲自计算、合作、委托代算和结果使用者，检查分流、题目理解、实际完成时间，并填写公开联系方式与开发仓库链接。
+本仓库是**调研资料包**，不包含 `.cube` → OpenVDB 转换器或 Blender 插件。QCBlender 当前问卷面向过去 12 个月亲自处理过高级分析结果的用户，正式发放前仍需通过 10–15 人认知访谈核验题目理解、筛选分支、文件类别、完成时间和隐私提示。问卷各版本在 `docs/survey/quantum_chemistry_software_survey.md` 上迭代，并由 Git 提交历史追溯。
