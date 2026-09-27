@@ -70,3 +70,26 @@
 
 - Local source PDFs/DJVU, package archives and rendered page/crop images are excluded by scoped rules for the whole `learning` directory in the repository `.gitignore`; the learning package's catalog metadata and OCR text/JSON remain available for review and traceability.
 - Raw OCR JSON retains page dimensions, model settings and parsed content while its image `input_path` is repository-relative rather than a workstation-specific absolute path.
+
+## 12-hour textbook and format-atlas implementation — 2026-09-20
+
+- User selected layered full coverage, a minimum derivation chain, and a 12-hour core route.
+- The existing textbook is a useful data-semantics first sprint, but lacks the explicit molecular Hamiltonian, variational/single-determinant bridge, Roothaan-Hall and Kohn-Sham equations, primitive/contracted Gaussian equations, and formula-to-file mappings required for the expanded goal.
+- Live ChemBlender source of truth remains branch `feat/2.5-real-user-tutorials` at `2e94f90419aab186f522fb3b701746839ee8c5c4`; the reader matrix contains 22 entries and includes molecular, periodic, wavefunction, result-envelope, VASP-grid, phonon, band/DOS and persistence families.
+- `learning_state.json` remains `not_started`, all capabilities remain `unverified`, and LX00 evidence must remain untouched while authoring the materials.
+- The page-faithful introductory DFT Markdown is navigation evidence; equations cited from it must be checked against the preserved source-page image rather than trusted from OCR text alone.
+- Built-in user-workflow fixtures provide compact, real examples for XYZ/extXYZ, Gaussian/ORCA input, MOL/SDF/SMILES/MOL2, CIF/POSCAR, PDB/PQR, Cube, CJSON and QCSchema. Scientific-visualization fixtures cover FCHK/Molden, cclib Gaussian/ORCA outputs, phonopy YAML, VASP CHGCAR and vasprun band/DOS data.
+- Atlas coverage should be grouped by user-visible format family rather than by reader implementation: duplicate MOL readers and optional ASE alternatives do not create extra format cards.
+- Current format support separates always-available readers from optional cclib/IOData/ASE/pymatgen/phonopy runtimes; the atlas must expose that dependency boundary rather than imply every format is available in every installation.
+- Representative periodic examples are the Si POSCAR for lattice plus fractional coordinates, Li CHGCAR for a real-space field, and silicon vasprun files for k-space band/DOS semantics.
+- Direct visual checks of the preserved DFT-course pages confirmed: course 2 p.5 has the stationary Schrödinger equation, p.46 the effective one-electron equation, pp.62-63 the basis expansion and Roothaan equation, course 3 p.43 the first Hohenberg-Kohn theorem, and p.47 the Kohn-Sham equation with the exchange-correlation functional derivative.
+- English-source page checks confirmed the expanded theory chain: Jensen PDF pp.113, 117-118, 124, 129 and 131 for the molecular Hamiltonian, variational/single-determinant assumptions, basis expansion, RHF/UHF/ROHF and SCF caveats; Szabo/Ostlund PDF pp.153, 157, 160 and 227-230 for `FC=SCε`, density and unrestricted channels; GBasis PDF pp.6 and 10-11 for primitive/contracted Gaussians and `ρ(r)=Σγijφiφj`; PySCF PDF p.5 for the modular computational pipeline.
+- Final terminology pass moved CBQ/`.npy` definitions before their first use and added immediate definitions for ECP, Cartesian/spherical Gaussian, post-SCF, numerical integration grids, dispersion/solvation settings and the atlas's recurring format terms.
+- The core textbook now has 34 closed display-math blocks and 19 complete formula explanation groups. Project-native Grid3D equations are explicitly labeled as project definitions instead of being assigned fabricated textbook page numbers.
+- The atlas maps all 22 capability-matrix reader IDs exactly once while collapsing duplicate MOL and optional ASE implementations into user-facing cards. A uniform card audit passes for sections 2-21.
+## Long-term molecular tutorial scope — 2026-09-22
+
+- The learner chose deep coverage of molecular-system inputs, HF/DFT/basis/SCF, single-point/optimization/frequency, electronic-distribution outputs, and reliability checks; excited states are the sole extension. Gaussian, ORCA, and PySCF are examples for reading inputs and outputs, without requiring software operation.
+- The existing textbook already covers the Schrödinger-to-Grid3D chain, but its 12-hour contract and periodic Si case conflict with the current scope. Chapter 5 and the learning route need the largest expansion.
+- Levine 7th edition PDF chapter 15.12 begins at PDF p.510 and chapter 16.5 at PDF p.566. Jensen 3rd edition covers electron correlation/excited states in chapter 4.14, DFT/TDDFT in chapter 6.9, wavefunction analysis in chapter 10, properties in chapter 11 and convergence examples in chapter 12.
+- Current official examples: ORCA 6.1 manual documents `* xyz Charge Multiplicity` and SP/Opt/Freq/TDDFT task families; PySCF documents `Mole.charge`, `Mole.spin=2S`, atom/basis/unit, geometry optimization interfaces and TDDFT excitation energy/oscillator strength/transition dipole output. Gaussian's official site returned 502 for keyword pages, so version-specific Gaussian syntax should remain high-level and be labeled as illustrative unless corroborated by the accessible official GaussView PDF.
