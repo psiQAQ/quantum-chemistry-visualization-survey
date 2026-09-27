@@ -6,7 +6,9 @@
 
 先读 [REPORT.md](REPORT.md) 的第0–4节了解学习范围与资料选择，再读第7–9节查看计划与最终任务。取得所需资料后，在本地Codex中让它读取 [CODEX_HANDOFF.md](CODEX_HANDOFF.md) 并从LX00开始。
 
-首轮教材见 [QUANTUM_CHEMISTRY_DATA_SEMANTICS.md](QUANTUM_CHEMISTRY_DATA_SEMANTICS.md)。它按当前 ChemBlender 工作区的真实数据模型整理必学内容：计算架构、最小理论、核心格式、物理量语义、Grid3D、CBQ、验证与 H₂O/CH₃ 实例；不包含 LX00 标准答案。
+完整概念教程见 [QUANTUM_CHEMISTRY_DATA_SEMANTICS.md](QUANTUM_CHEMISTRY_DATA_SEMANTICS.md)。它从薛定谔方程开始，逐步讲解分子体系输入、HF/SCF、Kohn-Sham DFT、基组、单点能/优化/频率、MO/密度/ESP、收敛与误差、激发态，并对照 Gaussian、ORCA、PySCF 的输入输出及 ChemBlender 数据链；不包含 LX00 标准答案。
+
+全部当前输入格式按需查阅 [CHEMBLENDER_INPUT_FORMAT_ATLAS.md](CHEMBLENDER_INPUT_FORMAT_ATLAS.md)。图鉴按 ChemBlender `2e94f90419aab186f522fb3b701746839ee8c5c4`（2026-09-20）的 reader 能力矩阵整理真实片段、物理量、单位、解析对象、依赖、转换损失和验证方法；格式能力可能随项目更新而变化。
 
 建议第一次只准备：BK01英文主教材、BK03中文桥梁、RV01实空间可视化综述、RV02方法选择文章，以及DT01–DT04公开文档。不是下载全部22项后才允许学习。
 
@@ -15,7 +17,8 @@
 | 文件 | 用途 |
 |---|---|
 | REPORT.md | 完整调研、知识边界、5部教材/13篇文章/4份官方文档、4小时起步与8周计划 |
-| QUANTUM_CHEMISTRY_DATA_SEMANTICS.md | 首轮教材：量子化学数据语义、核心格式、Grid3D、CBQ和最小验证 |
+| QUANTUM_CHEMISTRY_DATA_SEMANTICS.md | 完整概念教程：分子计算理论、任务、输入输出、数据语义、Grid3D 和验证 |
+| CHEMBLENDER_INPUT_FORMAT_ATLAS.md | 当前 ChemBlender 输入格式图鉴：真实片段、单位、能力和损失边界 |
 | DOWNLOAD_CHECKLIST.md | 合法获取入口、权限边界、建议文件名 |
 | reading_manifest.json | 结构化书目、选读范围、优先级、后续本地文件和hash登记 |
 | CODEX_HANDOFF.md | 交给本地Codex的启动任务及教学规则 |

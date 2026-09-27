@@ -1,8 +1,8 @@
 {
   "schema_version": "1.0",
   "created_on": "2026-09-20",
-  "started_on": null,
-  "status": "not_started",
+  "started_on": "2026-09-22",
+  "status": "in_progress",
   "current_exercise": "LX00",
   "learner_baseline": {
     "source": "learner_self_report",
@@ -11,18 +11,18 @@
     "quantum_chemistry_competence": "unverified"
   },
   "learning_contract": {
-    "target": "针对ChemBlender量子化学可视化独立完成一个有科学验证的局部开发改进",
+    "target": "理解分子量子化学软件能计算什么，能独立解释典型输入、输出、物理含义和结果限制；以Gaussian、ORCA、PySCF为实例，不要求现阶段实际操作",
     "core_success_criteria": [
-      "物理定义正确",
-      "数据与元数据可追溯",
-      "数值误差有证据",
-      "架构与生命周期闭环",
-      "独立处理新变体"
+      "解释分子体系、坐标单位、电荷和自旋输入",
+      "解释HF、DFT、基组、自洽场及主要限制",
+      "区分单点能、结构优化、振动频率的输入和输出",
+      "区分轨道、电子密度、电荷分析和静电势的含义",
+      "检查收敛、单位和误差，并独立解释另一软件的同类结果"
     ],
-    "initial_sprint_minutes": 240,
-    "proposed_total_minutes": 3840,
-    "proposed_weeks": 8,
-    "first_sprint_included_in_total": true,
+    "initial_sprint_minutes": null,
+    "proposed_total_minutes": null,
+    "proposed_weeks": null,
+    "first_sprint_included_in_total": null,
     "user_confirmed_time_budget": false,
     "deadline": null
   },
@@ -91,7 +91,7 @@
     },
     {
       "id": "QC07",
-      "name": "光谱与激发态语义",
+      "name": "激发态与跃迁语义",
       "level": null,
       "status": "unverified",
       "evidence": [],
@@ -99,7 +99,7 @@
     },
     {
       "id": "QC08",
-      "name": "项目开发与保存恢复",
+      "name": "软件计算任务与输入输出识读",
       "level": null,
       "status": "unverified",
       "evidence": [],
@@ -107,7 +107,7 @@
     },
     {
       "id": "QC09",
-      "name": "独立迁移与科学解释",
+      "name": "跨软件迁移与科学解释",
       "level": null,
       "status": "unverified",
       "evidence": [],
@@ -119,13 +119,20 @@
   "repeated_errors": [],
   "blockers": [],
   "time_spent_minutes": 0,
-  "time_remaining_minutes": 3840,
-  "next_action": "读取CODEX_HANDOFF，核验最小环境后只提出LX00主问题，不提前展示答案。",
+  "time_remaining_minutes": null,
+  "next_action": "LX00首次回答为‘未知’；保持能力未验证，缩小问题并请学习者指出最想先核实的一项信息及原因。",
   "reviews": {
     "after_24h": null,
     "after_7d": null,
     "automation_created": false
   },
-  "sessions": [],
-  "notes": "资料调研完成不等于学习已开始；任何已掌握状态必须有学习者的实际证据。"
+  "sessions": [
+    {
+      "date": "2026-09-22",
+      "exercise": "LX00",
+      "evidence": "evidence/LX00-session-2026-09-22.md",
+      "result": "首次回答仅为‘未知’，尚不足以评定任何能力"
+    }
+  ],
+  "notes": "长期系统学习；深入学习基础主题1–5，扩展主题只包括激发态，其他扩展主题暂缓。资料调研和学习偏好不构成掌握证据。"
 }
